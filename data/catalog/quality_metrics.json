@@ -1,0 +1,166 @@
+{
+  "measured_at_utc": "2026-11-02T14:28:54.125479+00:00",
+  "downloaded_documents": 5,
+  "parsed_documents": 5,
+  "totals": {
+    "pages": 165,
+    "pdf_bytes": 2904620,
+    "raw_characters": 531371,
+    "cleaned_characters": 501394,
+    "tokens": 100464
+  },
+  "empty_pages": 0,
+  "very_little_text_pages": 3,
+  "very_little_text_definition": "1-99 cleaned characters; empty means 0",
+  "duplicate_pdf_files": 0,
+  "duplicate_cleaned_documents": 0,
+  "documents": [
+    {
+      "document_id": "bis_20241212_ai_regulation",
+      "pages": 38,
+      "parsed": true,
+      "sha256": "e0c9275e8dcabb65bc3261f1d930c4f93796fcea6133a569a43338e9f783adce",
+      "pdf_bytes": 872161,
+      "raw_characters": 149613,
+      "cleaned_characters": 140877,
+      "tokens": 29287,
+      "empty_pages": [],
+      "very_little_text_pages": [],
+      "replacement_characters": 0,
+      "raw_nonwhitespace_controls": {
+        "U+F081": 6,
+        "U+F082": 4,
+        "U+F083": 4,
+        "U+F084": 2,
+        "U+F085": 2,
+        "U+F086": 2,
+        "U+F087": 2
+      },
+      "repeated_edge_lines": [
+        {
+          "text": "Regulating AI in the financial sector: recent developments and main challenges",
+          "page_occurrences": 18
+        },
+        {
+          "text": "and possible developments and possible developments Regulating AI in the financial sector: recent developments and main challenges",
+          "page_occurrences": 17
+        }
+      ],
+      "cleaned_document_sha256": "c420ee581e737b10980a3bb6961aef1d4d8663b4c97cbd9618abe19cdbf16244"
+    },
+    {
+      "document_id": "fsb_20241114_ai_stability",
+      "pages": 40,
+      "parsed": true,
+      "sha256": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef",
+      "pdf_bytes": 596825,
+      "raw_characters": 126995,
+      "cleaned_characters": 118838,
+      "tokens": 24534,
+      "empty_pages": [],
+      "very_little_text_pages": [
+        1,
+        4
+      ],
+      "replacement_characters": 0,
+      "raw_nonwhitespace_controls": {},
+      "repeated_edge_lines": [],
+      "cleaned_document_sha256": "5ef97e9436687445424aa3623638a1c227826ae728febb2c8c5af19327907939"
+    },
+    {
+      "document_id": "fsb_20261015_responsible_ai",
+      "pages": 75,
+      "parsed": true,
+      "sha256": "4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de",
+      "pdf_bytes": 940160,
+      "raw_characters": 225600,
+      "cleaned_characters": 214837,
+      "tokens": 41417,
+      "empty_pages": [],
+      "very_little_text_pages": [
+        4
+      ],
+      "replacement_characters": 0,
+      "raw_nonwhitespace_controls": {},
+      "repeated_edge_lines": [],
+      "cleaned_document_sha256": "17c93fbc074f81204f88e5d03fadcfbf4a1986ddbb9f066758368d622f6bce04"
+    },
+    {
+      "document_id": "hkma_20191101_ai_principles",
+      "pages": 4,
+      "parsed": true,
+      "sha256": "588e79c06d1b8d8dc3d400b6ab87491e457472f1b726ad58df67a35e457981ad",
+      "pdf_bytes": 335744,
+      "raw_characters": 8535,
+      "cleaned_characters": 7887,
+      "tokens": 1436,
+      "empty_pages": [],
+      "very_little_text_pages": [],
+      "replacement_characters": 0,
+      "raw_nonwhitespace_controls": {},
+      "repeated_edge_lines": [],
+      "cleaned_document_sha256": "be069e271b723824a95c3caf7d7f7856bc696422a679e8c215c3c393400aeeb7"
+    },
+    {
+      "document_id": "hkma_20261015_ai_guidance",
+      "pages": 8,
+      "parsed": true,
+      "sha256": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109",
+      "pdf_bytes": 159730,
+      "raw_characters": 20628,
+      "cleaned_characters": 18955,
+      "tokens": 3790,
+      "empty_pages": [],
+      "very_little_text_pages": [],
+      "replacement_characters": 0,
+      "raw_nonwhitespace_controls": {},
+      "repeated_edge_lines": [],
+      "cleaned_document_sha256": "a36f5b9e08972ec626978009d1c2687c97e1e1892fabf10edf36d68c26631749"
+    }
+  ],
+  "chunks": {
+    "fixed_150": {
+      "count": 753,
+      "average_tokens": 133.43559096945552,
+      "average_characters": 665.3067729083665,
+      "min_tokens": 1,
+      "max_tokens": 150,
+      "mid_word_starts_heuristic": 42,
+      "mid_word_ends_heuristic": 42,
+      "non_sentence_ends_heuristic": 514,
+      "per_document": {
+        "bis_20241212_ai_regulation": 212,
+        "fsb_20241114_ai_stability": 188,
+        "fsb_20261015_responsible_ai": 314,
+        "hkma_20191101_ai_principles": 11,
+        "hkma_20261015_ai_guidance": 28
+      },
+      "citation_metadata_and_page_substring_checks": 753
+    },
+    "fixed_220_overlap_30": {
+      "count": 588,
+      "average_tokens": 192.44727891156464,
+      "average_characters": 958.6462585034013,
+      "min_tokens": 1,
+      "max_tokens": 220,
+      "mid_word_starts_heuristic": 27,
+      "mid_word_ends_heuristic": 45,
+      "non_sentence_ends_heuristic": 375,
+      "per_document": {
+        "bis_20241212_ai_regulation": 166,
+        "fsb_20241114_ai_stability": 147,
+        "fsb_20261015_responsible_ai": 243,
+        "hkma_20191101_ai_principles": 10,
+        "hkma_20261015_ai_guidance": 22
+      },
+      "citation_metadata_and_page_substring_checks": 588
+    }
+  },
+  "collections": {
+    "finance_fixed_150": 753,
+    "finance_overlap_220": 588
+  },
+  "database_storage_bytes": 15876424,
+  "smoke_questions": 5,
+  "smoke_hits_verified": 20
+}

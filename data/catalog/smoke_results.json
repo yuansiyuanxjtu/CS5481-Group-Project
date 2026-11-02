@@ -1,0 +1,342 @@
+[
+  {
+    "question": "What responsibilities do bank boards and senior management have for AI governance?",
+    "collection": "finance_fixed_150",
+    "hits": [
+      {
+        "chunk_id": "bis_20241212_ai_regulation_p32_c4_fixed_150",
+        "text": ", revisions or even new regulations especially with respect to use cases that present higher risks or significant potential impact on customers. In particular, at least in the context of credit and insurance underwriting, the following areas stand out as important: (i) Governance framework. The board and senior management of financial institutions are ultimately accountable for their activities, including AI use cases. That said, financial institutions’ use of AI, particularly in core business activities, underscores the importance of a clear allocation of roles and responsibilities across the entire AI life cycle (ie design, delivery and deployment of AI). Governance frameworks might need to specify the role of human intervention to minimise harmful outcomes from AI systems. (ii) AI expertise and skills. A foundational",
+        "metadata": {
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "token_count": 150,
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "document_id": "bis_20241212_ai_regulation",
+          "page_number": 32,
+          "chunk_strategy": "fixed_150"
+        },
+        "cosine_distance": 0.23965126276016235,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c1_fixed_150",
+        "text": "- 2 - Governance 1. Board and senior management accountable for the outcome of AI applications – Some AI applications have self-learning capabilities from experience and examples (e.g. via reinforcement learning and deep learning) and may be able to make automated decisions on behalf of their banks. The board and senior management of banks should appreciate that they remain accountable for all AI-driven decisions. Accordingly, they should ensure that proper governance framework and risk management measures are put in place to oversee the use of AI applications within their institutions. Moreover, the roles and responsibilities of the three lines of defence in developing and monitoring the operations of AI applications should be clearly defined. Application design and development 2. Possessing sufficient expertise – Given that designing and developing AI applications requires specific expertise",
+        "metadata": {
+          "page_number": 2,
+          "document_id": "hkma_20191101_ai_principles",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "chunk_strategy": "fixed_150",
+          "token_count": 150,
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf"
+        },
+        "cosine_distance": 0.252485990524292,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "How should financial institutions ensure AI explainability and transparency?",
+    "collection": "finance_fixed_150",
+    "hits": [
+      {
+        "chunk_id": "bis_20241212_ai_regulation_p26_c3_fixed_150",
+        "text": "to effectively develop, deploy and manage the risks from using AI systems, as well as provide independent internal assurance. More concretely, financial institutions face the challenge of ensuring that they have the necessary expertise to develop or maintain AI systems that are not only high-performing but also comprehensible to internal stakeholders (eg board of directors and senior management) and viewed as fair and reliable by external stakeholders (eg clients and regulators). As use of AI by financial institutions increases, financial authorities will also need similar skills to be able to effectively regulate and supervise. Transparency and explainability 48. The implementation of these governance principles will also be affected by the issue of AI explainability. As mentioned, explainability refers to making transparent how an AI system",
+        "metadata": {
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "chunk_strategy": "fixed_150",
+          "page_number": 26,
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "token_count": 150
+        },
+        "cosine_distance": 0.14564812183380127,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p42_c1_fixed_150",
+        "text": "3.5. Explainability and transparency Sound Practice 8 (Explainability and transparency): Financial institutions understand differences in the explainability of various types of AI. If appropriate and feasible, financial institutions adopt more explainable AI or consider compensating controls. Financial institutions also provide appropriate transparency tailored to different stakeholders. In this report, explainability refers to the ability of an AI model or system to provide clear and interpretable outputs or decisions, specifically the extent to which humans can understand how an AI model or system generates outputs from inputs, including: (i) the factors, logic, or processes that contribute to outputs; (ii) the relative importance/weighting of input variables or features; and (iii) how methodological relationships vary across",
+        "metadata": {
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_number": 42,
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "chunk_strategy": "fixed_150",
+          "token_count": 150
+        },
+        "cosine_distance": 0.15774452686309814,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "What data quality and data governance controls are needed for AI models?",
+    "collection": "finance_fixed_150",
+    "hits": [
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p39_c1_fixed_150",
+        "text": "capabilities of available AI models and systems, relevant industry practices and inputs from business users, control functions, subject matter experts and technical experts. Once an AI model or system is selected, financial institutions implement appropriate, documented change management processes throughout the AI lifecycle, in particular, for high- materiality and/or risk use cases. 3.4. Data governance Sound Practice 7 (Data governance): Financial institutions establish appropriate data governance to maintain data that is fit-for purpose for training, testing and using AI (i.e. accurate, complete, consistent, reliable, secure). Effective data governance is essential for effective AI risk management and for promoting high- quality data to underpin effective and reliable AI outputs. Data governance and data quality are",
+        "metadata": {
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "chunk_strategy": "fixed_150",
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_number": 39,
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "token_count": 150
+        },
+        "cosine_distance": 0.23198997974395752,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c3_fixed_150",
+        "text": "banks should adopt an effective data governance framework to ensure that the data used are of good quality and relevance. For instance, data quality assessment may be performed with respect to AI applications based on appropriately defined data quality metrics (covering factors such as accuracy, completeness, timeliness and consistency of data). Data quality issues identified should be escalated to the responsible parties for rectification in a timely manner. 5. Conducting rigorous model validation – Rigorous validation and testing of trained AI models should be performed to confirm the accuracy and appropriateness of the AI models before they are deployed for production use.",
+        "metadata": {
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "page_number": 2,
+          "token_count": 118,
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "document_id": "hkma_20191101_ai_principles",
+          "chunk_strategy": "fixed_150"
+        },
+        "cosine_distance": 0.23576712608337402,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "How can third-party AI providers create concentration and operational risks?",
+    "collection": "finance_fixed_150",
+    "hits": [
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p21_c1_fixed_150",
+        "text": "foundation models, data providers and deployment platforms. While third-party providers offer benefits, they also introduce risks. These risks apply not only to third-party AI tools and services, but also to those where third-party service providers incorporate or use AI within their tools and services not explicitly marketed or sold as AI (referred to as 'embedded AI'), including: ■ Failure to perform as expected: Third-party AI systems may exhibit performance inconsistent with the terms of agreed-upon service. ■ Insufficient transparency: Financial institutions may face reduced transparency when relying on proprietary or complex third-party AI models, systems, or data, limiting their ability to conduct due diligence, monitor performance and manage risks. For example, in the case of embedded",
+        "metadata": {
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "chunk_strategy": "fixed_150",
+          "token_count": 150,
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_number": 21
+        },
+        "cosine_distance": 0.2042534351348877,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p65_c2_fixed_150",
+        "text": "ability to manage and mitigate AI risks may need to be reliant on or supported by assurance and information from third-party AI providers. In addition to documentation, transparency and assurance tools, financial institutions’ contractual arrangements with third-party AI providers address disclosure and notification of: ■ arrangements for data usage, sharing and retention; ■ material changes affecting AI behaviour; ■ permitted and prohibited use; ■ training approaches; ■ service availability; ■ underlying technology dependencies; and ■ changes to third-party AI services (including non-AI services with embedded AI elements) that may alter risk profiles after deployment. Additionally, where relevant, financial institutions’ contractual arrangements clarify accountability for model performance, model drift, service degradation, version updates and service discontinu",
+        "metadata": {
+          "chunk_strategy": "fixed_150",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "page_number": 65,
+          "token_count": 150,
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf"
+        },
+        "cosine_distance": 0.2620106339454651,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "What human oversight and validation should banks apply to generative AI?",
+    "collection": "finance_fixed_150",
+    "hits": [
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c2_fixed_150",
+        "text": ", banks should ensure that their developers have the requisite competence and experience. Senior management should satisfy themselves that there is an effective mechanism to supervise the relevant staff. They should also implement appropriate programmes to recruit, train and retain employees with suitable skillsets. 3. Ensuring an appropriate level of explainability of AI applications – Trustworthy and robust AI applications should be explainable (i.e. no black-box excuse) to all relevant parties. Banks should implement adequate measures during the design phase to ensure a level of explainability which is appropriate and commensurate with the materiality of their AI applications. 4. Using data of good quality – As the accuracy and performance of AI applications depend heavily on the data used to train the AI models,",
+        "metadata": {
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_number": 2,
+          "document_id": "hkma_20191101_ai_principles",
+          "chunk_strategy": "fixed_150",
+          "token_count": 150
+        },
+        "cosine_distance": 0.29924696683883667,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p54_c1_fixed_150",
+        "text": "meaningful, i.e. it involves humans having sufficient ability, authority and incentive to intervene, as opposed to oversight that is nominal or driven by ‘tick-the-box’ compliance. Design and develop appropriate and meaningful human oversight of AI Financial institutions design and develop AI to enable effective and meaningful human oversight (as far as technically possible) which includes: ■ enabling staff to assess the outputs of the AI model or system and understand its capabilities and limitations; ■ preventing automation bias (i.e. overreliance) 81 by creating incentive alignment for thorough, thoughtful review, such as by incorporating performance metrics that reward quality of oversight decisions; ■ creating feedback mechanisms for the AI model or system to learn and improve from oversight decisions, including tracking when",
+        "metadata": {
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_number": 54,
+          "chunk_strategy": "fixed_150",
+          "token_count": 150,
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "document_id": "fsb_20261015_responsible_ai"
+        },
+        "cosine_distance": 0.328469455242157,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "What responsibilities do bank boards and senior management have for AI governance?",
+    "collection": "finance_overlap_220",
+    "hits": [
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c1_fixed_220_overlap_30",
+        "text": "- 2 - Governance 1. Board and senior management accountable for the outcome of AI applications – Some AI applications have self-learning capabilities from experience and examples (e.g. via reinforcement learning and deep learning) and may be able to make automated decisions on behalf of their banks. The board and senior management of banks should appreciate that they remain accountable for all AI-driven decisions. Accordingly, they should ensure that proper governance framework and risk management measures are put in place to oversee the use of AI applications within their institutions. Moreover, the roles and responsibilities of the three lines of defence in developing and monitoring the operations of AI applications should be clearly defined. Application design and development 2. Possessing sufficient expertise – Given that designing and developing AI applications requires specific expertise, banks should ensure that their developers have the requisite competence and experience. Senior management should satisfy themselves that there is an effective mechanism to supervise the relevant staff. They should also implement appropriate programmes to recruit, train and retain employees with suitable skillsets. 3. Ensuring an appropriate level of explainability of AI applications – Trustworthy and robust AI applications should",
+        "metadata": {
+          "page_number": 2,
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "token_count": 220,
+          "document_id": "hkma_20191101_ai_principles",
+          "chunk_strategy": "fixed_220_overlap_30",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf"
+        },
+        "cosine_distance": 0.24672776460647583,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p24_c1_fixed_220_overlap_30",
+        "text": "2. Organisation-wide AI governance The four sound practices in this section address AI governance practices at an organisational level and the eight sound practices in the next section cover the AI lifecycle. As is the case with cross-sectoral standards on AI,36 these four sound practices are designed to be cross-cutting to inform the remaining sound practices. AI governance concerns how financial institutions choose, monitor and review their approach to AI adoption and organisational governance. As in other areas, the board and senior management37 take responsibility and play critical roles in setting a clear direction for AI adoption and in providing senior-level oversight, so that AI adoption and governance align with the financial institution’s business model, risk appetite and strategy (Sound Practice 1). The board and senior management are also responsible for establishing and maintaining clear and well- defined roles and responsibilities across the organisation, to promote effective accountability and robust oversight of AI-related activities and risks (Sound Practices 2 and 3). Financial institutions adapt their governance approaches and operating models and appropriately resource the organisation as AI and the financial institution’s usage evolve",
+        "metadata": {
+          "page_number": 24,
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "token_count": 220,
+          "chunk_strategy": "fixed_220_overlap_30",
+          "document_id": "fsb_20261015_responsible_ai"
+        },
+        "cosine_distance": 0.250346302986145,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "How should financial institutions ensure AI explainability and transparency?",
+    "collection": "finance_overlap_220",
+    "hits": [
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p42_c2_fixed_220_overlap_30",
+        "text": "is made available to relevant stakeholders, including the financial institution’s board and senior management, counterparties and customers interacting with the AI model or system and authorities. Transparency supports accountability, verification, assurance and auditability – especially for more material use cases. Explainability and transparency are complementary but not synonymous. Even if appropriate information about an AI model or system is made available, it may still have inherent explainability limitations and neither its developers not its deployers may understand how it specifically translates inputs into outputs. Likewise, auditability/reproducibility and explainability are complementary and somewhat connected but distinct. Even if a financial institution maintains detailed lifecycle records and reproduces the outputs and actions taken by an AI model or system, it may not necessarily be able to explain how these outputs were derived. Understand explainability Financial institutions identify, understand and (where appropriate) communicate the degree of explainability of different AI models and systems for specific AI use cases. Financial institutions recognise that: (i) the importance of explainability may vary depending on the level of autonomy, materiality and risk of different AI models",
+        "metadata": {
+          "chunk_strategy": "fixed_220_overlap_30",
+          "token_count": 220,
+          "page_number": 42,
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf"
+        },
+        "cosine_distance": 0.13725942373275757,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "bis_20241212_ai_regulation_p26_c3_fixed_220_overlap_30",
+        "text": "(eg clients and regulators). As use of AI by financial institutions increases, financial authorities will also need similar skills to be able to effectively regulate and supervise. Transparency and explainability 48. The implementation of these governance principles will also be affected by the issue of AI explainability. As mentioned, explainability refers to making transparent how an AI system’s outputs (eg underwriting decisions) were derived from its inputs (eg customer data). This includes providing clarity as to how the system functions and makes decisions. However, as AI systems become more complex, they often achieve higher performance at the expense of explainability. In other words, while these systems can leverage large, diverse sources of credit- or insurance-related information and detect intricate data patterns, this increased complexity can make their decision-making processes harder to understand. Therefore, striking the right balance between performance and explainability is one of the main challenges for financial institutions implementing AI, especially in credit and insurance underwriting. Due to these explainability challenges, some industry players advocate that regulations should focus on the risk control surrounding the",
+        "metadata": {
+          "token_count": 220,
+          "document_id": "bis_20241212_ai_regulation",
+          "page_number": 26,
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "chunk_strategy": "fixed_220_overlap_30",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf"
+        },
+        "cosine_distance": 0.18084049224853516,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "What data quality and data governance controls are needed for AI models?",
+    "collection": "finance_overlap_220",
+    "hits": [
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c2_fixed_220_overlap_30",
+        "text": ", train and retain employees with suitable skillsets. 3. Ensuring an appropriate level of explainability of AI applications – Trustworthy and robust AI applications should be explainable (i.e. no black-box excuse) to all relevant parties. Banks should implement adequate measures during the design phase to ensure a level of explainability which is appropriate and commensurate with the materiality of their AI applications. 4. Using data of good quality – As the accuracy and performance of AI applications depend heavily on the data used to train the AI models, banks should adopt an effective data governance framework to ensure that the data used are of good quality and relevance. For instance, data quality assessment may be performed with respect to AI applications based on appropriately defined data quality metrics (covering factors such as accuracy, completeness, timeliness and consistency of data). Data quality issues identified should be escalated to the responsible parties for rectification in a timely manner. 5. Conducting rigorous model validation – Rigorous validation and testing of trained AI models should be performed to confirm the accuracy and appropriateness of the AI models",
+        "metadata": {
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "chunk_strategy": "fixed_220_overlap_30",
+          "page_number": 2,
+          "token_count": 220,
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "document_id": "hkma_20191101_ai_principles"
+        },
+        "cosine_distance": 0.2429211139678955,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p39_c1_fixed_220_overlap_30",
+        "text": "capabilities of available AI models and systems, relevant industry practices and inputs from business users, control functions, subject matter experts and technical experts. Once an AI model or system is selected, financial institutions implement appropriate, documented change management processes throughout the AI lifecycle, in particular, for high- materiality and/or risk use cases. 3.4. Data governance Sound Practice 7 (Data governance): Financial institutions establish appropriate data governance to maintain data that is fit-for purpose for training, testing and using AI (i.e. accurate, complete, consistent, reliable, secure). Effective data governance is essential for effective AI risk management and for promoting high- quality data to underpin effective and reliable AI outputs. Data governance and data quality are key regardless of whether a financial institution develops an AI model or system in-house using its own data, or relies on an AI model, system and/or data from third parties. However, in the latter case, there may contractual, legal, or practical limitations on the financial institution’s ability to access or process third-party data. In",
+        "metadata": {
+          "chunk_strategy": "fixed_220_overlap_30",
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "token_count": 220,
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "page_number": 39
+        },
+        "cosine_distance": 0.2546558976173401,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "How can third-party AI providers create concentration and operational risks?",
+    "collection": "finance_overlap_220",
+    "hits": [
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p66_c3_fixed_220_overlap_30",
+        "text": "these controls provide risk mitigation and may include: additional pre-deployment testing; limiting the initial use of the third-party AI to low materiality and risk use cases; and more intense human oversight (at least temporarily) such as enhanced monitoring, benchmarking, or stricter approval for certain actions. Contractual tools such as warranties and indemnities from third-party AI providers can also help compensate for limited transparency. Where there are no satisfactory compensating controls available to the financial institution that can bring relevant risks within agreed appetite, it may decide not to use the third-party AI provider’s model or system. 113 For example, see OECD Model Card Regulatory Check. 114 See ISO/IEC 42001:2023 - AI management systems. 115 For example, CMORG AI Shared Responsibility Model. 62",
+        "metadata": {
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "token_count": 170,
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "page_number": 66,
+          "chunk_strategy": "fixed_220_overlap_30"
+        },
+        "cosine_distance": 0.2227182388305664,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p67_c2_fixed_220_overlap_30",
+        "text": "-contracted or sub-outsourced activities (i.e. where a third-party AI provider itself relies on external parties) and the degree to which the third-party AI provider relies on those subcontractors to further identify indirect concentrations risk. As part of their operational resilience and third-party risk management framework, financial institutions assess whether critical services remain resilient, recoverable and subject to effective oversight when AI-enabled capabilities fail or become unavailable. Contingency planning considers: ■ incidents caused by or involving AI models or system (whether accidental or malicious). For example, mass deletions of data, hallucinations, or cyber attacks committed by AI agents in the pursuit of pre-defined objectives; ■ cloud-service disruptions; ■ foundation-model degradation; ■ vendor discontinuation; and ■ infrastructure failures affecting AI operations 116 For example, by asking a third-party AI provider how it has tested its ability to deal with severe shortages of essential hardware or energy. 63",
+        "metadata": {
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "chunk_strategy": "fixed_220_overlap_30",
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_number": 67,
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "token_count": 206
+        },
+        "cosine_distance": 0.2663571238517761,
+        "local_page_trace_verified": true
+      }
+    ]
+  },
+  {
+    "question": "What human oversight and validation should banks apply to generative AI?",
+    "collection": "finance_overlap_220",
+    "hits": [
+      {
+        "chunk_id": "hkma_20191101_ai_principles_p2_c1_fixed_220_overlap_30",
+        "text": "- 2 - Governance 1. Board and senior management accountable for the outcome of AI applications – Some AI applications have self-learning capabilities from experience and examples (e.g. via reinforcement learning and deep learning) and may be able to make automated decisions on behalf of their banks. The board and senior management of banks should appreciate that they remain accountable for all AI-driven decisions. Accordingly, they should ensure that proper governance framework and risk management measures are put in place to oversee the use of AI applications within their institutions. Moreover, the roles and responsibilities of the three lines of defence in developing and monitoring the operations of AI applications should be clearly defined. Application design and development 2. Possessing sufficient expertise – Given that designing and developing AI applications requires specific expertise, banks should ensure that their developers have the requisite competence and experience. Senior management should satisfy themselves that there is an effective mechanism to supervise the relevant staff. They should also implement appropriate programmes to recruit, train and retain employees with suitable skillsets. 3. Ensuring an appropriate level of explainability of AI applications – Trustworthy and robust AI applications should",
+        "metadata": {
+          "page_number": 2,
+          "document_id": "hkma_20191101_ai_principles",
+          "token_count": 220,
+          "chunk_strategy": "fixed_220_overlap_30",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf"
+        },
+        "cosine_distance": 0.3194293975830078,
+        "local_page_trace_verified": true
+      },
+      {
+        "chunk_id": "fsb_20261015_responsible_ai_p54_c1_fixed_220_overlap_30",
+        "text": "meaningful, i.e. it involves humans having sufficient ability, authority and incentive to intervene, as opposed to oversight that is nominal or driven by ‘tick-the-box’ compliance. Design and develop appropriate and meaningful human oversight of AI Financial institutions design and develop AI to enable effective and meaningful human oversight (as far as technically possible) which includes: ■ enabling staff to assess the outputs of the AI model or system and understand its capabilities and limitations; ■ preventing automation bias (i.e. overreliance) 81 by creating incentive alignment for thorough, thoughtful review, such as by incorporating performance metrics that reward quality of oversight decisions; ■ creating feedback mechanisms for the AI model or system to learn and improve from oversight decisions, including tracking when humans override AI recommendations, analysing patterns in these interventions and using this information to refine both the AI model or system and the oversight processes; and ■ assessing whether human overseers are providing effective oversight. When obtaining an AI model or system from an open-source or open-weight repository or third- party AI provider, financial institutions consider",
+        "metadata": {
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "token_count": 220,
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_number": 54,
+          "chunk_strategy": "fixed_220_overlap_30"
+        },
+        "cosine_distance": 0.3253319263458252,
+        "local_page_trace_verified": true
+      }
+    ]
+  }
+]

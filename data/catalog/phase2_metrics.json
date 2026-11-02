@@ -1,0 +1,20 @@
+{
+  "collections": {
+    "finance_fixed_150": {
+      "processed_chunks": 753,
+      "records_after": 753,
+      "records_before": 0
+    },
+    "finance_overlap_220": {
+      "processed_chunks": 588,
+      "records_after": 588,
+      "records_before": 0
+    }
+  },
+  "effective_batch_size": 32,
+  "embedding_seconds": 11.487360420000186,
+  "insertion_seconds": 1.3957545830044182,
+  "model_load_seconds": 3.6085894999996526,
+  "processed_chunks": 1341,
+  "storage_bytes": 15876424
+}

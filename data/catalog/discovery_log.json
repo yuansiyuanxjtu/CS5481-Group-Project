@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-02",
+  "initial_sources": [
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20191101-1-EN",
+      "result": "HTTP 200 via ordinary requests GET; main PDF hyperlink verified; PDF downloaded and parsed"
+    },
+    {
+      "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20261015-2-EN",
+      "result": "HTTP 200 via ordinary requests GET; main PDF hyperlink verified; PDF downloaded and parsed"
+    },
+    {
+      "url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+      "result": "HTTP 200 via ordinary requests GET; main PDF hyperlink verified; PDF downloaded and parsed"
+    },
+    {
+      "url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+      "result": "HTTP 200 via ordinary requests GET; main PDF hyperlink verified; PDF downloaded and parsed"
+    },
+    {
+      "url": "https://www.mas.gov.sg/publications/monographs-or-information-paper/2018/feat",
+      "result": "Browsing service returned an unavailable-service/maintenance page. No PDF requested, no restriction bypass attempted."
+    },
+    {
+      "url": "https://www.bis.org/fsi/publ/insights63.htm",
+      "result": "HTTP 200 after official BIS redirect; main PDF hyperlink and citation publication metadata verified; PDF downloaded and parsed"
+    }
+  ],
+  "notes": [
+    "Browsing service reported cache-miss/502 failures on some HKMA, FSB 2026 and BIS landing pages; ordinary unauthenticated HTTP GET succeeded.",
+    "Exactly five distinct PDF URLs downloaded, all from official sources. No MAS or EBA PDFs downloaded.",
+    "No crawling, authentication, access-control bypass, or bulk download."
+  ]
+}

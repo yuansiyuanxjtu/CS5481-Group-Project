@@ -1,0 +1,10 @@
+hkma_20191101_ai_principles: verified existing file; no network request
+hkma_20191101_ai_principles: 4 pages, 335744 bytes, SHA-256 588e79c06d1b8d8dc3d400b6ab87491e457472f1b726ad58df67a35e457981ad
+hkma_20261015_ai_guidance: verified existing file; no network request
+hkma_20261015_ai_guidance: 8 pages, 159730 bytes, SHA-256 2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109
+fsb_20241114_ai_stability: verified existing file; no network request
+fsb_20241114_ai_stability: 40 pages, 596825 bytes, SHA-256 4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef
+fsb_20261015_responsible_ai: verified existing file; no network request
+fsb_20261015_responsible_ai: 75 pages, 940160 bytes, SHA-256 4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de
+bis_20241212_ai_regulation: verified existing file; no network request
+bis_20241212_ai_regulation: 38 pages, 872161 bytes, SHA-256 e0c9275e8dcabb65bc3261f1d930c4f93796fcea6133a569a43338e9f783adce

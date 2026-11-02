@@ -1,0 +1,222 @@
+[
+  {
+    "selection": "first_substantive",
+    "chunk_id": "bis_20241212_ai_regulation_p2_c1_fixed_150",
+    "document_id": "bis_20241212_ai_regulation",
+    "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+    "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+    "page_number": 2,
+    "text": "FSI Insights are written by members of the Financial Stability Institute (FSI) of the Bank for International Settlements (BIS), often in collaboration with staff from supervisory agencies and central banks. The papers aim to contribute to international discussions on a range of contemporary regulatory and supervisory policy issues and implementation challenges faced by financial sector authorities. The views expressed in them are solely those of the authors and do not necessarily reflect those of the BIS or the Basel-based committees. Authorised by the Chair of the FSI, Fernando Restoy. This publication is available on the BIS website (www.bis.org). To contact the BIS Global Media and Public Relations team, please email media@bis.org. You can sign up for email alerts at www",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "bis_20241212_ai_regulation_p19_c5_fixed_150",
+    "document_id": "bis_20241212_ai_regulation",
+    "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+    "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+    "page_number": 19,
+    "text": "AI guidance but not always explicitly stated in MRM frameworks. That said, this can be inferred in specific contexts such as model validation or credit decisions. For instance, FRB-OCC (2011) specifies that reports generated from model outputs should be reviewed as part of the model validation process to ensure that they are accurate, complete and informative, and that they contain appropriate indicators of model performance and limitations. For the use of machine learning models for regulatory capital purposes, EBA (2021) recommends that banking institutions document the outcomes of statistical analyses involving risk drivers and output variables. The expectation for supported decision-making 58 The report scored 10 major foundation developers based on 100 transparency indicators and found that the average score was only 37, with",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "fsb_20241114_ai_stability_p3_c1_fixed_150",
+    "document_id": "fsb_20241114_ai_stability",
+    "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+    "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+    "page_number": 3,
+    "text": "Table of Contents Executive summary ............................................................................................................... 1 1. Introduction ..............................",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "fsb_20241114_ai_stability_p21_c1_fixed_150",
+    "document_id": "fsb_20241114_ai_stability",
+    "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+    "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+    "page_number": 21,
+    "text": "Table 4: Increasing sources of AI-related third-party dependencies for FIs Source Relevance for FIs Hardware • FIs that develop AI models, customise pre-trained models, and deploy AI in applications increasingly rely on accelerated computing chips, such as GPUs and application-specific integrated circuits (ASICs), which they acquire directly from chip suppliers or rent from cloud service providers (CSPs). Cloud services • CSPs, which offer flexible computing power arrangements, easy access to cutting edge AI toolsets and increasingly convenient LLM access channels, have become tightly integrated in AI development. Major CSPs also train and disseminate LLMs. FIs have indicated that one of the primary drivers of cloud adoption involves AI capabilities.57 FIs also increasingly assume",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "fsb_20261015_responsible_ai_p3_c1_fixed_150",
+    "document_id": "fsb_20261015_responsible_ai",
+    "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+    "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+    "page_number": 3,
+    "text": "Table of Contents Executive summary ............................................................................................................... 1 Introduction ................................",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "fsb_20261015_responsible_ai_p38_c1_fixed_150",
+    "document_id": "fsb_20261015_responsible_ai",
+    "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+    "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+    "page_number": 38,
+    "text": "Financial institutions have the ultimate choice of whether to adopt AI for specific use cases, taking into account alignment to their business strategy and their assessment of potential benefits and risks. If a financial institution chooses to adopt AI for a given use case, during the selection stage it decides: ■ whether to develop AI in-house, procure it from third-party AI providers, use open- source or open-weight tools, or use a combination of these; and ■ the appropriate AI model or system (such as traditional, GenAI, agentic, or other emerging models or system, or a combination thereof) for the use case. In making these decisions, financial institutions consider factors such as: ■ materiality and risks; ■ customer impact; ■ intended",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "hkma_20191101_ai_principles_p1_c1_fixed_150",
+    "document_id": "hkma_20191101_ai_principles",
+    "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+    "page_number": 1,
+    "text": "Our Ref.: B1/15C B9/29C 1 November 2019 The Chief Executive All Authorized Institutions Dear Sir/Madam, High-level Principles on Artificial Intelligence The Hong Kong Monetary Authority (HKMA) conducted a survey in Q3 2019 on the use of artificial intelligence (AI) by banks. It is noted that many banks are adopting or planning to adopt AI applications. The scope of AI usage is also expanding from customer-facing services (e.g. chatbots and personalised marketing) to internal processes and risk management areas (e.g. operational automation, cyber and fraud risk management). Details of the survey results will be published very soon. The growing use of AI presents not only opportunities but also new risk management challenges",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "hkma_20191101_ai_principles_p3_c1_fixed_150",
+    "document_id": "hkma_20191101_ai_principles",
+    "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+    "page_number": 3,
+    "text": "- 3 - It is preferable to involve an independent party (e.g. the second or third line of defence or an external consultant) in the model validation process. 6. Ensuring auditability of AI applications – There is a need to track the outcome of AI applications on a continuous basis and where necessary gather evidence to support investigations when incidents or unfavourable outcomes arise. Banks should build in sufficient audit logs and produce relevant documentation during the design phase. These audit logs and documentation should be retained for an appropriate period of time to ensure auditing is possible. 7. Implementing effective management oversight of third-party vendors – Where banks rely on third-party vendors to develop AI applications, they should perform proper due diligence on these vendors",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+    "document_id": "hkma_20261015_ai_guidance",
+    "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+    "page_number": 1,
+    "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "hkma_20261015_ai_guidance_p5_c1_fixed_150",
+    "document_id": "hkma_20261015_ai_guidance",
+    "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+    "page_number": 5,
+    "text": "steps leading up to final outcomes). At the same time, for A.I. systems that are used to test or monitor other A.I. systems, or “A.I. versus A.I.”, institutions should cater for potential weaknesses or biases that may be exhibited by the A.I. systems involved. In line with Principle 2 above, appropriate human oversight and corroborating checks should be in place. More generally, the ongoing monitoring arrangements6 should enable AIs to promptly identify any potential issues with the A.I. use case, and take remedial actions in a timely manner. • Response and recovery: In the event of incidents or other material issues identified through on-going monitoring, an AI",
+    "chunk_strategy": "fixed_150",
+    "token_count": 150
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "bis_20241212_ai_regulation_p2_c1_fixed_220_overlap_30",
+    "document_id": "bis_20241212_ai_regulation",
+    "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+    "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+    "page_number": 2,
+    "text": "FSI Insights are written by members of the Financial Stability Institute (FSI) of the Bank for International Settlements (BIS), often in collaboration with staff from supervisory agencies and central banks. The papers aim to contribute to international discussions on a range of contemporary regulatory and supervisory policy issues and implementation challenges faced by financial sector authorities. The views expressed in them are solely those of the authors and do not necessarily reflect those of the BIS or the Basel-based committees. Authorised by the Chair of the FSI, Fernando Restoy. This publication is available on the BIS website (www.bis.org). To contact the BIS Global Media and Public Relations team, please email media@bis.org. You can sign up for email alerts at www.bis.org/emailalerts.htm. © Bank for International Settlements 2024. All rights reserved. Brief excerpts may be reproduced or translated provided the source is stated. ISSN 2522-249X (online) ISBN 978-92-9259-822-8 (online)",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 211
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "bis_20241212_ai_regulation_p19_c4_fixed_220_overlap_30",
+    "document_id": "bis_20241212_ai_regulation",
+    "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+    "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+    "page_number": 19,
+    "text": "principles are explicitly or implicitly incorporated into the AI guidance and MRM frameworks under review. The expectation to provide supported decision-making explanations is included in AI guidance but not always explicitly stated in MRM frameworks. That said, this can be inferred in specific contexts such as model validation or credit decisions. For instance, FRB-OCC (2011) specifies that reports generated from model outputs should be reviewed as part of the model validation process to ensure that they are accurate, complete and informative, and that they contain appropriate indicators of model performance and limitations. For the use of machine learning models for regulatory capital purposes, EBA (2021) recommends that banking institutions document the outcomes of statistical analyses involving risk drivers and output variables. The expectation for supported decision-making 58 The report scored 10 major foundation developers based on 100 transparency indicators and found that the average score was only 37, with the top score being 54 out of 100. 16and possible developments and possible developments Regulating AI in the financial sector: recent developments and main challenges",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 209
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "fsb_20241114_ai_stability_p3_c1_fixed_220_overlap_30",
+    "document_id": "fsb_20241114_ai_stability",
+    "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+    "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+    "page_number": 3,
+    "text": "Table of Contents Executive summary ............................................................................................................... 1 1. Introduction ....................................................................................................",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "fsb_20241114_ai_stability_p21_c1_fixed_220_overlap_30",
+    "document_id": "fsb_20241114_ai_stability",
+    "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+    "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+    "page_number": 21,
+    "text": "Table 4: Increasing sources of AI-related third-party dependencies for FIs Source Relevance for FIs Hardware • FIs that develop AI models, customise pre-trained models, and deploy AI in applications increasingly rely on accelerated computing chips, such as GPUs and application-specific integrated circuits (ASICs), which they acquire directly from chip suppliers or rent from cloud service providers (CSPs). Cloud services • CSPs, which offer flexible computing power arrangements, easy access to cutting edge AI toolsets and increasingly convenient LLM access channels, have become tightly integrated in AI development. Major CSPs also train and disseminate LLMs. FIs have indicated that one of the primary drivers of cloud adoption involves AI capabilities.57 FIs also increasingly assume indirect cloud exposure through specialised AI service providers, which often use cloud services.58 Models • At present, the cost and complexity of training LLMs from scratch are generally prohibitive for non-specialist firms. FIs seeking to customise and deploy LLMs in domain-specific applications generally use pre-trained, third-party models. More broadly, FIs",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "fsb_20261015_responsible_ai_p3_c1_fixed_220_overlap_30",
+    "document_id": "fsb_20261015_responsible_ai",
+    "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+    "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+    "page_number": 3,
+    "text": "Table of Contents Executive summary ............................................................................................................... 1 Introduction ......................................................................................................",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "fsb_20261015_responsible_ai_p37_c4_fixed_220_overlap_30",
+    "document_id": "fsb_20261015_responsible_ai",
+    "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+    "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+    "page_number": 37,
+    "text": "), and FRB et al (2026). 57 For example, see BOE/PRA et al (2021). 58 For example, see BOE/PRA (2021) and FRB et al (2023). 59 Existing frameworks include model risk management, operational resilience and/or third-party risk. 60 See FSB (2024a) and BCBS (2021a), pp.3. 33",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 94
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "hkma_20191101_ai_principles_p1_c1_fixed_220_overlap_30",
+    "document_id": "hkma_20191101_ai_principles",
+    "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+    "page_number": 1,
+    "text": "Our Ref.: B1/15C B9/29C 1 November 2019 The Chief Executive All Authorized Institutions Dear Sir/Madam, High-level Principles on Artificial Intelligence The Hong Kong Monetary Authority (HKMA) conducted a survey in Q3 2019 on the use of artificial intelligence (AI) by banks. It is noted that many banks are adopting or planning to adopt AI applications. The scope of AI usage is also expanding from customer-facing services (e.g. chatbots and personalised marketing) to internal processes and risk management areas (e.g. operational automation, cyber and fraud risk management). Details of the survey results will be published very soon. The growing use of AI presents not only opportunities but also new risk management challenges to banks. The HKMA therefore considers it appropriate to provide guidance to the banking industry on the use of AI applications. The high-level principles set out in this letter have been developed having regard to sound industry practices and similar principles formulated by leading overseas authorities. Banks are expected to take these principles into account when designing and adopting their AI and big data",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "hkma_20191101_ai_principles_p3_c1_fixed_220_overlap_30",
+    "document_id": "hkma_20191101_ai_principles",
+    "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+    "page_number": 3,
+    "text": "- 3 - It is preferable to involve an independent party (e.g. the second or third line of defence or an external consultant) in the model validation process. 6. Ensuring auditability of AI applications – There is a need to track the outcome of AI applications on a continuous basis and where necessary gather evidence to support investigations when incidents or unfavourable outcomes arise. Banks should build in sufficient audit logs and produce relevant documentation during the design phase. These audit logs and documentation should be retained for an appropriate period of time to ensure auditing is possible. 7. Implementing effective management oversight of third-party vendors – Where banks rely on third-party vendors to develop AI applications, they should perform proper due diligence on these vendors having regard to the applicable principles set out in this letter. They should also implement effective vendor management controls including periodic reviews of the services provided to manage the associated risks. 8. Being ethical, fair and transparent – Banks should ensure that AI-driven decisions do not discriminate or unintentionally show bias against any group of consumers. The",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "first_substantive",
+    "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_220_overlap_30",
+    "document_id": "hkma_20261015_ai_guidance",
+    "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+    "page_number": 1,
+    "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different forms of A.I. adoption, balances robust risk management with pragmatism and feasibility, and supports effective, fit-for-purpose solutions. With A.I. adoption reaching a more mature state, coupled with the successful conclusion of the second cohort of the Generative Artificial Intelligence (GenA.I.) Sandbox1",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  },
+  {
+    "selection": "middle",
+    "chunk_id": "hkma_20261015_ai_guidance_p5_c1_fixed_220_overlap_30",
+    "document_id": "hkma_20261015_ai_guidance",
+    "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+    "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+    "page_number": 5,
+    "text": "steps leading up to final outcomes). At the same time, for A.I. systems that are used to test or monitor other A.I. systems, or “A.I. versus A.I.”, institutions should cater for potential weaknesses or biases that may be exhibited by the A.I. systems involved. In line with Principle 2 above, appropriate human oversight and corroborating checks should be in place. More generally, the ongoing monitoring arrangements6 should enable AIs to promptly identify any potential issues with the A.I. use case, and take remedial actions in a timely manner. • Response and recovery: In the event of incidents or other material issues identified through on-going monitoring, an AI should be able to: (i) respond rapidly, including to recover operations in the event of disruptions. In this connection, an AI should maintain credible fallback and recovery arrangements with sufficient capacity and expertise prepared to address different severe but plausible scenarios, including third-party failures; and/or (ii) contain, suspend, or even decomm",
+    "chunk_strategy": "fixed_220_overlap_30",
+    "token_count": 220
+  }
+]
