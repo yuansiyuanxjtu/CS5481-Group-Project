@@ -214,6 +214,8 @@ Storage includes SQLite/index files and any journals or unrelated collections in
 
 ## Member B integration
 
+For the application-facing `retrieve()` API, Windows reproduction, QA review, and the eight-way retrieval experiment, see [Member B retrieval and evaluation](docs/retrieval_evaluation.md).
+
 Import the public functions below from the installed package. Use the same storage path, pinned encoder, and strategy as ingestion. The wrapper opens an existing collection and verifies its embedding contract; it does not create collections. Example access and a simple query smoke check:
 
 ```python
