@@ -1,5 +1,10 @@
 # CS5481 RAG: Member A, Phases 1, 2, 2.5 and 2.6
 
+Member C's grounded QA, Streamlit startup, configurable LLM provider, citation/refusal
+checks and answer evaluation are documented in [Member C handoff](docs/member_c_handoff.md).
+Use C's combined `requirements-app-lock.txt` for the application environment (Streamlit
+requires a Pillow override); A's historical phase locks remain unchanged.
+
 A small Python pipeline for PDF ingestion, page-preserving token chunking, normalized MiniLM embeddings, and persistent Chroma storage. The initial local checkout had no files, commits, or GitHub remote; this implementation starts the project here. A five-document official-source pilot has been downloaded and processed locally; PDFs and generated stores remain ignored by Git. See [dataset catalog](docs/dataset_catalog.md) and [quality report](docs/data_quality_report.md). The attached course brief is project context, not part of the knowledge-base corpus.
 
 ## Install

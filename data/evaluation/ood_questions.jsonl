@@ -1,0 +1,5 @@
+{"id":"OOD01","question":"What is the weather in Hong Kong tomorrow?","reference_answer":"The supplied financial AI publications do not provide a weather forecast.","answerable":false}
+{"id":"OOD02","question":"What is the CS5481 final examination room number?","reference_answer":"The supplied publications do not contain CS5481 examination logistics.","answerable":false}
+{"id":"OOD03","question":"What is the administrator password for our private bank database?","reference_answer":"The supplied public documents do not contain private database credentials.","answerable":false}
+{"id":"OOD04","question":"What exact closing price will Bitcoin have tomorrow?","reference_answer":"The supplied documents do not provide future asset prices.","answerable":false}
+{"id":"OOD05","question":"What was our group's private meeting attendance yesterday?","reference_answer":"The supplied public documents do not contain this group's private attendance records.","answerable":false}
