@@ -1,4 +1,5 @@
 """One bounded Chat Completions request; no hidden retries or external tools."""
+import asyncio
 import httpx
 
 from .config import Settings
@@ -18,6 +19,12 @@ class ChatClient:
         self.transport = transport
 
     def generate(self, messages: list[dict]) -> dict:
+        try:
+            return asyncio.run(asyncio.wait_for(self._request(messages), timeout=self.settings.timeout))
+        except TimeoutError:
+            raise LLMError("LLM request exceeded the total time limit. This is a service failure, not missing knowledge.") from None
+
+    async def _request(self, messages: list[dict]) -> dict:
         cfg = self.settings
         if not cfg.api_key:
             raise LLMError("Set LLM_API_KEY in the local .env file before submitting a question.")
@@ -29,8 +36,8 @@ class ChatClient:
             payload["thinking"] = {"type": cfg.thinking}
         # Never expose provider response bodies, exceptions or authorization headers.
         try:
-            with httpx.Client(timeout=cfg.timeout, follow_redirects=False, transport=self.transport) as client:
-                response = client.post(cfg.base_url.rstrip("/") + "/chat/completions",
+            async with httpx.AsyncClient(timeout=cfg.timeout, follow_redirects=False, transport=self.transport) as client:
+                response = await client.post(cfg.base_url.rstrip("/") + "/chat/completions",
                                        headers={"Authorization": f"Bearer {cfg.api_key}"}, json=payload)
             if response.status_code != 200:
                 raise LLMError(f"LLM service returned HTTP {response.status_code}; check credentials, quota and endpoint.")

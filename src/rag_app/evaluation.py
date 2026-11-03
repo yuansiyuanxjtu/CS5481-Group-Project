@@ -142,7 +142,7 @@ def run_evaluation(service, gold, ood, output, demo=False, resume=None):
     # Reserve output before spending any tokens; checkpoint each completed request.
     save_new(output, run)
     with ratings_path.open("x", newline="", encoding="utf-8") as stream:
-        writer = csv.DictWriter(stream, fieldnames=["id", "verdict", "citation_verdict", "failure_stage", "reason", "reviewer"])
+        writer = csv.DictWriter(stream, fieldnames=["id", "verdict", "citation_verdict", "failure_stage", "reason", "reviewer"], lineterminator="\n")
         writer.writeheader()
         writer.writerows({"id": row["id"], "verdict": "pending", "citation_verdict": "pending"} for row in rows)
     stop = False

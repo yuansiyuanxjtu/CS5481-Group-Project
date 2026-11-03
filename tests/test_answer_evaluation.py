@@ -43,6 +43,7 @@ def test_failure_stops_requests_and_checkpoints_without_secrets(inputs):
     assert result["records"][1]["result"]["status"] == "not_run"
     assert "SYNTHETIC_SECRET" not in output.read_text()
     assert (folder / "run_ratings.csv").is_file()
+    assert b"\r\n" not in (folder / "run_ratings.csv").read_bytes()
     with pytest.raises(FileExistsError):
         run_evaluation(service, gold, ood, output)
 

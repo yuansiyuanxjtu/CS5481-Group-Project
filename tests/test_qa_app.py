@@ -170,6 +170,19 @@ def test_missing_key_is_configuration_error():
         ChatClient(Settings()).generate([])
 
 
+def test_total_deadline_cancels_a_live_provider_request():
+    import asyncio
+    cancelled = []
+    async def slow(request):
+        try:
+            await asyncio.sleep(10)
+        finally:
+            cancelled.append(True)
+    with pytest.raises(LLMError, match="total time limit"):
+        ChatClient(Settings(api_key="TEST", timeout=1), httpx.MockTransport(slow)).generate([])
+    assert cancelled == [True]
+
+
 def test_evaluation_denominator_and_pending_scores():
     records = [{"id": "q1", "answerable": True, "result": {"status": "answered"}},
                {"id": "q2", "answerable": True, "result": {"status": "llm_error"}},

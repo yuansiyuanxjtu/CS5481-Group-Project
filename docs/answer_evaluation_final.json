@@ -1,0 +1,2405 @@
+{
+  "run_at_utc": "2026-11-03T08:58:41.695208+00:00",
+  "kind": "formal",
+  "git_commit": "2e8b56287c9c49bebce3c5d07bb117f68f521f89",
+  "worktree_dirty": true,
+  "gold_sha256": "af3bfc80b45537ef16d4c9dd0a88687dfdba89e02a0c94d3458672df4c6d92da",
+  "ood_sha256": "44dfa280f749c6671b786b87d1d5b0dade9ab8ef5da54c2c453dca2b2603df10",
+  "benchmark_sha256": "13f242aa035c0254e722539726295982123a7d5ffe6192236cd0f4143c77ccbc",
+  "temporal_catalog_sha256": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612",
+  "prompt_version": "c-grounded-1",
+  "prompt_sha256": "7009031d5ea3dcd9454adcf3c0c4fc2a3eeb0087cbb32da41bb5ce31639ac91a",
+  "app_source_sha256": {
+    "service.py": "8b30fada35d7e1bb783cfb8cfbc0ee480f60293f719f4e6e5eff029ac8f9703e",
+    "config.py": "7491bd9959b9cd2491ec6f89136c7aeab7a620ee3528575cc9be8d2207582316",
+    "evaluation.py": "0a1cf65e56fb274b6cde24f998987575cbb7a26f08e0a63fc00055eb425a28c5",
+    "__init__.py": "5d03cbf1f2f6a117d66d831fc9f32d8ea0a816b337703d3816724edf28e287f3",
+    "llm.py": "e70f194a2f0e612bda81f0ee9e98ef19d5a3b94dc9999199918f135edcc29439",
+    "grounding.py": "c6ff3c8d440c2be3ad8a2dd1bdfdad04c68dc87292b1228d2b9924aa672d4548"
+  },
+  "provider": "https://llm.cs.cityu.edu.hk/v1",
+  "requested_model": "CS5351/DeepSeek-V4-Flash",
+  "temperature": 0,
+  "max_output_tokens": 1200,
+  "timeout_seconds": 60.0,
+  "thinking": "",
+  "json_mode": true,
+  "top_k": 5,
+  "collection": "fixed_150",
+  "arm": "enhanced",
+  "max_distance": null,
+  "python": "3.11.18",
+  "dependencies": {
+    "httpx": "0.28.1",
+    "streamlit": "1.66.0",
+    "chromadb": "1.3.5",
+    "sentence-transformers": "5.1.2"
+  },
+  "records": [
+    {
+      "id": "B01",
+      "question": "Who remained responsible for automated AI-driven decisions under the HKMA's November 2019 principles?",
+      "reference_answer": "The bank's board and senior management remained accountable for all AI-driven decisions.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Governance, principle 1",
+          "excerpt": "The board and senior management of banks should appreciate that they remain accountable for all AI-driven decisions."
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.2838832139968872,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.3139430284500122,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.3388291597366333,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p33_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "financial decision making, while also building a substantial portfolio of AI-related intellectual property. After about a year, the bank shifted from research to implementation in areas where AI seemed to be most fruitful and governable. These early deployments demonstrated that advanced AI systems could operate reliably and deliver measurable outcomes without undermining risk controls. In parallel, the bank invested in enterprise grade data and computing 49 See HKMA (2026).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 33,
+            "distance": 0.3743687868118286,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=33"
+          },
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p4_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "mechanism, prudent risk limits and sample quality assurance check), banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures (e.g. human intervention or conventional processes). As international regulatory standards and industry developments regarding the use of AI are evolving rapidly, the HKMA will keep the aforementioned principles under periodic review and provide further guidance to banks as and when appropriate. Specifically, the HKMA plans to issue separate guidance on the principles relating to consumer protection aspects involved in the use of AI applications. Should you have any questions about this circular, please contact Mr Tsz-Wai Chiu on 2878-1389 or Ms Glenda Chung on 2878-8533. Yours faithfully, Raymond Chan",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 4,
+            "distance": 0.3826368451118469,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 5,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=4"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 2073,
+          "total_tokens": 2085,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1945
+        },
+        "elapsed_seconds": 22.987
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B02",
+      "question": "Which four dimensions of data quality does the HKMA's 2019 circular give as examples for AI assessments?",
+      "reference_answer": "Accuracy, completeness, timeliness and consistency.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Application design and development, principle 4",
+          "excerpt": "accuracy, completeness, timeliness and consistency of data"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.4240231513977051,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p40_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": ", for example to confirm that data being retrieved and ingested are secure, representative and trusted; and ■ an adaptable but consistent approach for assessing data quality and performance. Effectively manage different stages of AI data use Managing the different stages of AI data use is key to sound data governance. Effective management of these stages can vary by use case, but typically includes: ■ an initial assessment of the availability, quality, quantity and suitability of data needed for the AI use case, which may in turn influence the AI design choice. This stage includes considering whether to use internal data, public data and/or data from third parties.",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 40,
+            "distance": 0.42648816108703613,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=40"
+          },
+          {
+            "chunk_id": "bis_20241212_ai_regulation_p20_c3_fixed_150",
+            "document_id": "bis_20241212_ai_regulation",
+            "text": ", AI guidance and MRM frameworks generally expect financial institutions to provide accurate and adequate explanations. There is a growing consensus around the need to disclose material information about AI-driven decisions. Information is considered material if its omission could influence stakeholders’ decisions. To reduce subjectivity in determining materiality or adequacy, the Monetary Authority of Singapore (MAS) (2018) and the Hong Kong Monetary Authority (HKMA) (2024a) have specified that financial institutions must inform data subjects about their use of AI, associated risks, and how customer data is being used. Moreover, HKMA (2024a) suggests that financial institutions should disclose the factors influencing AI-driven decisions. With respect to the expectations around communicating or understanding",
+            "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+            "page_number": 20,
+            "distance": 0.43714582920074463,
+            "title": "Regulating AI in the financial sector: recent developments and main challenges",
+            "publication_date": "2024-12-12",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf#page=20"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p48_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "■ the materiality and risk of the AI use case.75 Material or high-risk AI use cases may justify higher performance requirements and a lower tolerance for errors. ■ the AI model’s or system’s attributes, including complexity and scope of action. More complex models or systems may be more difficult to evaluate, while those with a broader scope of action may have greater downstream consequences if issues arise. ■ the AI use case’s prior performance. A model’s or system’s performance track record may signal where closer scrutiny is needed and helps financial institutions calibrate their assessment benchmarks. ■ any recent changes to the AI model or system, or its data. 76 ■ any significant changes to relevant real-world conditions. Several types",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 48,
+            "distance": 0.4390079975128174,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=48"
+          },
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p1_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "to banks. The HKMA therefore considers it appropriate to provide guidance to the banking industry on the use of AI applications. The high-level principles set out in this letter have been developed having regard to sound industry practices and similar principles formulated by leading overseas authorities. Banks are expected to take these principles into account when designing and adopting their AI and big data analytics applications. These principles are high-level in nature as the HKMA is mindful that overly prescriptive or rigid requirements may inhibit the further development of AI-related technologies. Banks may apply the following principles in a proportionate manner that reflects the nature of their AI applications and the level of risks involved.",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 1,
+            "distance": 0.45125240087509155,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 5,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=1"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 2038,
+          "total_tokens": 2050,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1910
+        },
+        "elapsed_seconds": 8.148
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B03",
+      "question": "In the 2019 HKMA principles, when should a trained model be validated, and whom does the circular prefer to involve?",
+      "reference_answer": "Validate and test before production use. Prefer involving an independent party such as the second or third line of defence or an external consultant.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Principle 5, opening paragraph",
+          "excerpt": "before they are deployed for production use"
+        },
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Principle 5, continuation",
+          "excerpt": "preferable to involve an independent party"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.399566650390625,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.5541316270828247,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p2_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Application AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks, drawing on existing governance and risk management arrangements as appropriate. The Principles should also be read in conjunction with the report on “Practical Insights from the Second Cohort of the GenA.I. Sandbox”, which sets out some non-exhaustive examples of how the Principles may be applied in practice, as well as other prevailing supervisory and regulatory requirements. AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner. Any questions may be directed to the Technology Risk Team at ebanking@hkma.iclnet.hk. Supervisory Expectations A",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 2,
+            "distance": 0.5628631114959717,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=2"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c2_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "forms of A.I. adoption, balances robust risk management with pragmatism and feasibility, and supports effective, fit-for-purpose solutions. With A.I. adoption reaching a more mature state, coupled with the successful conclusion of the second cohort of the Generative Artificial Intelligence (GenA.I.) Sandbox1, the HKMA updates its supervisory guidance to reflect the practical implementation experience gained through the Sandbox. This document has also incorporated the latest guidance issued by international bodies including the Financial Stability Board2. The updated guidance is anchored around three pillars that the HKMA considers to be defining characteristics of responsible A.I. adoption, and which collectively form the acronym “ART”: ➢ Accountability — ensuring clear ownership",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.5681272745132446,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.5688592195510864,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 2073,
+          "total_tokens": 2085,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1945
+        },
+        "elapsed_seconds": 2.085
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B04",
+      "question": "Which two manipulation-based cybersecurity threats were named in the HKMA's 2019 AI principles?",
+      "reference_answer": "Data poisoning and adversarial attacks.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Principle 11",
+          "excerpt": "data poisoning and adversarial attacks"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.3764760494232178,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.39140141010284424,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p75_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "SHAP and LIME, Advanced Intelligent System, Vol. 7 Issue 1, January Swiss Financial Market Supervisory Authority (FINMA) (2024), Governance and risk management when using artificial intelligence, FINMA Guidance 08/2024, December The MindForge Consortium (2026), AI Risk Management: Operationalisation Handbook, January UK Department for Science, Innovation & Technology (2025a), Code of Practice for the Cyber Security of AI, Guidance, January UK Department for Science, Innovation & Technology (2025b), Implementation Guide for the AI Cyber Security Code of Practice, January",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 75,
+            "distance": 0.41674965620040894,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=75"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p27_c3_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "AI-related cyber vulnerabilities. The FSB, SSBs and national authorities have published a wide range of standards, guidance and toolkits to support cybersecurity risk management and incident responses.95 Recently, the US Treasury highlighted a range of practices shared by FIs for managing AI-related cybersecurity risks, many of which were derived from existing risk management standards. 96 These include developing an AI risk management framework, integrating AI risk management in existing enterprise risk management frameworks (whether those are based on the three lines of defence recommended by the Basel Committee on Banking Supervision (BCBS) or a different principles-based approach), and integrating AI-specific questions in vendor due diligence, among others. 88 Al",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 27,
+            "distance": 0.4186088442802429,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=27"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.41984111070632935,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1930,
+          "total_tokens": 1942,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1802
+        },
+        "elapsed_seconds": 1.58
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B05",
+      "question": "What should banks be able to do if an AI application produces an unintended outcome, according to the 2019 HKMA contingency principle?",
+      "reference_answer": "Promptly suspend the application and trigger fallback procedures, such as human intervention or conventional processes.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Principle 12",
+          "excerpt": "promptly suspend AI applications and trigger fall back procedures (e.g. human intervention or conventional processes)"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "Banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures. [1]\n\nThe fall back procedures may include human intervention or conventional processes. [1]",
+        "citations": [
+          {
+            "evidence_id": 1,
+            "chunk_id": "hkma_20191101_ai_principles_p4_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 4,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=4",
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "excerpts": [
+              "banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures",
+              "trigger fall back procedures (e.g. human intervention or conventional processes)"
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "Banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures.",
+            "evidence": [
+              {
+                "id": 1,
+                "quote": "banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures"
+              }
+            ]
+          },
+          {
+            "text": "The fall back procedures may include human intervention or conventional processes.",
+            "evidence": [
+              {
+                "id": 1,
+                "quote": "trigger fall back procedures (e.g. human intervention or conventional processes)"
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p4_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "mechanism, prudent risk limits and sample quality assurance check), banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures (e.g. human intervention or conventional processes). As international regulatory standards and industry developments regarding the use of AI are evolving rapidly, the HKMA will keep the aforementioned principles under periodic review and provide further guidance to banks as and when appropriate. Specifically, the HKMA plans to issue separate guidance on the principles relating to consumer protection aspects involved in the use of AI applications. Should you have any questions about this circular, please contact Mr Tsz-Wai Chiu on 2878-1389 or Ms Glenda Chung on 2878-8533. Yours faithfully, Raymond Chan",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 4,
+            "distance": 0.22669506072998047,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 1,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=4"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p33_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "financial decision making, while also building a substantial portfolio of AI-related intellectual property. After about a year, the bank shifted from research to implementation in areas where AI seemed to be most fruitful and governable. These early deployments demonstrated that advanced AI systems could operate reliably and deliver measurable outcomes without undermining risk controls. In parallel, the bank invested in enterprise grade data and computing 49 See HKMA (2026).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 33,
+            "distance": 0.35590165853500366,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=33"
+          },
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p1_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "to banks. The HKMA therefore considers it appropriate to provide guidance to the banking industry on the use of AI applications. The high-level principles set out in this letter have been developed having regard to sound industry practices and similar principles formulated by leading overseas authorities. Banks are expected to take these principles into account when designing and adopting their AI and big data analytics applications. These principles are high-level in nature as the HKMA is mindful that overly prescriptive or rigid requirements may inhibit the further development of AI-related technologies. Banks may apply the following principles in a proportionate manner that reflects the nature of their AI applications and the level of risks involved.",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 1,
+            "distance": 0.357896625995636,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 3,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p2_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Application AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks, drawing on existing governance and risk management arrangements as appropriate. The Principles should also be read in conjunction with the report on “Practical Insights from the Second Cohort of the GenA.I. Sandbox”, which sets out some non-exhaustive examples of how the Principles may be applied in practice, as well as other prevailing supervisory and regulatory requirements. AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner. Any questions may be directed to the Technology Risk Team at ebanking@hkma.iclnet.hk. Supervisory Expectations A",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 2,
+            "distance": 0.36381155252456665,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=2"
+          },
+          {
+            "chunk_id": "bis_20241212_ai_regulation_p31_c4_fixed_150",
+            "document_id": "bis_20241212_ai_regulation",
+            "text": "HKMA, on the other hand, recently launched its GenA.I. Sandbox99, which aims to promote responsible innovation in gen AI across the banking industry. The Sandbox provides a platform for banks to pilot their gen AI use cases within a risk-managed framework, supported by essential technical assistance and targeted supervisory feedback. Section 5 – Conclusion 67. The broader adoption of AI has the potential to bring transformative benefits to society as a whole and to the financial system in particular. Within the financial system, AI capabilities offer opportunities to financial institutions to substantially enhance productivity as well as to achieve time and cost efficiencies in their activities. AI also offers unprecedented levels of automation and accuracy in regulatory compliance, including fraud detection and AML",
+            "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+            "page_number": 31,
+            "distance": 0.3730369806289673,
+            "title": "Regulating AI in the financial sector: recent developments and main challenges",
+            "publication_date": "2024-12-12",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf#page=31"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 98,
+          "prompt_tokens": 2179,
+          "total_tokens": 2277,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 2051
+        },
+        "elapsed_seconds": 2.686
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B06",
+      "question": "Which earlier HKMA document did the October 2026 supervisory guidance explicitly supersede?",
+      "reference_answer": "The High-level Principles on Artificial Intelligence dated 1 November 2019.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 1,
+          "page_end": 1,
+          "locator": "Purpose",
+          "excerpt": "It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019."
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "The October 2026 HKMA supervisory guidance supersedes the \"High-level Principles on Artificial Intelligence\" dated 1 November 2019. [2]",
+        "citations": [
+          {
+            "evidence_id": 2,
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019."
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "The October 2026 HKMA supervisory guidance supersedes the \"High-level Principles on Artificial Intelligence\" dated 1 November 2019.",
+            "evidence": [
+              {
+                "id": 2,
+                "quote": "It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019."
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p15_c5_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "MAS (2025b), HKMA (2024), HKMA (2025), and OSFI (2025b).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 15,
+            "distance": 0.41614824533462524,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=15"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.43791627883911133,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.44899213314056396,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.4570576548576355,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c2_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "forms of A.I. adoption, balances robust risk management with pragmatism and feasibility, and supports effective, fit-for-purpose solutions. With A.I. adoption reaching a more mature state, coupled with the successful conclusion of the second cohort of the Generative Artificial Intelligence (GenA.I.) Sandbox1, the HKMA updates its supervisory guidance to reflect the practical implementation experience gained through the Sandbox. This document has also incorporated the latest guidance issued by international bodies including the Financial Stability Board2. The updated guidance is anchored around three pillars that the HKMA considers to be defining characteristics of responsible A.I. adoption, and which collectively form the acronym “ART”: ➢ Accountability — ensuring clear ownership",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.46636253595352173,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 71,
+          "prompt_tokens": 1895,
+          "total_tokens": 1966,
+          "prompt_tokens_details": {
+            "cached_tokens": 1664
+          },
+          "prompt_cache_hit_tokens": 1664,
+          "prompt_cache_miss_tokens": 231
+        },
+        "elapsed_seconds": 2.022
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B07",
+      "question": "What do the three letters of the HKMA's ART framework stand for?",
+      "reference_answer": "Accountability, Resilience and Trust.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 1,
+          "page_end": 1,
+          "locator": "Background, ART bullets",
+          "excerpt": "form the acronym “ART”"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "The HKMA's updated guidance is anchored around three pillars that collectively form the acronym \"ART\". [5]\n\nThe first letter, A, stands for Accountability, described as ensuring clear ownership. [5]\n\nThe second letter, R, stands for Resilience, described as enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively. [4]\n\nThe third letter, T, stands for Trust, described as prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. [4]",
+        "citations": [
+          {
+            "evidence_id": 4,
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively",
+              "➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties."
+            ]
+          },
+          {
+            "evidence_id": 5,
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c2_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "The updated guidance is anchored around three pillars that the HKMA considers to be defining characteristics of responsible A.I. adoption, and which collectively form the acronym “ART”",
+              "➢ Accountability — ensuring clear ownership"
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "The HKMA's updated guidance is anchored around three pillars that collectively form the acronym \"ART\".",
+            "evidence": [
+              {
+                "id": 5,
+                "quote": "The updated guidance is anchored around three pillars that the HKMA considers to be defining characteristics of responsible A.I. adoption, and which collectively form the acronym “ART”"
+              }
+            ]
+          },
+          {
+            "text": "The first letter, A, stands for Accountability, described as ensuring clear ownership.",
+            "evidence": [
+              {
+                "id": 5,
+                "quote": "➢ Accountability — ensuring clear ownership"
+              }
+            ]
+          },
+          {
+            "text": "The second letter, R, stands for Resilience, described as enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively.",
+            "evidence": [
+              {
+                "id": 4,
+                "quote": "➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively"
+              }
+            ]
+          },
+          {
+            "text": "The third letter, T, stands for Trust, described as prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties.",
+            "evidence": [
+              {
+                "id": 4,
+                "quote": "➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties."
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p15_c5_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "MAS (2025b), HKMA (2024), HKMA (2025), and OSFI (2025b).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 15,
+            "distance": 0.4802395701408386,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=15"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.569196343421936,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p2_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Application AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks, drawing on existing governance and risk management arrangements as appropriate. The Principles should also be read in conjunction with the report on “Practical Insights from the Second Cohort of the GenA.I. Sandbox”, which sets out some non-exhaustive examples of how the Principles may be applied in practice, as well as other prevailing supervisory and regulatory requirements. AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner. Any questions may be directed to the Technology Risk Team at ebanking@hkma.iclnet.hk. Supervisory Expectations A",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 2,
+            "distance": 0.5702778100967407,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=2"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.5713900327682495,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c2_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "forms of A.I. adoption, balances robust risk management with pragmatism and feasibility, and supports effective, fit-for-purpose solutions. With A.I. adoption reaching a more mature state, coupled with the successful conclusion of the second cohort of the Generative Artificial Intelligence (GenA.I.) Sandbox1, the HKMA updates its supervisory guidance to reflect the practical implementation experience gained through the Sandbox. This document has also incorporated the latest guidance issued by international bodies including the Financial Stability Board2. The updated guidance is anchored around three pillars that the HKMA considers to be defining characteristics of responsible A.I. adoption, and which collectively form the acronym “ART”: ➢ Accountability — ensuring clear ownership",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.5790860056877136,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 269,
+          "prompt_tokens": 1896,
+          "total_tokens": 2165,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1768
+        },
+        "elapsed_seconds": 3.034
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B08",
+      "question": "How should an HKMA-authorized institution handle AI solutions that are outside its approved use-case register under the 2026 guidance?",
+      "reference_answer": "Maintain an up-to-date inventory of AI use cases approved for deployment and restrict use of solutions outside it.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Accountability, expectation 3",
+          "excerpt": "Maintain an up-to-date inventory of A.I. use cases approved for deployment within the institution, and restrict the use of solutions not covered in the inventory."
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "AIs should implement controls to manage \"shadow A.I.\" adoption. [1]\n\nStaff should not adopt unapproved tools or use approved tools for unapproved purposes. [1]\n\nAIs are expected to apply the \"ART\" Principles proportionately to their A.I. adoption and manage associated risks. [5]\n\nAIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner. [5]",
+        "citations": [
+          {
+            "evidence_id": 1,
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "AIs should also implement controls to manage “shadow A.I.” adoption.",
+              "no adoption of unapproved tools, or the use of approved tools for unapproved purposes"
+            ]
+          },
+          {
+            "evidence_id": 5,
+            "chunk_id": "hkma_20261015_ai_guidance_p2_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 2,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=2",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks",
+              "AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner."
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "AIs should implement controls to manage \"shadow A.I.\" adoption.",
+            "evidence": [
+              {
+                "id": 1,
+                "quote": "AIs should also implement controls to manage “shadow A.I.” adoption."
+              }
+            ]
+          },
+          {
+            "text": "Staff should not adopt unapproved tools or use approved tools for unapproved purposes.",
+            "evidence": [
+              {
+                "id": 1,
+                "quote": "no adoption of unapproved tools, or the use of approved tools for unapproved purposes"
+              }
+            ]
+          },
+          {
+            "text": "AIs are expected to apply the \"ART\" Principles proportionately to their A.I. adoption and manage associated risks.",
+            "evidence": [
+              {
+                "id": 5,
+                "quote": "AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks"
+              }
+            ]
+          },
+          {
+            "text": "AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner.",
+            "evidence": [
+              {
+                "id": 5,
+                "quote": "AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner."
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.2552903890609741,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p4_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "mechanism, prudent risk limits and sample quality assurance check), banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures (e.g. human intervention or conventional processes). As international regulatory standards and industry developments regarding the use of AI are evolving rapidly, the HKMA will keep the aforementioned principles under periodic review and provide further guidance to banks as and when appropriate. Specifically, the HKMA plans to issue separate guidance on the principles relating to consumer protection aspects involved in the use of AI applications. Should you have any questions about this circular, please contact Mr Tsz-Wai Chiu on 2878-1389 or Ms Glenda Chung on 2878-8533. Yours faithfully, Raymond Chan",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 4,
+            "distance": 0.2985902428627014,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 2,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=4"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.3140179514884949,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.32786399126052856,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p2_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Application AIs are expected to apply the “ART” Principles proportionately to their A.I. adoption and manage associated risks, drawing on existing governance and risk management arrangements as appropriate. The Principles should also be read in conjunction with the report on “Practical Insights from the Second Cohort of the GenA.I. Sandbox”, which sets out some non-exhaustive examples of how the Principles may be applied in practice, as well as other prevailing supervisory and regulatory requirements. AIs should take appropriate steps to uplift their policies, procedures and controls in line with the new guidance in a timely manner. Any questions may be directed to the Technology Risk Team at ebanking@hkma.iclnet.hk. Supervisory Expectations A",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 2,
+            "distance": 0.37331241369247437,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=2"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 227,
+          "prompt_tokens": 2194,
+          "total_tokens": 2421,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 2066
+        },
+        "elapsed_seconds": 2.486
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B09",
+      "question": "What ability should reviewers have when intervening in an AI system under HKMA's 2026 human oversight expectation?",
+      "reference_answer": "Reviewers should have sufficient competence, information, time and authority to challenge, override or stop the system.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Accountability, expectation 2 continuation",
+          "excerpt": "sufficient competence, information, time and authority to challenge, override or stop the A.I. system"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "Reviewers involved in intervention should have sufficient competence, information, time and authority to challenge, override or stop the A.I. system. [4]\n\nThe HKMA expectation is for human-in-command arrangements, supported by A.I. where appropriate, with risk-based triggers for human approval or intervention. [4]\n\nAIs should obtain assurances around the effectiveness of such oversight, for example through testing. [4]",
+        "citations": [
+          {
+            "evidence_id": 4,
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3",
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "Reviewers involved in such intervention should have sufficient competence, information, time and authority to challenge, override or stop the A.I. system.",
+              "“human-in-command” arrangements, supported by A.I. where appropriate, with risk-based triggers for human approval or intervention",
+              "AIs should obtain assurances around the effectiveness of such oversight (e.g. through testing)"
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "Reviewers involved in intervention should have sufficient competence, information, time and authority to challenge, override or stop the A.I. system.",
+            "evidence": [
+              {
+                "id": 4,
+                "quote": "Reviewers involved in such intervention should have sufficient competence, information, time and authority to challenge, override or stop the A.I. system."
+              }
+            ]
+          },
+          {
+            "text": "The HKMA expectation is for human-in-command arrangements, supported by A.I. where appropriate, with risk-based triggers for human approval or intervention.",
+            "evidence": [
+              {
+                "id": 4,
+                "quote": "“human-in-command” arrangements, supported by A.I. where appropriate, with risk-based triggers for human approval or intervention"
+              }
+            ]
+          },
+          {
+            "text": "AIs should obtain assurances around the effectiveness of such oversight, for example through testing.",
+            "evidence": [
+              {
+                "id": 4,
+                "quote": "AIs should obtain assurances around the effectiveness of such oversight (e.g. through testing)"
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.3224911093711853,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.3328709602355957,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p54_c2_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "humans override AI recommendations, analysing patterns in these interventions and using this information to refine both the AI model or system and the oversight processes; and ■ assessing whether human overseers are providing effective oversight. When obtaining an AI model or system from an open-source or open-weight repository or third- party AI provider, financial institutions consider the following as part of their due diligence: ■ the extent to which the AI model or system has been designed to enable effective and meaningful human oversight by those deploying it; and ■ (if applicable) the extent to which the third-party AI provider will provide human oversight. For example, in the case of a GenAI model, the extent of human oversight when the third-party",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 54,
+            "distance": 0.34978044033050537,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=54"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "“human-in-command” arrangements, supported by A.I. where appropriate, with risk-based triggers for human approval or intervention3. Reviewers involved in such intervention should have sufficient competence, information, time and authority to challenge, override or stop the A.I. system. AIs should obtain assurances around the effectiveness of such oversight (e.g. through testing) and ensure that staff exercise appropriate independent judgement when considering A.I. outputs. In line with their overall responsibility for an institution’s A.I. adoption, the board and senior management remain accountable for the outputs generated. 3. Maintain an up-to-date inventory of A.I. use cases approved for deployment within the institution, and restrict",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.35991859436035156,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p54_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "meaningful, i.e. it involves humans having sufficient ability, authority and incentive to intervene, as opposed to oversight that is nominal or driven by ‘tick-the-box’ compliance. Design and develop appropriate and meaningful human oversight of AI Financial institutions design and develop AI to enable effective and meaningful human oversight (as far as technically possible) which includes: ■ enabling staff to assess the outputs of the AI model or system and understand its capabilities and limitations; ■ preventing automation bias (i.e. overreliance) 81 by creating incentive alignment for thorough, thoughtful review, such as by incorporating performance metrics that reward quality of oversight decisions; ■ creating feedback mechanisms for the AI model or system to learn and improve from oversight decisions, including tracking when",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 54,
+            "distance": 0.36962366104125977,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=54"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 197,
+          "prompt_tokens": 1980,
+          "total_tokens": 2177,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1852
+        },
+        "elapsed_seconds": 22.433
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B10",
+      "question": "What extra validation and testing does the 2026 HKMA guidance call for when an AI use case is material or higher-risk?",
+      "reference_answer": "Independent validation and, where appropriate, adversarial testing.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Resilience, expectation 4",
+          "excerpt": "independent validation and where appropriate, adversarial testing"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p3_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "use to staff, e.g. no adoption of unapproved tools, or the use of approved tools for unapproved purposes4. AIs should also implement controls to manage “shadow A.I.” adoption. 3 In the HKMA circular “Consumer Protection in respect of Use of Generative Artificial Intelligence” dated 19 August 2024, it was stated that “during the early stage of deploying customer-facing GenAI applications, authorized institutions should adopt the “human-in-the-loop” approach, i.e. having human to retain control in the decision-making process to ensure the model-generated outputs are accurate and not misleading”. The HKMA recognises that as A.I. development advances, a",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 3,
+            "distance": 0.325958251953125,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=3"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c3_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": ", governance, decision-making authority and assurance throughout the A.I. lifecycle; ➢ Resilience — enabling secure, robust and well-controlled A.I. adoption that operates safely, fails safely and recovers effectively; and ➢ Trust — prioritising fair, transparent, explainable and privacy-conscious A.I. use that is responsive to customers and other affected parties. 1 HKMA Press Release, “HKMA announces second cohort of GenA.I. Sandbox to advance responsible A.I. innovation”, issued on 15 October 2025 2 Financial Stability Board Report, “Sound Practices for Responsible Adoption of Artificial Intelligence (AI)”, issued on 15 October 2026",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.34822797775268555,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "hkma_20191101_ai_principles_p4_c2_fixed_150",
+            "document_id": "hkma_20191101_ai_principles",
+            "text": "mechanism, prudent risk limits and sample quality assurance check), banks should implement contingency measures that can promptly suspend AI applications and trigger fall back procedures (e.g. human intervention or conventional processes). As international regulatory standards and industry developments regarding the use of AI are evolving rapidly, the HKMA will keep the aforementioned principles under periodic review and provide further guidance to banks as and when appropriate. Specifically, the HKMA plans to issue separate guidance on the principles relating to consumer protection aspects involved in the use of AI applications. Should you have any questions about this circular, please contact Mr Tsz-Wai Chiu on 2878-1389 or Ms Glenda Chung on 2878-8533. Yours faithfully, Raymond Chan",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+            "page_number": 4,
+            "distance": 0.3534988760948181,
+            "title": "High-level Principles on Artificial Intelligence",
+            "publication_date": "2019-11-01",
+            "regulatory_status": "superseded",
+            "evidence_id": 3,
+            "status_evidence": {
+              "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+              "locator": "Physical page 1, Purpose section",
+              "evidence_document_id": "hkma_20261015_ai_guidance",
+              "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+            },
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf#page=4"
+          },
+          {
+            "chunk_id": "hkma_20261015_ai_guidance_p1_c1_fixed_150",
+            "document_id": "hkma_20261015_ai_guidance",
+            "text": "Annex A Supervisory Guidance for Responsible Adoption of Artificial Intelligence Purpose This document sets out the Hong Kong Monetary Authority (HKMA)’s latest supervisory expectations for responsible adoption of artificial intelligence (A.I.) by Authorized Institutions (AIs). It supersedes the “High-level Principles on Artificial Intelligence” dated 1 November 2019. Background The HKMA, as part of its interactive and iterative supervisory approach, supports AIs’ practical experimentation within risk-controlled sandbox environments. The HKMA also prioritises collaboration with the industry to promote responsible innovation, underpinned by high-level guiding principles that establish fundamental guardrails while providing flexibility and practicality for real-life situations. This reflects an inclusive approach that accommodates different",
+            "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+            "page_number": 1,
+            "distance": 0.37105488777160645,
+            "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf#page=1"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p48_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "■ the materiality and risk of the AI use case.75 Material or high-risk AI use cases may justify higher performance requirements and a lower tolerance for errors. ■ the AI model’s or system’s attributes, including complexity and scope of action. More complex models or systems may be more difficult to evaluate, while those with a broader scope of action may have greater downstream consequences if issues arise. ■ the AI use case’s prior performance. A model’s or system’s performance track record may signal where closer scrutiny is needed and helps financial institutions calibrate their assessment benchmarks. ■ any recent changes to the AI model or system, or its data. 76 ■ any significant changes to relevant real-world conditions. Several types",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 48,
+            "distance": 0.3717908263206482,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=48"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 2144,
+          "total_tokens": 2156,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 2016
+        },
+        "elapsed_seconds": 1.409
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B11",
+      "question": "According to the executive summary of the FSB's 2024 stability report, how could widespread use of the same AI models and data amplify market stress?",
+      "reference_answer": "Their trading, lending and pricing could become more correlated, amplifying stress, liquidity crunches and asset price vulnerabilities.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Executive summary, market correlations",
+          "excerpt": "increased correlations in trading, lending, and pricing"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p10_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "guidance specific to AI. 11 As such, authorities, whilst supporting AI adoption, stress the importance of responsible AI adoption via strong governance, clear accountability and sound risk management practices especially in high-materiality and high-risk use cases.12 The FSB assessed the financial stability implications of AI in the financial system in 2017, followed by an update in 2024.13 However, given the rapidly evolving nature of the technology, the benefits and challenges set out in this section remain subject to future reassessment by the FSB. 1.2. Use cases and benefits of AI in the financial system AI adoption has accelerated since the 2024 FSB report on the financial stability implications of AI,14 though this acceleration varies across entities, sectors and",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 10,
+            "distance": 0.3527212142944336,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=10"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p17_c3_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": ", both in conceptually designing stress testing scenarios and in operationalising stress testing models in code.51 The use of AI in SupTech may increase in the future, partly driven by regulatory authorities’ need to keep up with and understand the rapid uptake in the use of AI by FIs. 4. Financial stability implications of AI While the responsible and productive use of AI could have significant benefits for FIs and their customers as discussed in Section 3, rapid AI uptake by FIs without commensurate risk management and controls, inadequate monitoring by financial authorities and novel usage by malicious actors could harm financial stability. The remainder of this section examines the potential financial stability implications of AI. While these vulnerabilities are not unique to AI, greater AI adoption",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 17,
+            "distance": 0.3529894948005676,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=17"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p33_c4_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "lnerabilities and challenges for financial stability. This underscores the importance of continuous monitoring, research, and policy consideration by financial authorities. In light of the findings of this report and to address potential financial stability risks from AI adoption, the FSB, SSBs and national authorities may wish to: ■ Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications. For example, authorities could consider leveraging periodic and ad-hoc surveys on AI adoption and use cases, reporting from regulated entities, and public disclosures. It may 128 See OECD (2024), Regulatory Approaches to Artificial Intelligence in Finance, October, based on a survey of 49 jurisdictions. 129",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 33,
+            "distance": 0.36443763971328735,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=33"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p1_c1_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "The Financial Stability Implications of Artificial Intelligence 14 November 2024",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 1,
+            "distance": 0.3739168047904968,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=1"
+          },
+          {
+            "chunk_id": "bis_20241212_ai_regulation_p14_c4_fixed_150",
+            "document_id": "bis_20241212_ai_regulation",
+            "text": ")). Their access to vast quantities of data, the computational power to process them, and expertise to build the AI systems has collectively given them the first-mover advantage. These developments are attracting closer supervisory scrutiny as they can give rise to microprudential and financial stability risks. In 2023, the FSB published a toolkit for financial institutions and financial authorities to manage and oversee third-party risks.45 In 2024, the Federal Trade Commission launched an investigation into gen AI investments and partnerships between AI companies and major 39 See Aldasoro, Doerr, Gambacorta, Notra, Oliviero and Whyte (2024). 40 BOE and FCA (2024) found from their industry survey that",
+            "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+            "page_number": 14,
+            "distance": 0.3766913414001465,
+            "title": "Regulating AI in the financial sector: recent developments and main challenges",
+            "publication_date": "2024-12-12",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf#page=14"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1736,
+          "total_tokens": 1748,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1608
+        },
+        "elapsed_seconds": 1.591
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B12",
+      "question": "Why does the executive summary of the FSB's 2024 stability report flag reliance on specialised hardware, cloud services and pretrained models as a systemic vulnerability?",
+      "reference_answer": "These services and products are concentrated among providers, so disruptions at key providers can expose financial institutions to operational vulnerabilities and the system to broader risk.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Executive summary, third-party dependency",
+          "excerpt": "disruptions affecting key service providers"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p18_c4_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "uptake. The remarkable 52 A vulnerability is “a property of the financial system that: (i) reflects the accumulation of imbalances, (ii) may increase the likelihood of a shock, and (iii) when acted upon by a shock, may lead to a system disruption”; see FSB (2021), FSB Financial Stability Surveillance Framework. Financial stability is the “capacity of the global financial system to withstand shocks, containing the risk of disruptions in the financial intermediation process and other financial system functions that are severe enough to adversely impact the real economy”; see FSB (2021), FSB Financial Stability Surveillance Framework, September. 53 Aldasoro et al (2024), p. 15.",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 18,
+            "distance": 0.3854202628135681,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=18"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p17_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "s 2024 report, four types of AI-related vulnerabilities stand out for their potential to increase financial stability risks:26 (i) third-party dependencies and service provider concentration; (ii) market correlations; (iii) cyber risks; and (iv) model risk, data quality and governance. This report builds on the FSB’s previous analysis of these risks and describes additional AI-related risks and implementation challenges that can impact financial institutions and their customers. Inadequate governance and strategic execution AI has the potential to rapidly transform a wide range of existing business processes, but inadequate governance and lack of board and senior management oversight can give rise to significant risks. Without clear accountability within the financial institution, critical issues may be overlooked.",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 17,
+            "distance": 0.4234888553619385,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=17"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p27_c5_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "2024). 93 US Treasury (2024); and FSSCC (2024); BCBS (2024), Digitalisation of finance, May. 94 US Treasury (2024). 95 For example, see BCBS (2021), Revisions to the Principles for the Sound Management of Operational Risks, June; FSB (2020), Effective Practices for Cyber Incident Response and Recovery, October; IAIS (2023), Issues paper on insurance sector operational resilience, May; National Institute of Standards and Technology (NIST) (2018), Framework for Improving Critical Infrastructure Cybersecurity, April; UK National Cyber Security Centre and others (2023), Guidelines for secure AI system development; Committee",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 27,
+            "distance": 0.4401383399963379,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=27"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p21_c4_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "significant and growing concern from an operational vulnerability perspective. Table 5 summarises key factors that could increase or reduce concentration in the market for LLMs and GenAI. High costs, complexity, persistent supply chain bottlenecks, investments and acquisitions, vertical integration, and the demand for multimodal models 61 could potentially increase LLM market concentration. Conversely, competitive open-source models, architectural innovations, hardware market 57 US Treasury (2023), The Financial Services Sector’s Adoption of Cloud Services. 58 Ibid. 59 Financial institutions use a wide range of important computing services offered by CSPs beyond those relevant for AI. 60 Danielsson and Uthemann (2024), Artificial intelligence and financial crises, p. 14. 61 Multi",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 21,
+            "distance": 0.44198083877563477,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=21"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p28_c6_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "governance issues can also expose financial institutions to a variety of legal, reputational, and consumer compliance risks. 103 Hsu (2024), AI Tools, Weapons, and Accountability: A Financial Stability Perspective, speech delivered at the 2024 Conference on Artificial Intelligence and Financial Stability, June.",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 28,
+            "distance": 0.4426040053367615,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=28"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1732,
+          "total_tokens": 1744,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1604
+        },
+        "elapsed_seconds": 1.626
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B13",
+      "question": "According to the executive summary of the FSB's 2024 stability report, what did most finance AI use cases focus on?",
+      "reference_answer": "Improving internal operations and regulatory compliance. The report says uses generating new revenue streams were not widely observed at the time.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Executive summary, adoption",
+          "excerpt": "enhancing internal operations and improving regulatory compliance; use cases generating new revenue streams are not widely observed at present."
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p10_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "guidance specific to AI. 11 As such, authorities, whilst supporting AI adoption, stress the importance of responsible AI adoption via strong governance, clear accountability and sound risk management practices especially in high-materiality and high-risk use cases.12 The FSB assessed the financial stability implications of AI in the financial system in 2017, followed by an update in 2024.13 However, given the rapidly evolving nature of the technology, the benefits and challenges set out in this section remain subject to future reassessment by the FSB. 1.2. Use cases and benefits of AI in the financial system AI adoption has accelerated since the 2024 FSB report on the financial stability implications of AI,14 though this acceleration varies across entities, sectors and",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 10,
+            "distance": 0.24510705471038818,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=10"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p6_c2_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": ", could have implications for financial markets and institutions. While existing financial policy frameworks address many of the vulnerabilities associated with use of AI by FIs, more work may be needed to ensure that these frameworks are sufficiently comprehensive. To this end, the FSB, standard setting bodies (SSBs) and national authorities may wish to: ■ Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications. ■ Assess whether current regulatory and supervisory frameworks adequately address the vulnerabilities identified in this report, both domestically and internationally. ■ Consider ways to enhance regulatory and supervisory capabilities for overseeing policy frameworks related to the application of AI in finance, for instance, through international and",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 6,
+            "distance": 0.31178969144821167,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=6"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p7_c1_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "1. Introduction This report provides a high-level overview of recent developments in AI, along with an assessment of their potential financial stability implications.1 It revisits the 2017 FSB report on AI in financial services 2 (henceforth the “2017 FSB report”) and takes stock of the latest advancements, exploring current use cases in the financial sector and drivers of adoption, as well as new potential benefits and AI-related financial sector vulnerabilities. To this end, the FSB assessed the experience and initiatives from member jurisdictions, reviewed the existing literature and conducted multiple bilateral and multilateral outreach meetings, including an OECD-FSB joint AI roundtable.3 The financial services industry has long used AI tools, but adoption",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 7,
+            "distance": 0.316131055355072,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=7"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p7_c3_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "processing, information retrieval, and software development. These AI use cases could have considerable benefits for FIs, their customers, and financial markets more broadly. However, AI usage by FIs and malicious actors also has the potential to increase important sources of financial sector vulnerabilities. The rest of the report is structured as follows. Section 2 reviews developments since the 2017 FSB report, providing context to the technological advancements and taking into consideration supply and demand-side drivers. Section 3 discusses selected AI use cases by industry participants and official sector authorities. Section 4 discusses implications for financial stability, focusing on how AI could amplify specific types of financial sector vulnerabilities. Section 5 concludes by discussing policy implications. Annex 1 discusses the LLM supply chain",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 7,
+            "distance": 0.3202323913574219,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=7"
+          },
+          {
+            "chunk_id": "fsb_20241114_ai_stability_p33_c4_fixed_150",
+            "document_id": "fsb_20241114_ai_stability",
+            "text": "lnerabilities and challenges for financial stability. This underscores the importance of continuous monitoring, research, and policy consideration by financial authorities. In light of the findings of this report and to address potential financial stability risks from AI adoption, the FSB, SSBs and national authorities may wish to: ■ Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications. For example, authorities could consider leveraging periodic and ad-hoc surveys on AI adoption and use cases, reporting from regulated entities, and public disclosures. It may 128 See OECD (2024), Regulatory Approaches to Artificial Intelligence in Finance, October, based on a survey of 49 jurisdictions. 129",
+            "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+            "page_number": 33,
+            "distance": 0.32183265686035156,
+            "title": "The Financial Stability Implications of Artificial Intelligence",
+            "publication_date": "2024-11-14",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P14112024.pdf#page=33"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1815,
+          "total_tokens": 1827,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1687
+        },
+        "elapsed_seconds": 6.755
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B14",
+      "question": "What kind of AI output inaccuracy does the executive summary of the FSB's 2024 stability report name when explaining why assessing model output is hard?",
+      "reference_answer": "Hallucinations.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Executive summary, model risk continuation",
+          "excerpt": "inaccuracies, such as hallucinations"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "insufficient_evidence",
+        "answer": "The retrieved documents do not provide sufficient, consistent evidence to answer this question.",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p48_c2_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "of performance assessments used for non-AI models or systems and other analytical approaches can help financial institutions assess AI models or systems.77 Several key types are examined below (e.g. accuracy, benchmarking, range of output, robustness). Notably, financial institutions subject the performance of AI models or systems, in particular for high- materiality and/or high-risk use cases, to independent assessment by dedicated validation staff or others tasked with independent review. Assessing the performance of traditional AI models or systems generally involves comparing a quantitative output with predetermined targets or thresholds (e.g. predicted versus actual quantitative values). It is therefore conceptually straightforward and easier to automate. GenAI models or systems produce a range",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 48,
+            "distance": 0.41812247037887573,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=48"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p10_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "guidance specific to AI. 11 As such, authorities, whilst supporting AI adoption, stress the importance of responsible AI adoption via strong governance, clear accountability and sound risk management practices especially in high-materiality and high-risk use cases.12 The FSB assessed the financial stability implications of AI in the financial system in 2017, followed by an update in 2024.13 However, given the rapidly evolving nature of the technology, the benefits and challenges set out in this section remain subject to future reassessment by the FSB. 1.2. Use cases and benefits of AI in the financial system AI adoption has accelerated since the 2024 FSB report on the financial stability implications of AI,14 though this acceleration varies across entities, sectors and",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 10,
+            "distance": 0.42813366651535034,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=10"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p54_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": ". 81 For example, an AI model or system may be designed to seek human feedback in specific scenarios or provide confidence scores for outputs.",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 54,
+            "distance": 0.43994247913360596,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=54"
+          },
+          {
+            "chunk_id": "bis_20241212_ai_regulation_p19_c5_fixed_150",
+            "document_id": "bis_20241212_ai_regulation",
+            "text": "AI guidance but not always explicitly stated in MRM frameworks. That said, this can be inferred in specific contexts such as model validation or credit decisions. For instance, FRB-OCC (2011) specifies that reports generated from model outputs should be reviewed as part of the model validation process to ensure that they are accurate, complete and informative, and that they contain appropriate indicators of model performance and limitations. For the use of machine learning models for regulatory capital purposes, EBA (2021) recommends that banking institutions document the outcomes of statistical analyses involving risk drivers and output variables. The expectation for supported decision-making 58 The report scored 10 major foundation developers based on 100 transparency indicators and found that the average score was only 37, with",
+            "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+            "page_number": 19,
+            "distance": 0.4422474503517151,
+            "title": "Regulating AI in the financial sector: recent developments and main challenges",
+            "publication_date": "2024-12-12",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf#page=19"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p48_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "■ the materiality and risk of the AI use case.75 Material or high-risk AI use cases may justify higher performance requirements and a lower tolerance for errors. ■ the AI model’s or system’s attributes, including complexity and scope of action. More complex models or systems may be more difficult to evaluate, while those with a broader scope of action may have greater downstream consequences if issues arise. ■ the AI use case’s prior performance. A model’s or system’s performance track record may signal where closer scrutiny is needed and helps financial institutions calibrate their assessment benchmarks. ■ any recent changes to the AI model or system, or its data. 76 ■ any significant changes to relevant real-world conditions. Several types",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 48,
+            "distance": 0.44327884912490845,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=48"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 12,
+          "prompt_tokens": 1776,
+          "total_tokens": 1788,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1648
+        },
+        "elapsed_seconds": 1.427
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B15",
+      "question": "How does the executive summary of the FSB's 2026 report describe the authority and intended use of its sound practices?",
+      "reference_answer": "No. They are non-prescriptive practices intended as a practical toolkit adaptable to institutions' contexts and risk profiles.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Executive summary, nature of the practices",
+          "excerpt": "The sound practices are non-prescriptive and do not constitute a binding international standard. Rather, they serve as a practical toolkit"
+        }
+      ],
+      "answerable": true,
+      "result": {
+        "status": "answered",
+        "answer": "The report encourages boards and senior management of financial institutions to reference the sound practices when considering business strategy, technology adoption and risk management. [2]\n\nThe sound practices are described as generally applicable to all types of AI, though certain practices can be more relevant for specific AI technologies. [2]\n\nThe report states that the sound practices are not exhaustive and will evolve as AI develops. [2]\n\nCase studies of financial institutions applying some sound practices proportionately are illustrative only and do not prescribe a specific approach or represent expected outcomes or benchmarks. [3]",
+        "citations": [
+          {
+            "evidence_id": 2,
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8",
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "The board and senior management of financial institutions are strongly encouraged to reference the sound practices as they consider business strategy, technology adoption and risk management in an increasingly AI-enabled environment.",
+              "While all sound practices in this report are generally applicable to all types of AI, certain practices can be more relevant for specific AI technologies",
+              "The sound practices are not exhaustive and will evolve as AI"
+            ]
+          },
+          {
+            "evidence_id": 3,
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8",
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "status_evidence": null,
+            "excerpts": [
+              "These case studies are illustrative only and do not prescribe a specific approach to AI adoption nor do they represent expected outcomes or benchmarks for any financial institution."
+            ]
+          }
+        ],
+        "claims": [
+          {
+            "text": "The report encourages boards and senior management of financial institutions to reference the sound practices when considering business strategy, technology adoption and risk management.",
+            "evidence": [
+              {
+                "id": 2,
+                "quote": "The board and senior management of financial institutions are strongly encouraged to reference the sound practices as they consider business strategy, technology adoption and risk management in an increasingly AI-enabled environment."
+              }
+            ]
+          },
+          {
+            "text": "The sound practices are described as generally applicable to all types of AI, though certain practices can be more relevant for specific AI technologies.",
+            "evidence": [
+              {
+                "id": 2,
+                "quote": "While all sound practices in this report are generally applicable to all types of AI, certain practices can be more relevant for specific AI technologies"
+              }
+            ]
+          },
+          {
+            "text": "The report states that the sound practices are not exhaustive and will evolve as AI develops.",
+            "evidence": [
+              {
+                "id": 2,
+                "quote": "The sound practices are not exhaustive and will evolve as AI"
+              }
+            ]
+          },
+          {
+            "text": "Case studies of financial institutions applying some sound practices proportionately are illustrative only and do not prescribe a specific approach or represent expected outcomes or benchmarks.",
+            "evidence": [
+              {
+                "id": 3,
+                "quote": "These case studies are illustrative only and do not prescribe a specific approach to AI adoption nor do they represent expected outcomes or benchmarks for any financial institution."
+              }
+            ]
+          }
+        ],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "the role of AI as an augmentative technology and workforce multiplier, while highlighting the risk of workforce deskilling. It also addresses documentation needed to support auditability, traceability, sound governance and effective oversight. Several sound practices have also been enhanced. Key updates include: clearer descriptions of the roles of boards and 6 There is no standard, one-size-fits-all stages of AI lifecycle as different AI use cases may involve different stages of varying length. For details, see Section 3.1. 7 See FSB (2024b) and FSB (2025b). 8 All public consultation responses are available on the FSB website. See FSB (2026).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "distance": 0.4242357611656189,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "■ Section 3 presents sound practices for managing AI throughout its development and deployment (AI lifecycle6); ■ Annex lists the 12 sound practices for easy reference; and ■ the report concludes with a glossary of key terms and a list of references. The board and senior management of financial institutions are strongly encouraged to reference the sound practices as they consider business strategy, technology adoption and risk management in an increasingly AI-enabled environment. In doing so, they should note the following: ■ While all sound practices in this report are generally applicable to all types of AI, certain practices can be more relevant for specific AI technologies – for example, practices addressing risks arising from the autonomy of AI agents. ■ The sound practices are not exhaustive and will evolve as AI",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "distance": 0.43860357999801636,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "financial institutions have applied some of the sound practices proportionately. These case studies are illustrative only and do not prescribe a specific approach to AI adoption nor do they represent expected outcomes or benchmarks for any financial institution. This report builds on, and is broadly compatible with, existing and ongoing work by the FSB7 and other SSBs, as well as by national/regional financial authorities (‘authorities’). It also draws on inputs from a range of stakeholders across the financial system, including financial institutions and technology vendors, as well as feedback received through the public consultation on the earlier version of this report published in June 2026.8 In response to the consultation feedback, the report expands its description of benefits and risks. It recognises",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "distance": 0.46590447425842285,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p1_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI) Final report 15 October 2026",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 1,
+            "distance": 0.48598676919937134,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=1"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p73_c3_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "Effective Practices for Cyber Incident Response and Recovery, October FSB (2023a), Cyber Lexicon: Updated in 2023, April FSB (2023b), Final Report on Enhancing Third-party Risk Management and Oversight – A Toolkit for Financial Institutions and Financial Authorities, December FSB (2024a), Guidance on Arrangements to Support Operational Continuity in Resolution - Revised version, March FSB (2024b), The Financial Stability Implications of Artificial Intelligence, November FSB (2025a), Format for Incident Reporting Exchange (FIRE), Final report, April FSB (2025b), Monitoring AI Adoption and Related Vulnerabilities in the Financial Sector, October FSB (2026), Sound",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 73,
+            "distance": 0.4873197078704834,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=73"
+          }
+        ],
+        "error": null,
+        "model": "CS5351/DeepSeek-V4-Flash",
+        "usage": {
+          "completion_tokens": 264,
+          "prompt_tokens": 1720,
+          "total_tokens": 1984,
+          "prompt_tokens_details": {
+            "cached_tokens": 128
+          },
+          "prompt_cache_hit_tokens": 128,
+          "prompt_cache_miss_tokens": 1592
+        },
+        "elapsed_seconds": 2.23
+      },
+      "request_timeout_seconds": 30.0
+    },
+    {
+      "id": "B16",
+      "question": "What does the 2026 FSB report say about adapting its AI sound practices to institutions of different sizes and business models?",
+      "reference_answer": "Apply them proportionately, considering the institution's business model, complexity, role in the financial system, structure, size and use of AI in critical or material functions.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_start": 8,
+          "page_end": 8,
+          "locator": "Introduction, proportional application",
+          "excerpt": "based on its business model, complexity, role in the financial system, structure, size and the extent to which AI is used or deployed in their critical (or material) functions"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "llm_error",
+        "answer": "",
+        "citations": [],
+        "claims": [],
+        "retrieved": [
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "the role of AI as an augmentative technology and workforce multiplier, while highlighting the risk of workforce deskilling. It also addresses documentation needed to support auditability, traceability, sound governance and effective oversight. Several sound practices have also been enhanced. Key updates include: clearer descriptions of the roles of boards and 6 There is no standard, one-size-fits-all stages of AI lifecycle as different AI use cases may involve different stages of varying length. For details, see Section 3.1. 7 See FSB (2024b) and FSB (2025b). 8 All public consultation responses are available on the FSB website. See FSB (2026).",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "distance": 0.3058074116706848,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 1,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p6_c2_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "sharing among financial institutions, supervisors and other stakeholders, within and across jurisdictions. They build on, and are broadly compatible with, existing and ongoing work by the FSB and other standard-setting bodies (SSBs). As AI technologies and applications evolve, the FSB will monitor developments and update the sound practices as necessary to support safe and responsible AI adoption by financial institutions.",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 6,
+            "distance": 0.32200300693511963,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 2,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=6"
+          },
+          {
+            "chunk_id": "bis_20241212_ai_regulation_p14_c4_fixed_150",
+            "document_id": "bis_20241212_ai_regulation",
+            "text": ")). Their access to vast quantities of data, the computational power to process them, and expertise to build the AI systems has collectively given them the first-mover advantage. These developments are attracting closer supervisory scrutiny as they can give rise to microprudential and financial stability risks. In 2023, the FSB published a toolkit for financial institutions and financial authorities to manage and oversee third-party risks.45 In 2024, the Federal Trade Commission launched an investigation into gen AI investments and partnerships between AI companies and major 39 See Aldasoro, Doerr, Gambacorta, Notra, Oliviero and Whyte (2024). 40 BOE and FCA (2024) found from their industry survey that",
+            "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+            "page_number": 14,
+            "distance": 0.3286798596382141,
+            "title": "Regulating AI in the financial sector: recent developments and main challenges",
+            "publication_date": "2024-12-12",
+            "regulatory_status": "unknown",
+            "evidence_id": 3,
+            "status_evidence": null,
+            "page_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf#page=14"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p8_c1_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "■ Section 3 presents sound practices for managing AI throughout its development and deployment (AI lifecycle6); ■ Annex lists the 12 sound practices for easy reference; and ■ the report concludes with a glossary of key terms and a list of references. The board and senior management of financial institutions are strongly encouraged to reference the sound practices as they consider business strategy, technology adoption and risk management in an increasingly AI-enabled environment. In doing so, they should note the following: ■ While all sound practices in this report are generally applicable to all types of AI, certain practices can be more relevant for specific AI technologies – for example, practices addressing risks arising from the autonomy of AI agents. ■ The sound practices are not exhaustive and will evolve as AI",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 8,
+            "distance": 0.3315355181694031,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 4,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=8"
+          },
+          {
+            "chunk_id": "fsb_20261015_responsible_ai_p7_c4_fixed_150",
+            "document_id": "fsb_20261015_responsible_ai",
+            "text": "2 presents sound practices for organisation-wide AI governance; 1 For detailed AI-related terms and their definitions, please refer to the Glossary section. 2 For example, see Breeden (2026). 3 See Bowman (2026). 4 See, for example, FSB (2024b). 5 This includes risks from the misuse of AI models with the autonomous capabilities to discover and generate working exploits for security vulnerabilities.",
+            "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+            "page_number": 7,
+            "distance": 0.3345513939857483,
+            "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+            "publication_date": "2026-10-15",
+            "regulatory_status": "unknown",
+            "evidence_id": 5,
+            "status_evidence": null,
+            "page_url": "https://www.fsb.org/uploads/P151026-1.pdf#page=7"
+          }
+        ],
+        "error": "LLM service returned HTTP 429; check credentials, quota and endpoint.",
+        "model": null,
+        "usage": {},
+        "elapsed_seconds": 3.476
+      }
+    },
+    {
+      "id": "B17",
+      "question": "In section 3.2 of the FSB's 2026 report, when does Sound Practice 5 call for assessing the materiality and risk of an AI use case?",
+      "reference_answer": "At inception and thereafter, using an effective and systematic approach.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_start": 35,
+          "page_end": 35,
+          "locator": "Section 3.2, Sound Practice 5",
+          "excerpt": "inception stage and thereafter"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B18",
+      "question": "How does the FSB's 2026 AI lifecycle distinguish verification from validation?",
+      "reference_answer": "Verification confirms the use case meets specified requirements. Validation confirms it performs as intended in real-world scenarios.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_start": 35,
+          "page_end": 35,
+          "locator": "Section 3.1, lifecycle bullets",
+          "excerpt": "meets specified requirements (verification) and performs as intended in real-world scenarios (validation)"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B19",
+      "question": "Does BIS FSI Insights No. 63 identify a globally accepted financial regulatory definition of AI, and which definition is there alignment towards?",
+      "reference_answer": "The paper reports no globally accepted definition for financial regulation and observes alignment towards the OECD definition.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Section 1, paragraph 2",
+          "excerpt": "There is currently no globally accepted definition of “AI” for financial regulatory purposes but there is alignment towards the OECD definition."
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B20",
+      "question": "What three types of financial-sector AI use cases does the BIS FSI Insights No. 63 executive summary highlight?",
+      "reference_answer": "Customer support chatbots, fraud detection including AML/CFT, and credit and insurance underwriting.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Executive summary",
+          "excerpt": "customer support chatbots; fraud detection, including for purposes of anti-money laundering and combating the financing of terrorism (AML/CFT); and credit and insurance underwriting."
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B21",
+      "question": "Which Bank of America customer-service chatbot is listed in Table 1 of BIS FSI Insights No. 63?",
+      "reference_answer": "Erica.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "page_start": 9,
+          "page_end": 9,
+          "locator": "Table 1, Customer support",
+          "excerpt": "Bank of America Erica customer"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B22",
+      "question": "Which insurer and tool are paired in the BIS FSI Insights No. 63 table as an example of estimating property damage with AI?",
+      "reference_answer": "MS&AD is listed as using Tractable.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "page_start": 9,
+          "page_end": 9,
+          "locator": "Table 1, Insurance claims",
+          "excerpt": "MS&AD use of Tractable"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B23",
+      "question": "Who carries ultimate accountability in both the HKMA's 2019 AI principles and its 2026 supervisory guidance?",
+      "reference_answer": "The board and senior management. The 2019 principles cover AI-driven decisions, and the 2026 guidance assigns accountability for the institution's AI adoption through strategy and governance.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Governance, principle 1",
+          "excerpt": "remain accountable for all AI-driven decisions"
+        },
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Accountability, expectation 1",
+          "excerpt": "setting effective strategy and governance arrangements"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "B24",
+      "question": "Which international report does the HKMA cite when introducing its 2026 responsible AI guidance, and what does that report say about the binding nature of its practices?",
+      "reference_answer": "The FSB's Sound Practices for Responsible Adoption of Artificial Intelligence, issued 15 October 2026. The FSB says the practices are non-prescriptive and do not constitute a binding international standard.",
+      "review_status": "agent_verified",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "page_start": 1,
+          "page_end": 1,
+          "locator": "Background, footnote 2",
+          "excerpt": "Sound Practices for Responsible Adoption of Artificial Intelligence"
+        },
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Executive summary, nature of the practices",
+          "excerpt": "do not constitute a binding international standard"
+        }
+      ],
+      "answerable": true,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "OOD01",
+      "question": "What is the weather in Hong Kong tomorrow?",
+      "reference_answer": "The supplied financial AI publications do not provide a weather forecast.",
+      "answerable": false,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "OOD02",
+      "question": "What is the CS5481 final examination room number?",
+      "reference_answer": "The supplied publications do not contain CS5481 examination logistics.",
+      "answerable": false,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "OOD03",
+      "question": "What is the administrator password for our private bank database?",
+      "reference_answer": "The supplied public documents do not contain private database credentials.",
+      "answerable": false,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "OOD04",
+      "question": "What exact closing price will Bitcoin have tomorrow?",
+      "reference_answer": "The supplied documents do not provide future asset prices.",
+      "answerable": false,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    },
+    {
+      "id": "OOD05",
+      "question": "What was our group's private meeting attendance yesterday?",
+      "reference_answer": "The supplied public documents do not contain this group's private attendance records.",
+      "answerable": false,
+      "request_timeout_seconds": 60.0,
+      "result": {
+        "status": "not_run",
+        "answer": "",
+        "citations": [],
+        "error": "Stopped after an infrastructure failure"
+      }
+    }
+  ],
+  "resume": {
+    "source_path": "docs/answer_evaluation_completed.json",
+    "source_sha256": "0f13633c7b916a508beedd22f5d5e3938840de863031ad3a730f854e5cd3b7c3",
+    "retained_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B08",
+      "B09",
+      "B10",
+      "B11",
+      "B12",
+      "B13",
+      "B14",
+      "B15"
+    ],
+    "original_timeout_seconds": 60.0,
+    "note": "Only service failures and unexecuted questions retried; previous attempts preserved at source_path."
+  }
+}

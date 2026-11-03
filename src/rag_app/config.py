@@ -11,11 +11,11 @@ ROOT = Path(__file__).resolve().parents[2]
 @dataclass(frozen=True)
 class Settings:
     api_key: str = field(default="", repr=False)
-    base_url: str = "https://llm.cs.cityu.edu.hk/v1"
-    model: str = "CS5351/DeepSeek-V4-Flash"
+    base_url: str = "https://api.deepseek.com"
+    model: str = "deepseek-flash"
     timeout: float = 30
     max_tokens: int = 1200
-    thinking: str = ""
+    thinking: str = "disabled"
     json_mode: bool = True
     top_k: int = 5
     collection: str = "fixed_150"
@@ -59,7 +59,7 @@ class Settings:
             model=os.environ.get("LLM_MODEL", cls.model),
             timeout=float(os.environ.get("LLM_TIMEOUT_SECONDS", "30")),
             max_tokens=int(os.environ.get("LLM_MAX_OUTPUT_TOKENS", "1200")),
-            thinking=os.environ.get("LLM_THINKING", ""),
+            thinking=os.environ.get("LLM_THINKING", "disabled"),
             json_mode=json_mode == "true",
             top_k=int(os.environ.get("RAG_TOP_K", "5")),
             collection=os.environ.get("RAG_COLLECTION", "fixed_150"),

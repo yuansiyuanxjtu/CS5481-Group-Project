@@ -1,5 +1,11 @@
 # Member C: Grounded QA & Demo
 
+Completed direct-provider results: [official experiment analysis](answer_evaluation_official_analysis.md),
+[24+5 real QA records](answer_evaluation_official_completed.json),
+[per-question draft grading](answer_evaluation_official_completed_ratings.csv),
+[metrics](answer_summary_official.json), [six demo records](demo_records.json), and
+[validation log](member_c_validation.md). Human team review remains required.
+
 C calls B's `Retriever.retrieve(question, top_k, collection=..., arm=...)` and preserves A's
 document IDs, exact chunk text, official PDF URLs and one-based physical PDF page numbers.
 The current C branch includes B commit `5fbfbb0` as a dependency; B's PR should be reviewed
@@ -38,11 +44,14 @@ the authoritative locator. Verify links in the presentation browser before class
 
 ## Configuration and provider replacement
 
-`.env` is ignored. `.env.example` contains no credentials. The user-selected provider is
-the school LiteLLM gateway (`https://llm.cs.cityu.edu.hk/v1`). A read-only authenticated
-`GET /v1/models` on 2026-11-03 returned model ID `CS5351/DeepSeek-V4-Flash`.
-The adapter sends one HTTPS Chat Completions request, JSON mode and temperature 0.
-Provider-specific `thinking` is omitted by default for the school gateway.
+`.env` is ignored. `.env.example` contains no credentials. The final user-selected provider
+is direct DeepSeek (`https://api.deepseek.com`, model ID `deepseek-flash`) with an official
+DeepSeek API key and `thinking=disabled`. The adapter sends one HTTPS Chat Completions
+request, JSON mode and temperature 0.
+The earlier school gateway (`https://llm.cs.cityu.edu.hk/v1`, model
+`CS5351/DeepSeek-V4-Flash`, blank `LLM_THINKING`) became deployment-unavailable during
+the first evaluation. That partial run remains separately archived; it is not mixed into
+the official-provider experiment.
 It does not call search or other tools. Restart Streamlit
 after changing environment/model/key so the cached service reloads.
 
@@ -56,7 +65,9 @@ the same JSON schema and citation checks. Other API formats need a new `generate
 
 Cost bounds: one call per submitted question, no automatic retries, 1..10 hits,
 40,000 characters total context, 128..4,096 output tokens (default 1,200), finite
-HTTP inactivity timeouts (default 30 seconds). Evaluation stops after the first API or
+HTTP timeouts plus a cancellable total request deadline (example configuration: 60 seconds).
+The total deadline also bounds provider responses that keep sending whitespace/keepalive data.
+Evaluation stops after the first API or
 retrieval service failure. These are request bounds, not an account-wide spending limit.
 
 ## Evidence and refusal rules
@@ -89,15 +100,28 @@ knowledge-base questions. B's current review status is `agent_verified`, not ind
 human verification. A group member should confirm the gold references against the PDFs.
 
 ```bash
-.venv/bin/python scripts/eval_answers.py run --output docs/answer_evaluation.json
+.venv/bin/python scripts/eval_answers.py run --output docs/answer_evaluation_new.json
 ```
 
 This makes at most 29 real requests, saves actual answers, evidence, citations, provider-
 reported model/usage, timing, run/source/prompt/QA fingerprints, and creates
-`docs/answer_evaluation_ratings.csv`. It checkpoints each result and refuses to overwrite
+`docs/answer_evaluation_new_ratings.csv`. It checkpoints each result and refuses to overwrite
 earlier runs. Review each row in the CSV and fill `verdict`, `citation_verdict`,
 `failure_stage`, `reason`, `reviewer`. Use a new output name to rerun; never silently replace
 an inconvenient result. An infrastructure failure leaves subsequent records `not_run`.
+
+Resume into a **new** output path after resolving a service failure:
+
+```bash
+.venv/bin/python scripts/eval_answers.py run --resume docs/answer_evaluation_new.json \
+  --output docs/answer_evaluation_continued.json
+```
+
+Resume retains all answered/refused/invalid-output records; only infrastructure failures
+and `not_run` records are eligible for retry. Question, prompt, source, retrieval and
+generation settings must match. A changed network timeout is recorded per request.
+Prior attempts and their fingerprint remain linked in the new run. Never resume to
+select a nicer answer for a completed test question.
 
 Grading:
 
@@ -115,8 +139,8 @@ ratings for service failures and correct ratings for invalid citations.
 
 ```bash
 .venv/bin/python scripts/eval_answers.py summarize \
-  --run docs/answer_evaluation.json --ratings docs/answer_evaluation_ratings.csv \
-  --output docs/answer_summary.json
+  --run docs/answer_evaluation_new.json --ratings docs/answer_evaluation_new_ratings.csv \
+  --output docs/answer_summary_new.json
 ```
 
 Analyse at least three actual failures/limitations in the final report: retrieval misses,
@@ -126,7 +150,7 @@ errors, false refusals or service errors. Do not invent failure observations bef
 ## Demo and regression validation
 
 ```bash
-.venv/bin/python scripts/eval_answers.py run --demo --output docs/demo_records.json
+.venv/bin/python scripts/eval_answers.py run --demo --output docs/demo_records_new.json
 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 RAG_TEST_REAL_MODEL=1 \
   .venv/bin/python -m pytest -q
 ```
