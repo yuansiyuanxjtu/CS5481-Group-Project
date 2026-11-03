@@ -53,3 +53,9 @@ adapter now uses cancellable asynchronous HTTP under a synchronous interface, bo
 the entire call as well as network inactivity. A dedicated test verifies cancellation.
 This transport-only hardening preserves the prompt/request payload and recorded experiment
 answers; source hashes in the run correctly identify the pre-hardening execution version.
+
+Post-hardening browser check succeeded against the official API: B05 returned the
+historical contingency/fallback answer with two exact quotations, physical PDF page 4,
+the official URL and a visible superseded warning. Measured end-to-end time was 61.10
+seconds in this check; this is not a low-latency claim. Actual screenshots are
+`docs/demo/official_answer.jpg` and `docs/demo/official_source_card.jpg`.
