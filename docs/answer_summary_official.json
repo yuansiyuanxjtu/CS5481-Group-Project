@@ -1,0 +1,19 @@
+{
+  "run": "docs/answer_evaluation_official_completed.json",
+  "grading_complete": true,
+  "gold_count": 24,
+  "ood_count": 5,
+  "gold_grades": {
+    "correct": 8,
+    "partial": 3,
+    "incorrect": 13,
+    "pending": 0
+  },
+  "strict_accuracy": 0.3333333333333333,
+  "partial_credit_accuracy": 0.3958333333333333,
+  "ood_explicit_refusal_rate": 1.0,
+  "service_errors": 0,
+  "not_run": 0,
+  "citation_errors": 0,
+  "score_rule": "Strict correct/N; optional (correct+0.5*partial)/N. All gold questions remain in denominator; failures count incorrect, never refusals."
+}

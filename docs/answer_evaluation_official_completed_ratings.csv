@@ -1,0 +1,30 @@
+id,verdict,citation_verdict,failure_stage,reason,reviewer
+B01,incorrect,not_applicable,retrieval,False refusal; returned evidence omits the requested 2019 governance passage,Codex-source-review-human-pending
+B02,incorrect,not_applicable,retrieval,False refusal; no retrieved support for the four 2019 data-quality dimensions,Codex-source-review-human-pending
+B03,incorrect,not_applicable,retrieval,False refusal; required 2019 physical pages 2-3 not retrieved,Codex-source-review-human-pending
+B04,incorrect,not_applicable,retrieval,False refusal; cybersecurity threats absent from supplied evidence,Codex-source-review-human-pending
+B05,correct,valid,none,Suspension and fallback procedures with human-intervention and conventional-process examples are supported by historical physical page 4,Codex-source-review-human-pending
+B06,correct,valid,none,Correct superseded title and date; exact 2026 physical page 1 statement,Codex-source-review-human-pending
+B07,correct,valid,none,All ART pillars correctly identified; additional descriptions supported by the cited physical page 1 chunks,Codex-source-review-human-pending
+B08,partial,valid,generation,Supported restrictions on shadow AI but omits maintaining the approved-use-case inventory; returned page hit lacks the gold passage,Codex-source-review-human-pending
+B09,correct,valid,none,Reviewer competence-information-time-authority and challenge-override-stop powers are all source-supported,Codex-source-review-human-pending
+B10,incorrect,not_applicable,retrieval,False refusal; no retrieved independent-validation and adversarial-testing passage,Codex-source-review-human-pending
+B11,incorrect,not_applicable,retrieval,False refusal; labeled FSB executive-summary market-correlations evidence not retrieved,Codex-source-review-human-pending
+B12,incorrect,not_applicable,retrieval,False refusal; labeled provider-concentration evidence not retrieved,Codex-source-review-human-pending
+B13,incorrect,not_applicable,retrieval,False refusal; requested executive-summary adoption findings absent from retrieved chunks,Codex-source-review-human-pending
+B14,incorrect,not_applicable,retrieval,False refusal; hallucinations passage from physical page 6 not retrieved,Codex-source-review-human-pending
+B15,partial,valid,generation,Source-supported intended-use discussion but omits requested non-prescriptive and non-binding character,Codex-source-review-human-pending
+B16,incorrect,not_applicable,retrieval,False refusal; physical page 8 is retrieved but its chunks omit the required proportional-application paragraph,Codex-source-review-human-pending
+B17,correct,valid,none,Inception-and-thereafter timing and systematic assessment match physical page 35; annex corroboration also cited,Codex-source-review-human-pending
+B18,correct,valid,none,Verification and validation definitions correct; lifecycle comparison checked against full cited chunk on physical page 35,Codex-source-review-human-pending
+B19,incorrect,not_applicable,retrieval,False refusal; requested financial-regulatory definition paragraph absent from returned evidence,Codex-source-review-human-pending
+B20,incorrect,not_applicable,retrieval,False refusal; requested executive-summary list absent from supplied chunks,Codex-source-review-human-pending
+B21,correct,valid,none,Erica correctly identified in original physical page 9 Table 1; flattened table quotation independently checked,Codex-source-review-human-pending
+B22,correct,valid,none,MS&AD and Tractable pair matches physical page 9 Table 1; property-damage example also supported,Codex-source-review-human-pending
+B23,incorrect,not_applicable,retrieval,False refusal on cross-document gold question; complete historical and newer accountability evidence unavailable in Top-5,Codex-source-review-human-pending
+B24,partial,valid,generation,Correct FSB report and date from HKMA footnote; fails to answer the second part about binding nature and lacks FSB source citation,Codex-source-review-human-pending
+OOD01,correct,not_applicable,none,Explicit insufficient-evidence response; public financial AI corpus does not supply a future weather forecast,Codex-source-review-human-pending
+OOD02,correct,not_applicable,none,Explicit insufficient-evidence response; corpus does not contain course exam-room logistics,Codex-source-review-human-pending
+OOD03,correct,not_applicable,none,Explicit insufficient-evidence response; public corpus does not contain private database credentials,Codex-source-review-human-pending
+OOD04,correct,not_applicable,none,Explicit insufficient-evidence response; corpus cannot supply tomorrow's exact asset closing price,Codex-source-review-human-pending
+OOD05,correct,not_applicable,none,Explicit insufficient-evidence response; corpus does not contain private group attendance records,Codex-source-review-human-pending

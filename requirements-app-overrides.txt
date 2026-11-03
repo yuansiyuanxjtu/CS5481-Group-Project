@@ -1,0 +1,3 @@
+# Streamlit 1.66 requires Pillow <13. Applied only to C's combined environment.
+# Keep A's historical requirements-phase2-lock.txt unchanged.
+pillow==12.0.0

@@ -1,0 +1,322 @@
+{
+  "run_sha256": "2ee562728e53b7761e0907bf5fe03ff99ffe4687ca09d850f83b310633beb49f",
+  "checks": [
+    {
+      "id": "B01",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B02",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B03",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B03",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B04",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B05",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B05",
+      "kind": "answer_quote",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B05",
+      "kind": "answer_quote",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B06",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B06",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B07",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B07",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B07",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B07",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B07",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B08",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B08",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B08",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B08",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B08",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B09",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B09",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B09",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B09",
+      "kind": "answer_quote",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 3,
+      "present": true
+    },
+    {
+      "id": "B10",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B11",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20241114_ai_stability",
+      "physical_page": 5,
+      "present": true
+    },
+    {
+      "id": "B12",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20241114_ai_stability",
+      "physical_page": 5,
+      "present": true
+    },
+    {
+      "id": "B13",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20241114_ai_stability",
+      "physical_page": 5,
+      "present": true
+    },
+    {
+      "id": "B14",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20241114_ai_stability",
+      "physical_page": 6,
+      "present": true
+    },
+    {
+      "id": "B15",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 6,
+      "present": true
+    },
+    {
+      "id": "B15",
+      "kind": "answer_quote",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 8,
+      "present": true
+    },
+    {
+      "id": "B15",
+      "kind": "answer_quote",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 8,
+      "present": true
+    },
+    {
+      "id": "B15",
+      "kind": "answer_quote",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 8,
+      "present": true
+    },
+    {
+      "id": "B15",
+      "kind": "answer_quote",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 8,
+      "present": true
+    },
+    {
+      "id": "B16",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 8,
+      "present": true
+    },
+    {
+      "id": "B17",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 35,
+      "present": true
+    },
+    {
+      "id": "B18",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 35,
+      "present": true
+    },
+    {
+      "id": "B19",
+      "kind": "gold_excerpt",
+      "document_id": "bis_20241212_ai_regulation",
+      "physical_page": 6,
+      "present": true
+    },
+    {
+      "id": "B20",
+      "kind": "gold_excerpt",
+      "document_id": "bis_20241212_ai_regulation",
+      "physical_page": 4,
+      "present": true
+    },
+    {
+      "id": "B21",
+      "kind": "gold_excerpt",
+      "document_id": "bis_20241212_ai_regulation",
+      "physical_page": 9,
+      "present": true
+    },
+    {
+      "id": "B22",
+      "kind": "gold_excerpt",
+      "document_id": "bis_20241212_ai_regulation",
+      "physical_page": 9,
+      "present": true
+    },
+    {
+      "id": "B23",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20191101_ai_principles",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B23",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 2,
+      "present": true
+    },
+    {
+      "id": "B24",
+      "kind": "gold_excerpt",
+      "document_id": "hkma_20261015_ai_guidance",
+      "physical_page": 1,
+      "present": true
+    },
+    {
+      "id": "B24",
+      "kind": "gold_excerpt",
+      "document_id": "fsb_20261015_responsible_ai",
+      "physical_page": 6,
+      "present": true
+    }
+  ],
+  "all_present": true,
+  "limitation": "Automated substring/provenance check only; does not establish semantic correctness or human verification."
+}

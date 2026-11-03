@@ -1,0 +1,30 @@
+id,verdict,citation_verdict,failure_stage,reason,reviewer
+B01,incorrect,not_applicable,retrieval,False refusal on answerable gold question; no 2019 physical page 2 evidence retrieved,Codex-source-review-human-pending
+B02,incorrect,not_applicable,retrieval,False refusal; Top-5 misses the 2019 data-quality evidence page,Codex-source-review-human-pending
+B03,incorrect,not_applicable,retrieval,False refusal; Top-5 misses the required 2019 physical pages 2 and 3,Codex-source-review-human-pending
+B04,incorrect,not_applicable,retrieval,False refusal; named cybersecurity threats absent from the returned 2019 evidence,Codex-source-review-human-pending
+B05,correct,valid,none,Answer covers suspension and fallback examples; both quotes verified in historical HKMA physical page 4,Codex-source-review-human-pending
+B06,correct,valid,none,Correct superseded document and date; explicit source statement at HKMA 2026 physical page 1,Codex-source-review-human-pending
+B07,correct,valid,none,All three ART pillars correctly identified with supporting excerpts at physical page 1,Codex-source-review-human-pending
+B08,partial,valid,generation,Supported restrictions on shadow AI; omits required up-to-date approved-use-case inventory; page hit did not include the gold excerpt,Codex-source-review-human-pending
+B09,correct,valid,none,All four reviewer prerequisites and challenge-override-stop authority match the physical page 3 quotation,Codex-source-review-human-pending
+B10,incorrect,not_applicable,retrieval,False refusal; Top-5 misses independent validation and adversarial-testing passage,Codex-source-review-human-pending
+B11,incorrect,not_applicable,retrieval,False refusal; no labeled FSB 2024 executive-summary evidence in Top-5,Codex-source-review-human-pending
+B12,incorrect,not_applicable,retrieval,False refusal; provider-concentration passage from physical page 5 not retrieved,Codex-source-review-human-pending
+B13,incorrect,not_applicable,retrieval,False refusal; no labeled executive-summary adoption passage in Top-5,Codex-source-review-human-pending
+B14,incorrect,not_applicable,retrieval,False refusal; physical page 6 hallucinations passage not retrieved,Codex-source-review-human-pending
+B15,partial,valid,generation,Actual cited page 8 supports intended use but answer omits non-prescriptive and non-binding status from requested executive summary,Codex-source-review-human-pending
+B16,incorrect,not_applicable,service,Initial request timed out; continuation attempts returned HTTP 429 with no available model deployments,Codex-source-review-human-pending
+B17,pending,pending,,,
+B18,pending,pending,,,
+B19,pending,pending,,,
+B20,pending,pending,,,
+B21,pending,pending,,,
+B22,pending,pending,,,
+B23,pending,pending,,,
+B24,pending,pending,,,
+OOD01,pending,pending,,,
+OOD02,pending,pending,,,
+OOD03,pending,pending,,,
+OOD04,pending,pending,,,
+OOD05,pending,pending,,,
