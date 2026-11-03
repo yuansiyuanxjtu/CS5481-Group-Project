@@ -1,0 +1,821 @@
+{
+  "started_at_utc": "2026-11-03T01:53:32.413418+00:00",
+  "hardware": {
+    "platform": "macOS-27.0.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "python": "3.11.15 (main, Mar  3 2026, 00:52:57) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "logical_cpus": 10,
+    "hw.model": "unavailable",
+    "hw.memsize": "unavailable",
+    "machdep.cpu.brand_string": "unavailable"
+  },
+  "dependencies": {
+    "shellingham": "1.5.4",
+    "uvicorn": "0.54.0",
+    "opentelemetry-exporter-otlp-common": "0.66b2",
+    "scikit-learn": "1.9.1",
+    "watchfiles": "1.3.0",
+    "cloudpickle": "3.1.2",
+    "pydantic": "2.14.2",
+    "opentelemetry-exporter-otlp-proto-common": "1.45.2",
+    "durationpy": "0.11",
+    "click": "8.5.0",
+    "googleapis-common-protos": "1.76.0",
+    "packaging": "26.3",
+    "importlib_resources": "7.1.0",
+    "narwhals": "2.28.0",
+    "joblib": "1.6.0",
+    "protobuf": "7.36.2",
+    "uvloop": "0.23.0",
+    "pybase64": "1.5.1",
+    "overrides": "7.7.0",
+    "websockets": "17.4",
+    "Pygments": "2.21.0",
+    "jsonschema-specifications": "2025.9.1",
+    "aiohttp-retry": "2.9.1",
+    "requests": "2.34.2",
+    "httptools": "0.9.0",
+    "rich": "15.0.0",
+    "PyPika": "0.51.1",
+    "certifi": "2026.10.23",
+    "PyMuPDF": "1.26.6",
+    "yarl": "1.25.1",
+    "networkx": "3.6.1",
+    "chromadb": "1.3.5",
+    "jsonschema": "4.26.0",
+    "orjson": "3.13.0",
+    "oauthlib": "4.0.1",
+    "onnxruntime": "1.31.1",
+    "pydantic_core": "2.50.2",
+    "numpy": "2.4.6",
+    "propcache": "0.5.4",
+    "iniconfig": "2.3.1",
+    "build": "1.6.1",
+    "httpcore": "1.0.9",
+    "aiohappyeyeballs": "2.7.1",
+    "pillow": "13.0.0",
+    "sympy": "1.14.0",
+    "huggingface_hub": "0.36.2",
+    "opentelemetry-semantic-conventions": "0.66b2",
+    "grpcio": "1.85.1",
+    "pluggy": "1.7.0",
+    "opentelemetry-api": "1.45.2",
+    "safetensors": "0.8.0",
+    "tqdm": "4.70.1",
+    "opentelemetry-proto": "1.45.2",
+    "urllib3": "2.8.0",
+    "filelock": "4.2.6",
+    "h11": "0.16.0",
+    "mmh3": "5.3.1",
+    "mdurl": "0.1.2",
+    "pyproject_hooks": "1.3.3",
+    "mpmath": "1.3.0",
+    "PyYAML": "6.0.3",
+    "pytest": "8.4.2",
+    "fsspec": "2026.9.0",
+    "sentence-transformers": "5.1.2",
+    "cs5481-rag-ingest": "0.1.0",
+    "python-dotenv": "1.2.4",
+    "frozenlist": "1.8.0",
+    "bcrypt": "5.0.0",
+    "aiosignal": "1.4.0",
+    "typer": "0.27.3",
+    "scipy": "1.17.1",
+    "opentelemetry-exporter-otlp-proto-grpc": "1.45.2",
+    "setuptools": "83.0.0",
+    "Jinja2": "3.1.6",
+    "annotated-types": "0.8.0",
+    "referencing": "0.37.0",
+    "regex": "2026.9.29",
+    "markdown-it-py": "4.2.0",
+    "tzdata": "2026.6",
+    "annotated-doc": "0.0.5",
+    "threadpoolctl": "3.7.0",
+    "typing-inspection": "0.4.4",
+    "distro": "1.9.0",
+    "rpds-py": "2026.9.1",
+    "flatbuffers": "25.12.19",
+    "anyio": "4.16.0",
+    "aiohttp": "3.14.5",
+    "attrs": "26.1.0",
+    "multidict": "7.2.1",
+    "transformers": "4.57.1",
+    "websocket-client": "1.9.2",
+    "pip": "26.1.2",
+    "opentelemetry-sdk": "1.45.2",
+    "httpx": "0.28.1",
+    "typing_extensions": "4.16.0",
+    "MarkupSafe": "3.0.4",
+    "backoff": "2.2.1",
+    "hf-xet": "1.8.0",
+    "python-dateutil": "4.0.0",
+    "tokenizers": "0.22.2",
+    "posthog": "5.4.0",
+    "torch": "2.15.0",
+    "charset-normalizer": "3.5.2",
+    "tenacity": "9.2.1",
+    "six": "1.17.0",
+    "requests-oauthlib": "2.0.0",
+    "kubernetes": "37.0.1",
+    "idna": "3.20"
+  },
+  "dataset_snapshot": [
+    {
+      "document_id": "bis_20241212_ai_regulation",
+      "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+      "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+      "sha256": "e0c9275e8dcabb65bc3261f1d930c4f93796fcea6133a569a43338e9f783adce"
+    },
+    {
+      "document_id": "fsb_20241114_ai_stability",
+      "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+      "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+      "sha256": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef"
+    },
+    {
+      "document_id": "fsb_20261015_responsible_ai",
+      "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+      "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+      "sha256": "4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de"
+    },
+    {
+      "document_id": "hkma_20191101_ai_principles",
+      "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+      "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+      "sha256": "588e79c06d1b8d8dc3d400b6ab87491e457472f1b726ad58df67a35e457981ad"
+    },
+    {
+      "document_id": "hkma_20261015_ai_guidance",
+      "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+      "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+      "sha256": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+    }
+  ],
+  "dataset_sha256": "8321c43ee6b19681945f7dfc35d4592c5a8cf2dca66357d5edb0f3356031583d",
+  "dataset_version": "pilot5_8321c43ee6b1",
+  "temporal_catalog_sha256": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612",
+  "manifest_sha256": "b918cd1829259a19f70a752a00be5712bb675a48b6f919b93a7ea49847c6bc5b",
+  "embedding_spec": {
+    "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+    "model_revision": "c9745ed1d9f207416be6d2e6f8de32d1f16199bf",
+    "embedding_dimension": 384,
+    "normalized": true,
+    "encoder": "sentence-transformers-5.1.2/encode-float32",
+    "max_sequence_length": 256
+  },
+  "model_load_seconds": 0.07941512499996861,
+  "batch_size": 32,
+  "strategies": [
+    {
+      "name": "fixed_150",
+      "size": 150,
+      "overlap": 0
+    },
+    {
+      "name": "fixed_150_overlap_30",
+      "size": 150,
+      "overlap": 30
+    },
+    {
+      "name": "fixed_220",
+      "size": 220,
+      "overlap": 0
+    },
+    {
+      "name": "fixed_220_overlap_30",
+      "size": 220,
+      "overlap": 30
+    }
+  ],
+  "arms": {
+    "baseline": {
+      "pdf_processing_seconds": 1.6735390000000052,
+      "pages": {
+        "pages": 165,
+        "characters": 501394,
+        "empty_pages": 0,
+        "nearly_empty_pages": 3,
+        "page_label_only_pages": 2,
+        "exact_duplicate_nonempty_pages": 1
+      },
+      "per_document": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "pages": 38,
+          "characters": 140877,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "pages": 40,
+          "characters": 118838,
+          "empty_pages": 0,
+          "nearly_empty_pages": 2,
+          "page_label_only_pages": 1,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "pages": 75,
+          "characters": 214837,
+          "empty_pages": 0,
+          "nearly_empty_pages": 1,
+          "page_label_only_pages": 1,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "pages": 4,
+          "characters": 7887,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "pages": 8,
+          "characters": 18955,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        }
+      ],
+      "strategies": {
+        "fixed_150": {
+          "quality": {
+            "count": 753,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 2,
+            "page_number_only_chunks": 2,
+            "page_label_candidates": 3,
+            "suspiciously_short_chunks": 10,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 42,
+            "mid_word_ends": 42,
+            "non_sentence_ends": 514,
+            "token_distribution": {
+              "p0": 1.0,
+              "p25": 150.0,
+              "p50": 150.0,
+              "p75": 150.0,
+              "p95": 150.0,
+              "p100": 150.0
+            },
+            "average_tokens": 133.43559096945552
+          },
+          "chunking_seconds": 0.17187874999990527,
+          "jsonl_sha256": "63ba41484e3bf937c53cad0a2e52079c71b527fd7884fa7dd6c0f3858158b43b",
+          "first_ingestion": {
+            "processed_chunks": 753,
+            "embedding_seconds": 2.887093460999722,
+            "insertion_seconds": 0.5406395799998336,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150": {
+                "processed_chunks": 753,
+                "records_before": 0,
+                "records_after": 753
+              }
+            },
+            "storage_bytes": 9015460
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 753,
+            "embedding_seconds": 2.854590417000054,
+            "insertion_seconds": 0.6999625019999485,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150": {
+                "processed_chunks": 753,
+                "records_before": 753,
+                "records_after": 753
+              }
+            },
+            "storage_bytes": 11657082
+          },
+          "records": 753,
+          "record_snapshot_sha256": "9d9e2f7d4f1d3b14054fb42555889dad44a14c46e0905284b6467910b0ce6a2a",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_150_overlap_30": {
+          "quality": {
+            "count": 885,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 3,
+            "page_number_only_chunks": 2,
+            "page_label_candidates": 2,
+            "suspiciously_short_chunks": 2,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 42,
+            "mid_word_ends": 48,
+            "non_sentence_ends": 625,
+            "token_distribution": {
+              "p0": 1.0,
+              "p25": 150.0,
+              "p50": 150.0,
+              "p75": 150.0,
+              "p95": 150.0,
+              "p100": 150.0
+            },
+            "average_tokens": 137.9322033898305
+          },
+          "chunking_seconds": 0.21141554199994061,
+          "jsonl_sha256": "d072ca5d9ff8b80e4cdf4ac6c7ef3a4e1545022db4ccf873b0bb9c6d6e5f5a60",
+          "first_ingestion": {
+            "processed_chunks": 885,
+            "embedding_seconds": 3.4032227960001364,
+            "insertion_seconds": 0.7478668349998543,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150_overlap_30": {
+                "processed_chunks": 885,
+                "records_before": 0,
+                "records_after": 885
+              }
+            },
+            "storage_bytes": 20750366
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 885,
+            "embedding_seconds": 3.735115584000141,
+            "insertion_seconds": 0.8792140829999653,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150_overlap_30": {
+                "processed_chunks": 885,
+                "records_before": 885,
+                "records_after": 885
+              }
+            },
+            "storage_bytes": 22845538
+          },
+          "records": 885,
+          "record_snapshot_sha256": "f0b792b15e86fff2dfcfcdaa9b317cdcd77d81f1efde10c8f10a1be6a6f36d29",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_220": {
+          "quality": {
+            "count": 536,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 1,
+            "page_number_only_chunks": 2,
+            "page_label_candidates": 2,
+            "suspiciously_short_chunks": 7,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 35,
+            "mid_word_ends": 35,
+            "non_sentence_ends": 327,
+            "token_distribution": {
+              "p0": 1.0,
+              "p25": 180.5,
+              "p50": 220.0,
+              "p75": 220.0,
+              "p95": 220.0,
+              "p100": 220.0
+            },
+            "average_tokens": 187.46082089552237
+          },
+          "chunking_seconds": 0.19010470799992163,
+          "jsonl_sha256": "b97eeb7c65bc18bb78ce31148d6b710a8dc29aa4fee5660bb40ce6e44c5a300a",
+          "first_ingestion": {
+            "processed_chunks": 536,
+            "embedding_seconds": 3.2377805850001096,
+            "insertion_seconds": 0.4406571660000509,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_220": {
+                "processed_chunks": 536,
+                "records_before": 0,
+                "records_after": 536
+              }
+            },
+            "storage_bytes": 30738694
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 536,
+            "embedding_seconds": 3.2247515829998292,
+            "insertion_seconds": 0.6125372080001625,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_220": {
+                "processed_chunks": 536,
+                "records_before": 536,
+                "records_after": 536
+              }
+            },
+            "storage_bytes": 34870884
+          },
+          "records": 536,
+          "record_snapshot_sha256": "50e3eeb58a13945851fb6045bcc1e9737e1ba914e3948879f8b73fa5764b5fc8",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_220_overlap_30": {
+          "quality": {
+            "count": 588,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 1,
+            "page_number_only_chunks": 2,
+            "page_label_candidates": 2,
+            "suspiciously_short_chunks": 2,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 27,
+            "mid_word_ends": 45,
+            "non_sentence_ends": 375,
+            "token_distribution": {
+              "p0": 1.0,
+              "p25": 205.5,
+              "p50": 220.0,
+              "p75": 220.0,
+              "p95": 220.0,
+              "p100": 220.0
+            },
+            "average_tokens": 192.44727891156464
+          },
+          "chunking_seconds": 0.20300954200001797,
+          "jsonl_sha256": "e295923a4ba655dc81b39d5d4392adad68b366da0c18607919ab8be8be056701",
+          "first_ingestion": {
+            "processed_chunks": 588,
+            "embedding_seconds": 3.5396921660001226,
+            "insertion_seconds": 0.5751873349998959,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_overlap_220": {
+                "processed_chunks": 588,
+                "records_before": 0,
+                "records_after": 588
+              }
+            },
+            "storage_bytes": 36378376
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 588,
+            "embedding_seconds": 3.5390653740000744,
+            "insertion_seconds": 0.6634606250003117,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_overlap_220": {
+                "processed_chunks": 588,
+                "records_before": 588,
+                "records_after": 588
+              }
+            },
+            "storage_bytes": 40117190
+          },
+          "records": 588,
+          "record_snapshot_sha256": "4a4a30f78e596accafbcd9a7a7529434ad043d642379634c05814958f05afcb5",
+          "repeat_snapshot_identical": true
+        }
+      },
+      "database_storage_bytes": 40117190
+    },
+    "enhanced": {
+      "pdf_processing_seconds": 3.615088042000025,
+      "pages": {
+        "pages": 165,
+        "characters": 497252,
+        "empty_pages": 2,
+        "nearly_empty_pages": 1,
+        "page_label_only_pages": 0,
+        "exact_duplicate_nonempty_pages": 0
+      },
+      "per_document": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "pages": 38,
+          "characters": 137066,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "pages": 40,
+          "characters": 118733,
+          "empty_pages": 1,
+          "nearly_empty_pages": 1,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "pages": 75,
+          "characters": 214627,
+          "empty_pages": 1,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "pages": 4,
+          "characters": 7887,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        },
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "pages": 8,
+          "characters": 18939,
+          "empty_pages": 0,
+          "nearly_empty_pages": 0,
+          "page_label_only_pages": 0,
+          "exact_duplicate_nonempty_pages": 0
+        }
+      ],
+      "strategies": {
+        "fixed_150": {
+          "quality": {
+            "count": 749,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 1,
+            "page_number_only_chunks": 0,
+            "page_label_candidates": 0,
+            "suspiciously_short_chunks": 11,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 41,
+            "mid_word_ends": 41,
+            "non_sentence_ends": 512,
+            "token_distribution": {
+              "p0": 2.0,
+              "p25": 150.0,
+              "p50": 150.0,
+              "p75": 150.0,
+              "p95": 150.0,
+              "p100": 150.0
+            },
+            "average_tokens": 133.2283044058745
+          },
+          "chunking_seconds": 0.16911804099993333,
+          "jsonl_sha256": "d8806479f208d58cbd106cf23367b7aa55ca503633956f32c13b452e25651048",
+          "first_ingestion": {
+            "processed_chunks": 749,
+            "embedding_seconds": 2.8660637499999666,
+            "insertion_seconds": 0.5221647509997638,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150": {
+                "processed_chunks": 749,
+                "records_before": 0,
+                "records_after": 749
+              }
+            },
+            "storage_bytes": 8999076
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 749,
+            "embedding_seconds": 2.8650964169997906,
+            "insertion_seconds": 0.7012988749999067,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150": {
+                "processed_chunks": 749,
+                "records_before": 749,
+                "records_after": 749
+              }
+            },
+            "storage_bytes": 11649928
+          },
+          "records": 749,
+          "record_snapshot_sha256": "35cd6c088ca1c5cd6d680fbefec588142656da8749f4545267d800ccf7423ddd",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_150_overlap_30": {
+          "quality": {
+            "count": 874,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 2,
+            "page_number_only_chunks": 0,
+            "page_label_candidates": 0,
+            "suspiciously_short_chunks": 0,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 41,
+            "mid_word_ends": 48,
+            "non_sentence_ends": 620,
+            "token_distribution": {
+              "p0": 11.0,
+              "p25": 150.0,
+              "p50": 150.0,
+              "p75": 150.0,
+              "p95": 150.0,
+              "p100": 150.0
+            },
+            "average_tokens": 138.57093821510298
+          },
+          "chunking_seconds": 0.21064416699994126,
+          "jsonl_sha256": "536964c0a8c6ed7e8344abb10d1dc9c7b9259252b14016294effeee39e386f0b",
+          "first_ingestion": {
+            "processed_chunks": 874,
+            "embedding_seconds": 3.3440431240002226,
+            "insertion_seconds": 0.733252456999935,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150_overlap_30": {
+                "processed_chunks": 874,
+                "records_before": 0,
+                "records_after": 874
+              }
+            },
+            "storage_bytes": 20329516
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 874,
+            "embedding_seconds": 3.3244887060001247,
+            "insertion_seconds": 0.8576044999999795,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_150_overlap_30": {
+                "processed_chunks": 874,
+                "records_before": 874,
+                "records_after": 874
+              }
+            },
+            "storage_bytes": 22728336
+          },
+          "records": 874,
+          "record_snapshot_sha256": "f97e261de07eb1a9e338cc9f3a0c2558620d977b3bdc012ad46979c4a0c7733f",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_220": {
+          "quality": {
+            "count": 534,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 0,
+            "page_number_only_chunks": 0,
+            "page_label_candidates": 1,
+            "suspiciously_short_chunks": 8,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 35,
+            "mid_word_ends": 35,
+            "non_sentence_ends": 327,
+            "token_distribution": {
+              "p0": 2.0,
+              "p25": 175.75,
+              "p50": 220.0,
+              "p75": 220.0,
+              "p95": 220.0,
+              "p100": 220.0
+            },
+            "average_tokens": 186.87265917602997
+          },
+          "chunking_seconds": 0.18872658299994782,
+          "jsonl_sha256": "9165aff3c53dfbc9f854e3a5a7c35815f6907e081099c24e8a3b63742fd62361",
+          "first_ingestion": {
+            "processed_chunks": 534,
+            "embedding_seconds": 3.223527458000376,
+            "insertion_seconds": 0.45414679200007413,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_220": {
+                "processed_chunks": 534,
+                "records_before": 0,
+                "records_after": 534
+              }
+            },
+            "storage_bytes": 31239988
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 534,
+            "embedding_seconds": 3.2162488310002573,
+            "insertion_seconds": 0.6101108360001035,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_fixed_220": {
+                "processed_chunks": 534,
+                "records_before": 534,
+                "records_after": 534
+              }
+            },
+            "storage_bytes": 34750106
+          },
+          "records": 534,
+          "record_snapshot_sha256": "df810af01ee4c1770450e8f8f33a3b7a322e340e93adcf34728b6f125e83688f",
+          "repeat_snapshot_identical": true
+        },
+        "fixed_220_overlap_30": {
+          "quality": {
+            "count": 584,
+            "missing_citation_or_required_fields": 0,
+            "invalid_chunks": 0,
+            "invalid_token_counts": 0,
+            "model_limit_violations": 0,
+            "citation_integrity_failures": 0,
+            "duplicate_chunk_ids": 0,
+            "exact_duplicate_texts": 0,
+            "page_number_only_chunks": 0,
+            "page_label_candidates": 0,
+            "suspiciously_short_chunks": 0,
+            "malformed_text_chunks": 0,
+            "mid_word_starts": 27,
+            "mid_word_ends": 45,
+            "non_sentence_ends": 374,
+            "token_distribution": {
+              "p0": 11.0,
+              "p25": 203.75,
+              "p50": 220.0,
+              "p75": 220.0,
+              "p95": 220.0,
+              "p100": 220.0
+            },
+            "average_tokens": 192.48287671232876
+          },
+          "chunking_seconds": 0.2031341250000196,
+          "jsonl_sha256": "355f8b42dd6d85f07a3365018fad6cdeab86d3b3cec0a95b03cae76c77810f74",
+          "first_ingestion": {
+            "processed_chunks": 584,
+            "embedding_seconds": 3.5302539579997756,
+            "insertion_seconds": 0.5865737500002979,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_overlap_220": {
+                "processed_chunks": 584,
+                "records_before": 0,
+                "records_after": 584
+              }
+            },
+            "storage_bytes": 37474110
+          },
+          "repeat_ingestion": {
+            "processed_chunks": 584,
+            "embedding_seconds": 3.5214269999999033,
+            "insertion_seconds": 0.6507168770003773,
+            "effective_batch_size": 32,
+            "collections": {
+              "finance_overlap_220": {
+                "processed_chunks": 584,
+                "records_before": 584,
+                "records_after": 584
+              }
+            },
+            "storage_bytes": 39702382
+          },
+          "records": 584,
+          "record_snapshot_sha256": "ce3d382d82616c4a352bb2615286c03fb54270a81f40ad4ebf21f554430c1908",
+          "repeat_snapshot_identical": true
+        }
+      },
+      "database_storage_bytes": 39702382
+    }
+  },
+  "source_code_sha256": {
+    "temporal.py": "88a359b6028c1782b63b5ade881d1e127428bc4dfd7f4a85d36b9d669227cd8b",
+    "chunking.py": "182e52a3727582366bcf1f49eee5435523660edf50de25762ca900c98f32aa36",
+    "benchmark.py": "c5326c7a88223a38ad449d30b57e2631923fa9dda8bcc57c489b78236912f7aa",
+    "models.py": "f94f74beda06ab33c32e28d76af1156af568f55cddd15ee8b09df0c68fdeb6b9",
+    "manifest.py": "9d46ac6ce40c4640847c249402ff6343d71134f1de954d04c61722ec8230b75f",
+    "vector_store.py": "0abfbf838c365ce8d1f19046244673583c7e1e0be4921c563f33287469549c2e",
+    "__init__.py": "52c95e0878e80a0370335071d78a66b046c82bb2664202752ff35a65f8e8ac7f",
+    "pdf.py": "3cea96fa8a0250d33bab0469e3f4b2ead971358ae4c7b85c4a881059497b63d8",
+    "jsonl.py": "4d7c1c05ae45fb2c67b2117d1a10977421f579c7f503959042902f8744b18503",
+    "embeddings.py": "dcd929fb1755babf48fc078e335edb164424e8a074c507328262661c6771836a",
+    "cli.py": "0c4d2071044acb8f5697779142458475377c8430302490a6e03c53c601b73212",
+    "pipeline.py": "0be52a96f27da2e24ca196c77eedd4e1f939160a445efcd79e3a745edb067a03",
+    "store_cli.py": "676631fa07fdba03807899f80d675d1a95ddab7c909611ce25f63c1581da220a",
+    "quality.py": "dbee515f22f2605969367d51e1bcb0e1f13f44caf1b799765430485f475ae8b6",
+    "__main__.py": "6d8b7d7846a845059d7a3107143f11131f63c5511d669b44085b15ec5e3d2279"
+  },
+  "completed_at_utc": "2026-11-03T01:54:45.887905+00:00"
+}

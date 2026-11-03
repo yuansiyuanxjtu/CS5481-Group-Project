@@ -1,6 +1,6 @@
 # CS5481 development rules
 
-- Implement Member A's ingestion, chunking, embeddings, and storage work only. Current scope includes Phases 1, 2, and the five-document Phase 2.5 pilot; do not proceed to Phase 3.
+- Implement Member A's ingestion, chunking, embeddings, and storage work only. Current scope includes Phases 1, 2, and the five-document Phase 2.5 pilot and Phase 2.6 quality/benchmarking work; do not proceed to Phase 3.
 - Do not add retrieval/evaluation, LLM generation, or frontend modules.
 - Do not commit or push without explicit approval.
 - Use Python 3.11+, PyMuPDF, the pinned MiniLM fast tokenizer, typed data contracts, and pytest. Avoid unnecessary frameworks.
@@ -12,3 +12,5 @@
 - Default to offline model loading. Rebuild only explicitly requested collections; do not remove unrelated collections. Keep database files out of Git.
 - Count tokens without special tokens and verify the exported text meets its token budget. Keep both chunking strategies separate.
 - Run `.venv/bin/python -m pytest -q` after changes; see README for one-time tokenizer cache preparation.
+
+- Keep Phase 2.6 experiments isolated from pilot JSONL/Chroma outputs. Freeze raw-file checksums, log every cleaning removal, and preserve the baseline. Do not infer status from publication dates.

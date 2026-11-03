@@ -1,0 +1,72 @@
+{
+  "catalog_version": "temporal_v1_20261103",
+  "documents": [
+    {
+      "document_id": "hkma_20191101_ai_principles",
+      "title": "High-level Principles on Artificial Intelligence",
+      "issuing_organization": "Hong Kong Monetary Authority",
+      "publication_date": "2019-11-01",
+      "jurisdiction": "Hong Kong",
+      "original_source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20191101-1-EN",
+      "source_pdf_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+      "document_checksum": "588e79c06d1b8d8dc3d400b6ab87491e457472f1b726ad58df67a35e457981ad",
+      "regulatory_status": "superseded",
+      "status_verified_at": "2026-11-03",
+      "status_evidence": {
+        "url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+        "locator": "Physical page 1, Purpose section",
+        "evidence_document_id": "hkma_20261015_ai_guidance",
+        "evidence_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109"
+      },
+      "superseded_by": "hkma_20261015_ai_guidance"
+    },
+    {
+      "document_id": "hkma_20261015_ai_guidance",
+      "title": "Annex A: Supervisory Guidance for Responsible Adoption of Artificial Intelligence",
+      "issuing_organization": "Hong Kong Monetary Authority",
+      "publication_date": "2026-10-15",
+      "jurisdiction": "Hong Kong",
+      "original_source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/20261015-2-EN",
+      "source_pdf_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+      "document_checksum": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109",
+      "regulatory_status": "unknown",
+      "status_verified_at": null
+    },
+    {
+      "document_id": "fsb_20241114_ai_stability",
+      "title": "The Financial Stability Implications of Artificial Intelligence",
+      "issuing_organization": "Financial Stability Board",
+      "publication_date": "2024-11-14",
+      "jurisdiction": "International",
+      "original_source_url": "https://www.fsb.org/2024/11/the-financial-stability-implications-of-artificial-intelligence/",
+      "source_pdf_url": "https://www.fsb.org/uploads/P14112024.pdf",
+      "document_checksum": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef",
+      "regulatory_status": "unknown",
+      "status_verified_at": null
+    },
+    {
+      "document_id": "fsb_20261015_responsible_ai",
+      "title": "Sound Practices for Responsible Adoption of Artificial Intelligence (AI): Final report",
+      "issuing_organization": "Financial Stability Board",
+      "publication_date": "2026-10-15",
+      "jurisdiction": "International",
+      "original_source_url": "https://www.fsb.org/2026/10/sound-practices-for-responsible-adoption-of-artificial-intelligence-ai-final-report/",
+      "source_pdf_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+      "document_checksum": "4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de",
+      "regulatory_status": "unknown",
+      "status_verified_at": null
+    },
+    {
+      "document_id": "bis_20241212_ai_regulation",
+      "title": "Regulating AI in the financial sector: recent developments and main challenges",
+      "issuing_organization": "Bank for International Settlements, Financial Stability Institute",
+      "publication_date": "2024-12-12",
+      "jurisdiction": "International",
+      "original_source_url": "https://www.bis.org/fsi/publ/insights63.htm",
+      "source_pdf_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+      "document_checksum": "e0c9275e8dcabb65bc3261f1d930c4f93796fcea6133a569a43338e9f783adce",
+      "regulatory_status": "unknown",
+      "status_verified_at": null
+    }
+  ]
+}

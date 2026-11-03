@@ -5,14 +5,14 @@ from pathlib import Path
 import re
 from urllib.parse import urlsplit
 
-from .chunking import STRATEGIES
+from .chunking import EXPERIMENT_STRATEGIES
 from .models import Chunk
 
 
 def load_chunks(paths: list[Path]) -> dict[str, list[Chunk]]:
     if not paths:
         raise ValueError("Supply at least one processed JSONL file")
-    sizes = {s.name: s.size for s in STRATEGIES}
+    sizes = {s.name: s.size for s in EXPERIMENT_STRATEGIES}
     grouped: dict[str, list[Chunk]] = {}
     seen: set[str] = set()
     required = {f.name for f in fields(Chunk)}

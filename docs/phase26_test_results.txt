@@ -1,0 +1,22 @@
+........................................................................ [ 88%]
+.........                                                                [100%]
+=============================== warnings summary ===============================
+<frozen importlib._bootstrap>:241
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyPacked has no __module__ attribute
+
+<frozen importlib._bootstrap>:241
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type SwigPyObject has no __module__ attribute
+
+<frozen importlib._bootstrap>:241
+  <frozen importlib._bootstrap>:241: DeprecationWarning: builtin type swigvarlink has no __module__ attribute
+
+tests/test_phase26.py: 19 warnings
+tests/test_real_model.py: 2 warnings
+tests/test_vector_store.py: 30 warnings
+  /Users/yuansiyuan66/Documents/ChatGPT/CS5481 Group Project/.venv/lib/python3.11/site-packages/chromadb/api/models/CollectionCommon.py:155: DeprecationWarning: legacy embedding function config
+    return load_collection_configuration_from_json(self._model.configuration_json)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+81 passed, 56 warnings in 6.09s

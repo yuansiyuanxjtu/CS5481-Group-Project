@@ -1,109 +1,78 @@
-# Pilot data quality and integration report
+# Phase 2.6 data quality report
 
-Measured at `2026-11-02T14:28:54.125479+00:00`. Results apply only to these five downloaded PDFs and this local CPU run. They are not retrieval accuracy, answer correctness, or general performance estimates.
+Finalized run: `data/experiments/phase26_run4`; completed `2026-11-03T01:54:45.887905+00:00`. Dataset `pilot5_8321c43ee6b1`. Phase 2.5 baseline report is preserved in [the archive](data_quality_report_phase25.md). Original raw PDFs, both original JSONL files and the complete pilot database were verified byte-identical after the work.
 
-## Corpus measurements
+## Rules and preservation
 
-| Metric | Measured value |
-| --- | ---: |
-| Downloaded documents | 5 |
-| Successfully parsed documents | 5 |
-| Physical PDF pages | 165 |
-| PDF file bytes | 2,904,620 |
-| Raw extracted characters | 531,371 |
-| Cleaned characters | 501,394 |
-| Page text tokens (MiniLM; no special tokens) | 100,464 |
-| Empty cleaned pages | 0 |
-| Pages with 1–99 cleaned characters | 3 |
-| Exact duplicate PDF files | 0 |
-| Exact duplicate cleaned documents | 0 |
+The opt-in `conservative_margins_v1` profile retains the existing NFKC/control/whitespace normalization, then removes only geometry-confirmed margin page labels and manually approved BIS bottom-margin footer strings. Margin centers are within the outer 6% of page height. Numeric labels must not exceed the physical document length, protecting dates such as 2026. A sorted text line is removed only when it consists entirely of approved margin components; mixed body/margin lines and ambiguous repeated occurrences remain. Every removal has a page-level audit with before/after text and rule names.
 
-| Document ID | Pages | Cleaned characters | Page tokens | Fixed 150 chunks | Overlap 220 chunks |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| `bis_20241212_ai_regulation` | 38 | 140,877 | 29,287 | 212 | 166 |
-| `fsb_20241114_ai_stability` | 40 | 118,838 | 24,534 | 188 | 147 |
-| `fsb_20261015_responsible_ai` | 75 | 214,837 | 41,417 | 314 | 243 |
-| `hkma_20191101_ai_principles` | 4 | 7,887 | 1,436 | 11 | 10 |
-| `hkma_20261015_ai_guidance` | 8 | 18,955 | 3,790 | 28 | 22 |
+Header/footer recurrence is measured over geometry-derived margin lines, with at least three distinct pages needed to report a repeated string. Recurrence alone does not authorize deletion. Only the reviewed BIS title footer and hidden duplicate phrase fragment are allowlisted, for that document ID. Document checksums are verified before the benchmark applies the profile. Other headers, footnotes, citations, tables, contents, legal notices and short valid sections are retained. No LLM rewriting, general deduplication, sentence rewriting or threshold-based dropping is performed.
 
-Counts refer to one-based physical pages and the existing cleaning function. No parser failures were caught and reclassified as successes. No image-only document was identified; every page has some extracted text, although this does not prove every diagram or embedded image was captured.
+The original APIs/default two strategies are preserved. Baseline and enhanced text use the same token-window algorithm. Enhanced outputs and databases are isolated under the benchmark run; the pilot outputs are not overwritten. All physical pages remain represented, even when cleaning produces empty text and no chunk.
 
-Low-text pages were inspected: FSB 2024 page 1 is an 80-character cover; FSB 2024 page 4 and FSB 2026 page 4 contain only the roman page label `iv` (two characters, one token). These pages are retained by the unchanged pipeline, producing low-information chunks. They are not extraction failures. All extracted replacement-character counts (`U+FFFD`) were zero.
+## Measured before/after
 
-## Chunk and database measurements
+| Metric | Baseline | Enhanced |
+| --- | ---: | ---: |
+| Successfully visited physical pages | 165 | 165 |
+| Cleaned characters | 501,394 | 497,252 |
+| Empty cleaned pages | 0 | 2 |
+| Nonempty pages below 100 characters | 3 | 1 |
+| Whole pages consisting only of a page label | 2 | 0 |
+| Exact duplicate nonempty pages | 1 | 0 |
+| Pages with logged removals | 0 | 155 |
 
-| Strategy | Chunks / DB records | Mean tokens | Mean characters | Token range |
-| --- | ---: | ---: | ---: | --- |
-| `fixed_150` | 753 | 133.44 | 665.31 | 1–150 |
-| `fixed_220_overlap_30` | 588 | 192.45 | 958.65 | 1–220 |
+The two newly empty pages are FSB 2024 physical page 4 and FSB 2026 physical page 4, previously containing only `iv`. These are logged label removals, not parsing failures. The FSB 2024 cover remains the one nonempty page below 100 characters. All five documents parsed, all 165 physical pages were visited, and no document was added or removed. These coverage counts do not establish completeness of figures or image text.
 
-- Initial run: 1,341 processed chunks, batch size 32; both collections had zero records before insertion.
-- Embedding generation and validation: **11.487 seconds**; Chroma upsert calls: **1.396 seconds**.
-- Model load: **3.609 seconds**, using the already cached pinned MiniLM model offline.
-- `finance_fixed_150`: **753** records; `finance_overlap_220`: **588** records.
-- Database logical file size: **15,876,424 bytes** (15.14 MiB), including SQLite and index files; excludes model cache and PDFs.
-- Every stored vector was checked for dimension 384 and unit norm. Every stored ID, text, and citation-metadata field was compared against its JSONL record. Every JSONL text was found on its stated cleaned physical page and re-tokenized to verify token_count.
-- Page token totals exclude overlap. The sum of chunk token counts can differ because overlaps repeat text and window boundaries can change WordPiece tokenization.
+| Strategy | Baseline chunks | Enhanced chunks | Mean tokens before / after | Short chunks before / after | Duplicate texts before / after |
+| --- | ---: | ---: | --- | --- | --- |
+| `fixed_150` | 753 | 749 | 133.44 / 133.23 | 10 / 11 | 2 / 1 |
+| `fixed_150_overlap_30` | 885 | 874 | 137.93 / 138.57 | 2 / 0 | 3 / 2 |
+| `fixed_220` | 536 | 534 | 187.46 / 186.87 | 7 / 8 | 1 / 0 |
+| `fixed_220_overlap_30` | 588 | 584 | 192.45 / 192.48 | 2 / 0 | 1 / 0 |
 
-## Representative review and extraction issues
+Short means fewer than 10 content tokens. It is a review flag, not a rejection rule: short valid clauses and footnote remainders remain. Consequently the number of short chunks can increase after re-chunking. Exact duplicate text counts are within each strategy, not cross-strategy, and exclude neither boilerplate nor legitimate repetition. They are reported without deletion.
 
-Review covered 20 representative chunk records (first substantial page and middle chunk, for each document and strategy), all 1,341 records with automated traceability checks, and one rendered body page per PDF. The representative selection includes contents/disclaimer pages in the longer reports; those are explicitly part of the corpus. The rendered pages were HKMA 2019 p2, HKMA 2026 p3, FSB 2024 p5, FSB 2026 p7, and BIS p5. Full representative records are in `data/catalog/representative_chunks.json`.
+For all eight arm/strategy combinations: **zero structurally invalid chunks, missing citation fields, source/page integrity failures, duplicate IDs, invalid token counts, model-limit violations or malformed-text flags**. All exported token counts were recomputed. Every model input, including special tokens, fit within 256 tokens. Every stored vector had dimension 384 and unit norm. Every stored ID/text/metadata record matched its JSONL input before and after repeat ingestion.
 
-| Document | Observed issue | Consequence |
-| --- | --- | --- |
-| HKMA 2019 | Physical page numbers such as `- 2 -` remain in text; fixed windows split sentences. | Some noise; page metadata is still correct. Historical status is not encoded in chunk metadata. |
-| HKMA 2026 | Body paragraphs continue across pages and footnotes remain inline; overlapping chunks can end inside a word. | A single chunk may omit surrounding explanation even though its citation is traceable. |
-| FSB 2024 | Contents dot leaders and page-label-only pages are indexed; tables flatten into prose and headings. | Low-information chunks and reduced table structure. Physical page 5 is printed page 1. |
-| FSB 2026 | Contents, footnotes, references and page-label-only pages are indexed; some middle chunks contain mostly citations. | Retrieval may return navigation or bibliography rather than substantive guidance. Physical page 7 is printed page 3. |
-| BIS/FSI | Repeated title footers; some sorted footer text contains duplicated phrase fragments; chart glyphs use private-use characters. | Cleaning removes private-use glyphs, and page-order flattening loses visual associations. Physical page 5 is printed page 2. |
+All enhanced strategies have zero chunks from a whole page that consists solely of a page label (baseline: two per strategy). The broader syntactic `page_label_candidates` detector also flags bare numeric/roman strings inside normal pages: one enhanced `fixed_220` chunk contains the meaningful footnote year `2026`. It is retained and is not classified as a confirmed page-label-only page. Do not use candidate counts as an automatic deletion rule.
 
-The existing NFKC/whitespace cleaner was not changed. It removes 22 category-C private-use characters (U+F081–U+F087) from the BIS extraction; these are not U+FFFD replacement errors. A visual sample confirms clear body text but cannot certify all charts/tables across 165 pages. The BIS title footer was detected on 18 pages, and a variant prefixed with a duplicated phrase fragment on 17 pages, after stripping numeric page labels. The repeated footer phrase in the BIS extraction is an observed PDF extraction artifact, not newly generated text. No general header/footer removal is currently performed.
+## Before/after examples
 
-Heuristic boundary counts (first exact substring location on a page, not linguistic ground truth):
+- FSB 2024 p4 and FSB 2026 p4: before `iv`; after empty text. Their physical page identities and audit entries remain.
+- BIS p5: the merged bottom line contains a page numeral, the repeated title footer and a duplicated hidden phrase. That whole geometry-confirmed margin line is removed; all body paragraphs remain. Rendered p5 confirms the visible body/footer positions. Full exact before/after page text and removed-line lists are in `enhanced/cleaning_audit.json`.
+- HKMA 2026 p1: the bottom page numeral is removed, while the Purpose section, explicit supersession statement, footnotes and their publication years remain.
+- HKMA 2019 p2: the `- 2 -` header is outside the deliberately narrow margin region; it remains. The governance principles and numeric requirements are unchanged.
 
-| Strategy | Mid-word starts | Mid-word ends | Non-sentence ends before page end |
-| --- | ---: | ---: | ---: |
-| `fixed_150` | 42 | 42 | 514 |
-| `fixed_220_overlap_30` | 27 | 45 | 375 |
+## Remaining boundary and layout issues
 
-These are expected limitations of fixed token windows, not evidence of missing source pages. Sentence-end checks use punctuation only; repeated text can make the location heuristic ambiguous. Token budgets and exported token counts passed validation. Repeated edge-line diagnostics strip numeric page labels and identify exact recurring strings; they do not exhaustively detect all running headers or footers.
+| Strategy | Mid-word starts before / after | Mid-word ends before / after | Non-sentence ends before / after |
+| --- | --- | --- | --- |
+| `fixed_150` | 42 / 41 | 42 / 41 | 514 / 512 |
+| `fixed_150_overlap_30` | 42 / 41 | 48 / 48 | 625 / 620 |
+| `fixed_220` | 35 / 35 | 35 / 35 | 327 / 327 |
+| `fixed_220_overlap_30` | 27 / 27 | 45 / 45 | 375 / 374 |
 
-## Five-question smoke test
+These are substring/punctuation heuristics, not linguistic judgments. Fixed windows still break sentences and WordPiece words; this was held constant for the controlled 2×2 experiment. Table structures flatten, body/footnote reading order remains imperfect, contents/references remain indexable, and the pre-existing normalization still removes category-C private-use glyphs. No OCR or semantic repair is claimed. Numeric-only or roman-looking body fragments can be legitimate. Near-duplicate content is not measured beyond exact matches.
 
-Each question was embedded with the cached model and queried against both collections, requesting two hits: **10 query/collection combinations and 20 retrieved hits**. Full hit text, IDs, cosine distances and source metadata were printed and saved to `data/catalog/smoke_results.json`. All 20 hits passed local source-file, URL, physical-page and text-substring trace checks. No LLM answers, relevance labels, hit rates, or accuracy claims were produced.
+## Benchmark and temporal results
 
-| Question topic | Fixed 150 top hit (physical page) | Overlap 220 top hit (physical page) |
-| --- | --- | --- |
-| What responsibilities do bank boards and senior management have for AI governance? | `bis_20241212_ai_regulation`, p32 | `hkma_20191101_ai_principles`, p2 |
-| How should financial institutions ensure AI explainability and transparency? | `bis_20241212_ai_regulation`, p26 | `fsb_20261015_responsible_ai`, p42 |
-| What data quality and data governance controls are needed for AI models? | `fsb_20261015_responsible_ai`, p39 | `hkma_20191101_ai_principles`, p2 |
-| How can third-party AI providers create concentration and operational risks? | `fsb_20261015_responsible_ai`, p21 | `fsb_20261015_responsible_ai`, p66 |
-| What human oversight and validation should banks apply to generative AI? | `hkma_20191101_ai_principles`, p2 | `hkma_20191101_ai_principles`, p2 |
+Engineering measurements and the full machine-readable record are in [benchmark report](benchmark_phase26.md) and [JSON](benchmark_phase26.json). Each of the eight experiment collections was ingested twice with identical input and batch size; counts, text, metadata and vector snapshots remained identical. Timing samples are one measured finalized run, in fixed order, not a statistically controlled performance comparison. Three development runs remain in the ignored experiment directory; only run4 is reported here. Hardware details available to the process were macOS arm64, ten logical CPUs and Python 3.11.15. Model/RAM identifiers were unavailable through the sandbox and are recorded as unavailable rather than guessed.
 
-The governance, data-quality, and human-oversight queries sometimes rank the superseded 2019 HKMA circular first or second. This demonstrates why traceability alone is insufficient to establish current applicability. Formal relevance judgments, temporal filtering, and chunking-quality comparisons remain Member B’s work. Before Member C generates answers, the team should agree how historical versus current guidance is represented or filtered.
+All ten requested temporal fields are supplied separately and copied into experiment record metadata. Only the 2019 HKMA principles have an evidence-backed `superseded` status. Other statuses are `unknown`, not inferred current from their dates. See [temporal metadata](temporal_metadata.md) and [Member B handoff](member_b_handoff.md). No legal applicability or retrieval filter is implemented.
 
-## Reproduction commands
-
-Install the Phase 2 environment using README instructions. The first command below makes at most five official PDF downloads and reuses checksum-matching local files. All remaining processing is offline:
+## Reproduction and tests
 
 ```bash
-.venv/bin/python scripts/download_pilot.py
-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-ingest --manifest data/sources.csv --pdf-dir data/raw --output-dir data/processed --cache-dir .cache/huggingface/hub --offline
-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-store --input data/processed/fixed_150.jsonl data/processed/fixed_220_overlap_30.jsonl --db-dir data/chroma --cache-dir .cache/huggingface/hub --batch-size 32
-HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/python scripts/audit_pilot.py
+.venv/bin/python -m pip install --no-build-isolation --no-deps .
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-benchmark --output-dir data/experiments/phase26_reproduction --catalog data/catalog/temporal_metadata.json --cache-dir .cache/huggingface/hub --batch-size 32
 HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 RAG_TEST_REAL_MODEL=1 .venv/bin/python -m pytest -q
 ```
 
-Before ingestion, this run checked that `data/chroma` did not exist; no collections were destructively rebuilt. Reproduction uses normal upserts, not `--rebuild`. Timings and storage size may vary. The audit fails if database counts include stale/missing pilot records, so inspect an existing DB before reusing it. Initial ingestion timings are preserved in `data/catalog/phase2_metrics.json`; rerunning the audit refreshes quality and smoke JSON only.
+Use a new output directory. No downloads or destructive rebuilds are involved. The default original `rag-ingest` and `rag-store` commands remain valid. The benchmark archives and regenerates byte-identical original baseline JSONL, stores PDF and code checksums/configurations/environment, verifies full collection consistency, and logs every cleaning removal. Its generated benchmark JSON is the authoritative machine-readable measurement record.
 
-## Regression checks
+The full suite passed **81 tests**, including the original 59, additional quality/temporal/configuration/benchmark checks, and the opt-in cached real-model integration test. Dependency deprecation warnings remain. Final test output is in `docs/phase26_test_results.txt`.
 
-The offline full suite, including the real-model synthetic integration test, passed **59 tests** in **10.69 seconds**. PyMuPDF and Chroma emitted 37 dependency deprecation warnings; there were no failures. The exact pytest command is above, and output is saved in `data/catalog/test_run.txt`. The working Phase 1/2 source modules and APIs were not changed for this pilot.
+## Limits for Members B and C
 
-## Next steps within team responsibilities
-
-1. Stop collection at these five PDFs pending the user’s instruction; do not expand automatically.
-2. Ask Member B to create formal question/answer evidence labels and compare the two collections; these smoke queries do not replace that evaluation.
-3. Agree on handling superseded guidance before Member C uses it in answers. The catalog can be joined on document_id without changing current APIs.
-4. Consider a later, explicitly versioned cleaning/chunking experiment for page-label-only pages, contents, running footers, sentence/word boundaries and table extraction. Retain baseline outputs for comparison.
-5. Keep raw-file checksums and acquisition metadata with the report; verify source versions again before any later expansion.
+Member B still needs to evaluate retrieval quality with identical labels/settings and compare size/overlap within each cleaning arm. More retained context or fewer footer tokens does not establish better retrieval. Member C must retain document/page/date provenance, surface superseded status, and treat unknown applicability conservatively. IDs can collide across cleaning arms, so include dataset/cleaning version in joins. Do not expand the dataset or proceed to Phase 3 without a new request.

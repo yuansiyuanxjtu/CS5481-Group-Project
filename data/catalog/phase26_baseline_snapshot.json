@@ -1,0 +1,18 @@
+{
+  "data/raw/fsb_2026_10_15_responsible_ai_final_report.pdf": "4e3ea6d2f52439f8aef6a27fc316a20eecacecd50b03dfca4e89f9f1de0ca6de",
+  "data/raw/hkma_2019_11_01_high_level_ai_principles.pdf": "588e79c06d1b8d8dc3d400b6ab87491e457472f1b726ad58df67a35e457981ad",
+  "data/raw/hkma_2026_10_15_responsible_ai_guidance.pdf": "2517b00fba23ed6e4c4372e5f84ad789f23df435cae7ee4d8d500872fc9cb109",
+  "data/raw/fsb_2024_11_14_ai_financial_stability.pdf": "4b81544ecb28b50fb2fa5dab530a0f32c9351506a875d1de841b946d18e7ecef",
+  "data/raw/bis_fsi_2024_12_12_regulating_ai_insights63.pdf": "e0c9275e8dcabb65bc3261f1d930c4f93796fcea6133a569a43338e9f783adce",
+  "data/processed/fixed_220_overlap_30.jsonl": "e295923a4ba655dc81b39d5d4392adad68b366da0c18607919ab8be8be056701",
+  "data/processed/fixed_150.jsonl": "63ba41484e3bf937c53cad0a2e52079c71b527fd7884fa7dd6c0f3858158b43b",
+  "data/chroma/chroma.sqlite3": "4e76c0d297b60ce6d66d4919de6da223803ae079da91c4cb73880ce2c451faa6",
+  "data/chroma/c9dc35fb-3bd7-4ec7-911a-bdd023153d3b/data_level0.bin": "ec497c3d4ed856a8213e2e2735c920cda3394c0eab1ff5fff6ac589d020fe88f",
+  "data/chroma/c9dc35fb-3bd7-4ec7-911a-bdd023153d3b/length.bin": "7a12e561363385e9dfeeab326368731c030ed4b374e7f5897ac819159d2884c5",
+  "data/chroma/c9dc35fb-3bd7-4ec7-911a-bdd023153d3b/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/chroma/c9dc35fb-3bd7-4ec7-911a-bdd023153d3b/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150",
+  "data/chroma/7dc05454-8efc-4f4f-926d-88502d0bf5ca/data_level0.bin": "e0833b435e315bf4fb88b7beb213ebc84955655cd7f5b960d2ee64df51d44973",
+  "data/chroma/7dc05454-8efc-4f4f-926d-88502d0bf5ca/length.bin": "7a12e561363385e9dfeeab326368731c030ed4b374e7f5897ac819159d2884c5",
+  "data/chroma/7dc05454-8efc-4f4f-926d-88502d0bf5ca/link_lists.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data/chroma/7dc05454-8efc-4f4f-926d-88502d0bf5ca/header.bin": "a0e81c3b22454233bc12d0762f06dcca48261a75231cf87c79b75e69a6c00150"
+}

@@ -20,6 +20,8 @@ class Strategy:
 
 
 STRATEGIES = (Strategy("fixed_150", 150, 0), Strategy("fixed_220_overlap_30", 220, 30))
+EXTRA_STRATEGIES = (Strategy("fixed_150_overlap_30", 150, 30), Strategy("fixed_220", 220, 0))
+EXPERIMENT_STRATEGIES = (STRATEGIES[0], EXTRA_STRATEGIES[0], EXTRA_STRATEGIES[1], STRATEGIES[1])
 
 
 def load_tokenizer(revision: str, cache_dir: str | None = None, offline: bool = False) -> Any:

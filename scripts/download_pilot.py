@@ -57,6 +57,8 @@ def main():
             if not content.startswith(b"%PDF-"):
                 raise ValueError("Response is not a PDF (HTML/access denial will not be saved)")
             digest = hashlib.sha256(content).hexdigest()
+            if row.get("sha256") and digest != row["sha256"]:
+                raise ValueError("Downloaded PDF checksum differs from the pinned catalog; refusing to replace the dataset snapshot")
             if digest in seen:
                 raise ValueError("Duplicate PDF checksum")
             with pymupdf.open(stream=content, filetype="pdf") as doc:

@@ -1,4 +1,4 @@
-# CS5481 RAG: Member A, Phases 1 and 2
+# CS5481 RAG: Member A, Phases 1, 2, 2.5 and 2.6
 
 A small Python pipeline for PDF ingestion, page-preserving token chunking, normalized MiniLM embeddings, and persistent Chroma storage. The initial local checkout had no files, commits, or GitHub remote; this implementation starts the project here. A five-document official-source pilot has been downloaded and processed locally; PDFs and generated stores remain ignored by Git. See [dataset catalog](docs/dataset_catalog.md) and [quality report](docs/data_quality_report.md). The attached course brief is project context, not part of the knowledge-base corpus.
 
@@ -22,6 +22,26 @@ python -c 'from rag_ingest.chunking import load_tokenizer; from rag_ingest.cli i
 ```
 
 The tokenizer is `sentence-transformers/all-MiniLM-L6-v2` at immutable revision `c9745ed1d9f207416be6d2e6f8de32d1f16199bf`. Absence of PyTorch may produce a Transformers notice; Phase 1 uses only the tokenizer.
+
+## First team checkout: reproduce the existing five-document pilot
+
+Git does not include the PDFs, processed JSONL, databases, environments or model cache. On a new checkout, run these commands **in this order** from the repository root. Acquisition uses only the existing five catalog entries, with pinned SHA-256 checks; it does not expand the dataset. Network access is needed for dependencies, the five official PDFs and initial model preparation. If an official file changes or access is denied, stop and inspect the source rather than changing the pinned checksum.
+
+```bash
+python3.11 -m venv .venv
+.venv/bin/python -m pip install -r requirements-phase2-lock.txt
+.venv/bin/python -m pip install --no-build-isolation --no-deps .
+.venv/bin/python scripts/download_pilot.py
+.venv/bin/rag-store --prepare-model --allow-download --cache-dir .cache/huggingface/hub
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-ingest --manifest data/sources.csv --pdf-dir data/raw --output-dir data/processed --cache-dir .cache/huggingface/hub --offline
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-store --input data/processed/fixed_150.jsonl data/processed/fixed_220_overlap_30.jsonl --db-dir data/chroma --cache-dir .cache/huggingface/hub --batch-size 32
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-benchmark --output-dir data/experiments/phase26_reproduction --catalog data/catalog/temporal_metadata.json --cache-dir .cache/huggingface/hub --batch-size 32
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 RAG_TEST_REAL_MODEL=1 .venv/bin/python -m pytest -q
+```
+
+Use a new benchmark output directory if it already exists. Baseline expected counts are 753 and 588; enhanced counts are 749, 874, 534 and 584 for 150/0, 150/30, 220/0 and 220/30. Compare the benchmark's input checksums/configuration and structural counts; timings and file allocation need not match. The lock was validated on Python 3.11/macOS arm64; other platforms have not been validated. The alternative dependency-resolution command is documented below.
+
+After this sequence, use `data/chroma` for the original pilot or `data/experiments/phase26_reproduction/<baseline|enhanced>/chroma` for the controlled experiment. Member B's access example uses the latter path. The original local measurement directory `phase26_run4` is not shipped through Git.
 
 ## Register actual PDFs
 
@@ -245,3 +265,23 @@ API references: [SentenceTransformer](https://sbert.net/docs/package_reference/s
 ## Phase 2.5 pilot
 
 The pilot is capped at five documents. Use `.venv/bin/python scripts/download_pilot.py` to explicitly acquire/reverify the catalogued sources and `.venv/bin/python scripts/audit_pilot.py` after running the existing ingestion/storage CLIs to regenerate the quality and smoke records. The audit downloads nothing and does not write vector records. See the linked catalog and quality report for provenance, limitations, measured results, and exact reproduction commands. Do not expand the dataset without a new user request.
+
+## Phase 2.6 quality and controlled benchmarking
+
+The default ingestion/storage behavior and pilot database are preserved. Optional modules add conservative margin cleaning, diagnostic quality flags, four size/overlap combinations, and a separate temporal catalog. No dataset expansion or retrieval evaluation is included.
+
+After installing the existing Phase 2 environment, reinstall the project to register the new CLI:
+
+```bash
+.venv/bin/python -m pip install --no-build-isolation --no-deps .
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 .venv/bin/rag-benchmark --output-dir data/experiments/phase26_reproduction --catalog data/catalog/temporal_metadata.json --cache-dir .cache/huggingface/hub --batch-size 32
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 RAG_TEST_REAL_MODEL=1 .venv/bin/python -m pytest -q
+```
+
+Choose a new output directory each time. The benchmark checks PDF checksums, archives the original two JSONLs, recreates byte-identical baseline outputs, and creates baseline/enhanced databases with all four strategies in separate directories. Each collection is ingested twice and every record's identity, text, citation/temporal metadata, vector dimension/norm and repeat snapshot is verified. It never writes `data/raw`, `data/processed`, or `data/chroma`. It emits `benchmark.json`, `benchmark.md`, page/chunk JSONL, contexts, and full per-page cleaning audits.
+
+The two new strategy names are `fixed_150_overlap_30` and `fixed_220`. They are accepted by `load_chunks` and `rag-store`; the original defaults and filenames remain unchanged. The benchmark is the optional CLI for producing all four configurations. Query-time algorithms remain Member B's responsibility.
+
+The CSV and Chunk schemas are unchanged. Use `load_temporal_catalog` for a sidecar join on document_id, or `rag-store --catalog data/catalog/temporal_metadata.json --dataset-version <version> ...` to include scalar temporal fields in a **separate** database. The benchmark records stronger context automatically; avoid writing enhanced chunks into baseline collections. Known-status assertions require official evidence, and unknown status is not treated as current.
+
+See [quality report](docs/data_quality_report.md), [chunking design](docs/chunking_experiment.md), [temporal schema](docs/temporal_metadata.md), [benchmark](docs/benchmark_phase26.md), and [Member B handoff](docs/member_b_handoff.md). The Phase 2.5 report is preserved in `docs/data_quality_report_phase25.md`.

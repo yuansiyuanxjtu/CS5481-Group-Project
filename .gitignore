@@ -11,3 +11,36 @@ data/processed/*
 build/
 dist/
 data/chroma/
+data/experiments/
+
+# Local secrets and credentials; templates can be reviewed and committed.
+.env
+.env.*
+!.env.example
+!.env.template
+.aws/
+.ssh/
+credentials.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Generated database/model files even when a custom CLI output path is used.
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.db-wal
+*.db-shm
+*.safetensors
+*.pt
+*.ckpt
+.DS_Store
+*.bin
+*.npy
+*.npz

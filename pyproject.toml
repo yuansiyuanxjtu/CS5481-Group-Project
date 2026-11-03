@@ -16,6 +16,7 @@ phase2 = ["sentence-transformers==5.1.2", "chromadb==1.3.5"]
 [project.scripts]
 rag-ingest = "rag_ingest.cli:main"
 rag-store = "rag_ingest.store_cli:main"
+rag-benchmark = "rag_ingest.benchmark:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
