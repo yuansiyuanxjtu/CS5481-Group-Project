@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-06",
+  "status": "B_accepts_complete40_first_run_technical_and_semantic_review_finished",
+  "return_files_verified": 304,
+  "formal_calls": 69,
+  "selection_calls": 40,
+  "generation_calls": 29,
+  "stage_events": 349,
+  "first_checkpoints": 40,
+  "B_accepted_counts": {
+    "core_correct": 27,
+    "all_claims_supported": 25,
+    "refusal_success": 10
+  },
+  "baseline_counts": {
+    "core_correct": 27,
+    "all_claims_supported": 24,
+    "refusal_success": 7
+  },
+  "usage": {
+    "prompt_tokens": 399433,
+    "completion_tokens": 5894,
+    "total_tokens": 405327,
+    "prompt_cache_hit_tokens": 128249,
+    "prompt_cache_miss_tokens": 271184
+  },
+  "run_sha256": "0149c7ea94d48c1742124459710c7b65bdc190da4e8b99a7a85545d03bee16b1",
+  "new_B_API_calls": 0,
+  "user_human_QA_verification_claimed": false,
+  "historical_answers_rewritten": false,
+  "default_upgrade_authorized": false,
+  "new_model_experiments_authorized": false,
+  "authorized_trial_completed_once": true,
+  "unused_allowance_not_for_resampling": true,
+  "next_action": "Freeze results and report; keep candidate experimental. Further improvements start with offline retrieval/evidence-completeness diagnosis, not retries."
+}

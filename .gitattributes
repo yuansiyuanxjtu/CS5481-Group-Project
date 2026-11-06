@@ -1,0 +1,4 @@
+# Frozen experiment manifests hash UTF-8 file bytes across Windows and POSIX.
+.gitattributes text eol=lf
+experiments/** text eol=lf
+docs/experiments/** text eol=lf

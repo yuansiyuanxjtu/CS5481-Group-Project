@@ -1,0 +1,369 @@
+{
+  "scope": "Evaluator-only offline diagnosis; no retrieval/model changes",
+  "model_API_calls": 0,
+  "local_embedding_or_ANN_queries": 0,
+  "Chroma_API_used": false,
+  "SQLite_access": "mode=ro&immutable=1 + query_only; no WAL present; hashes unchanged",
+  "source_hashes": {
+    "pages.json": "5430940ab55ac195e29de4ceb719e5570f7ea9a3e3b1f693382f6c5dd357be24",
+    "fixed_150_overlap_30.jsonl": "536964c0a8c6ed7e8344abb10d1dc9c7b9259252b14016294effeee39e386f0b",
+    "collection_context.json": "dae1affec5c90a2bb44403daae08ee80a93097437b822967e881e2b4d1cf2c9a",
+    "chroma.sqlite3": "d1567dcd5cec4f8ba332d69715b2f6998d6b26a4f65b73e8480a31d074410952",
+    "budget_retrieval.py": "e656c2f9b5e02a54221a3f59491b4f19a80b013f7dee9b6738b67f522e13fb6b",
+    "boundary_retrieval.py": "fadfcccda0bde16afee2a03d6bf88bd1b09c618a89ba7383d6cb9bee6c5b712e"
+  },
+  "all320_saved_evidence_texts_match_local150_30": true,
+  "reference_facts": 6,
+  "complete_in_saved_eight": 1,
+  "facts": [
+    {
+      "id": "EXP28",
+      "document_id": "fsb_20241114_ai_stability",
+      "reference_source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+      "reference_physical_page": 6,
+      "reference_excerpt_evaluator_only": "Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": false,
+      "current_eight_matching_chunks": [],
+      "current_eight_reference_page_fragments": [],
+      "available_source_chunks": [
+        {
+          "chunk_id": "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "physical_page": 6,
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "c7aec0de0796e0b72563f66d5788e1ed7218cf585d2a0c9f773319d0ab5b6092"
+            }
+          ],
+          "chunk_text": "And from a longer-term perspective, AI uptake could drive changes in market structure, macroeconomic conditions, and energy use that, under certain circumstances, could have implications for financial markets and institutions. While existing financial policy frameworks address many of the vulnerabilities associated with use of AI by FIs, more work may be needed to ensure that these frameworks are sufficiently comprehensive. To this end, the FSB, standard setting bodies (SSBs) and national authorities may wish to: ■ Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications. ■ Assess whether current regulatory and supervisory frameworks adequately address the vulnerabilities identified in this report, both domestically and internationally"
+        },
+        {
+          "chunk_id": "fsb_20241114_ai_stability_p33_c5_fixed_150_overlap_30",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "physical_page": 33,
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "is_expected_reference_page": false,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "fsb_20241114_ai_stability_p33_c5_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "057d466d218075b1032162b737e88b03c5fe1b1f98f9fe8e3ec43245eb8779ae"
+            }
+          ],
+          "chunk_text": "of the findings of this report and to address potential financial stability risks from AI adoption, the FSB, SSBs and national authorities may wish to: ■ Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications. For example, authorities could consider leveraging periodic and ad-hoc surveys on AI adoption and use cases, reporting from regulated entities, and public disclosures. It may 128 See OECD (2024), Regulatory Approaches to Artificial Intelligence in Finance, October, based on a survey of 49 jurisdictions. 129 For example, the US Executive Order on AI articulates that AI must be safe and secure and requires that AI systems are compliant with applicable Federal laws and policies"
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    },
+    {
+      "id": "EXP28",
+      "document_id": "bis_20241212_ai_regulation",
+      "reference_source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+      "reference_physical_page": 34,
+      "reference_excerpt_evaluator_only": "The presence of various definitions of AI across jurisdictions is a significant impediment to acquiring these data.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": false,
+      "current_eight_matching_chunks": [],
+      "current_eight_reference_page_fragments": [],
+      "available_source_chunks": [
+        {
+          "chunk_id": "bis_20241212_ai_regulation_p34_c3_fixed_150_overlap_30",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "physical_page": 34,
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "bis_20241212_ai_regulation_p34_c3_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "c974144ccaf3bc4495b6091cadaff627717787587215a3274ce14edd050fd3b7"
+            }
+          ],
+          "chunk_text": "from AI as the technology evolves. Collaboration, for example, could be used to have a better understanding of AI use cases in the financial sector. This would help identify the specific areas in the financial sector where there may be heightened risks. At the moment, data on AI use cases in finance are anecdotal at best. The presence of various definitions of AI across jurisdictions is a significant impediment to acquiring these data. Hence, international alignment of the definition is an obvious first step, while recognising that any agreed definition may have to be adjusted as the technology evolves. An agreed definition will facilitate the identification of risks and provide an idea of where they can be found."
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    },
+    {
+      "id": "EXP29",
+      "document_id": "hkma_20261015_ai_guidance",
+      "reference_source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+      "reference_physical_page": 6,
+      "reference_excerpt_evaluator_only": "controls to minimise the risk exposure of personal data, such as by masking or using pseudonymous identifiers.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": true,
+      "current_eight_matching_chunks": [
+        "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30"
+      ],
+      "current_eight_reference_page_fragments": [
+        {
+          "id": 2,
+          "chunk_id": "hkma_20261015_ai_guidance_p6_c2_fixed_150_overlap_30",
+          "text_tail": "compliance with the Personal Data (Privacy) Ordinance and other applicable requirements. Institutions should also establish contractual safeguards to prevent A.I. service providers from re-using customers’ personal data or the institution’s"
+        },
+        {
+          "id": 4,
+          "chunk_id": "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+          "text_tail": " service providers to deliver an A.I. use case, the institution remains responsible for all A.I.- generated outcomes, and the overview robustness of the arrangement, including implications for the AI’s operational resilience. Accordingly, A"
+        }
+      ],
+      "available_source_chunks": [
+        {
+          "chunk_id": "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "physical_page": 6,
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": true,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "82c74792fed2bbffb71023c82e2fcd3cbb1081c26e9eb0e6ec213e5cd154268e"
+            }
+          ],
+          "chunk_text": "requirements. Institutions should also establish contractual safeguards to prevent A.I. service providers from re-using customers’ personal data or the institution’s other confidential information for model training or improvements unless specifically authorised by the institution and permitted under applicable requirements. As far as possible, an AI should also implement controls to minimise the risk exposure of personal data, such as by masking or using pseudonymous identifiers. • Third-party risks: Where an AI relies on external A.I. service providers to deliver an A.I. use case, the institution remains responsible for all A.I.- generated outcomes, and the overview robustness of the arrangement, including implications for the AI’s operational resilience. Accordingly, A"
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    },
+    {
+      "id": "EXP29",
+      "document_id": "bis_20241212_ai_regulation",
+      "reference_source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+      "reference_physical_page": 30,
+      "reference_excerpt_evaluator_only": "Financial institutions could also conduct due diligence on third parties to assess their data controls and ethical reviews on how the third party will use the data.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": false,
+      "current_eight_matching_chunks": [],
+      "current_eight_reference_page_fragments": [
+        {
+          "id": 7,
+          "chunk_id": "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+          "text_tail": "at set out requirements relating to data maintenance, access, rights, ownership and intellectual property, and security requirements. Financial institutions could also conduct due diligence on third parties to assess their data controls and"
+        }
+      ],
+      "available_source_chunks": [
+        {
+          "chunk_id": "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "physical_page": 30,
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "b8cae398dbe75e51cd54962886e03fed7fb549992fc2ddec2a01f3e73d63cf71"
+            }
+          ],
+          "chunk_text": ", rights, ownership and intellectual property, and security requirements. Financial institutions could also conduct due diligence on third parties to assess their data controls and ethical reviews on how the third party will use the data.89 62. Use of third-party AI services – and its relationship with cloud services – presents operational resilience issues. Use of third-party AI services (eg data processing and provision of AI model output) may be facilitated through APIs. Financial institutions are also increasingly moving their core business workloads – including credit and insurance underwriting – to the cloud.90 In addition, the large providers of AI services are also the major cloud service providers (CSPs), which deploy their AI services through their cloud infrastructure. All"
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    },
+    {
+      "id": "EXP30",
+      "document_id": "fsb_20261015_responsible_ai",
+      "reference_source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+      "reference_physical_page": 59,
+      "reference_excerpt_evaluator_only": "The log includes intermediate decisions and steps (not just final outcomes) that were escalated to human overseers and their outcome.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": false,
+      "current_eight_matching_chunks": [],
+      "current_eight_reference_page_fragments": [],
+      "available_source_chunks": [
+        {
+          "chunk_id": "fsb_20261015_responsible_ai_p59_c1_fixed_150_overlap_30",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "physical_page": 59,
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "fsb_20261015_responsible_ai_p59_c1_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "8e88bd879296a58c1f2b6f610e11609bd10848b261aa99ecbdc1211edbf908fc"
+            }
+          ],
+          "chunk_text": "at the control plane level to prevent access to sensitive assets, such as customer medical data, unless specifically allowed by a human overseeing the system of agents. The strict permissioning and access sought to prevent agent access to databases beyond approved ones. In particular, agents are given the minimum permissions necessary to accomplish their tasks. The appropriateness of these permissions is reviewed periodically and ahead of decisions to adjust agents’ autonomy. All agent actions during production are subject to automated, continuous monitoring with a log of activity and individual tasks. The log includes intermediate decisions and steps (not just final outcomes) that were escalated to human overseers and their outcome. Humans conducting oversight regularly spot- check key portions of agent logs to confirm there is traceability of actions – that"
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    },
+    {
+      "id": "EXP30",
+      "document_id": "hkma_20261015_ai_guidance",
+      "reference_source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+      "reference_physical_page": 5,
+      "reference_excerpt_evaluator_only": "Where applicable, including for generative A.I. use cases, records may also include prompts and evidence supporting the reasoning underlying material outputs.",
+      "present_in_processed_physical_page": true,
+      "present_in_local150_30_chunks": true,
+      "present_in_Chroma_SQLite_document_metadata": true,
+      "complete_excerpt_in_current_eight": false,
+      "current_eight_matching_chunks": [],
+      "current_eight_reference_page_fragments": [
+        {
+          "id": 2,
+          "chunk_id": "hkma_20261015_ai_guidance_p5_c4_fixed_150_overlap_30",
+          "text_tail": " including inappropriate bias and unfair outcomes. 7 Examples of records may include the sources, references, models and model versions used, as well as relevant model configurations and inputs. Where applicable, including for generative A."
+        },
+        {
+          "id": 4,
+          "chunk_id": "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+          "text_tail": "changes made over the course of implementation. Where an A.I. use case involves the generation of higher-risk and/or material outputs, records 7 enabling auditing and outcome tracing should be maintained as far as practicable. These records"
+        }
+      ],
+      "available_source_chunks": [
+        {
+          "chunk_id": "hkma_20261015_ai_guidance_p5_c5_fixed_150_overlap_30",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "physical_page": 5,
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "is_expected_reference_page": true,
+          "in_current_eight": false,
+          "chroma_SQLite_metadata_records": [
+            {
+              "chunk_id": "hkma_20261015_ai_guidance_p5_c5_fixed_150_overlap_30",
+              "segment_scope": "METADATA",
+              "stored_text_sha256": "825ed08181013cda8581b782003b1d573bdf17fa984a3bfebdc871ed310ebb4b"
+            }
+          ],
+          "chunk_text": "include the sources, references, models and model versions used, as well as relevant model configurations and inputs. Where applicable, including for generative A.I. use cases, records may also include prompts and evidence supporting the reasoning underlying material outputs."
+        }
+      ],
+      "diagnostic_not_runtime_route": true
+    }
+  ],
+  "static_neighbor_rule_checks": [
+    {
+      "id": "EXP28",
+      "base5_from_saved_order": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p3_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30"
+      ],
+      "structurally_eligible_neighbors_from_original_base_first3": [
+        {
+          "seed_id": "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+          "neighbor": "bis_20241212_ai_regulation_p2_c2_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        }
+      ],
+      "source_neighbor8_first_neighbor_slot": [
+        {
+          "seed_id": "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+          "neighbor": "bis_20241212_ai_regulation_p2_c2_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        }
+      ],
+      "rule_source_sha256": "e656c2f9b5e02a54221a3f59491b4f19a80b013f7dee9b6738b67f522e13fb6b",
+      "not_reproduced": "query embeddings, ANN candidate ranks, per-source rerank score queues and old execution intermediate pools",
+      "inference_limit": "Explains static eligibility/budget only; not proof of where a target disappeared from a historical candidate queue."
+    },
+    {
+      "id": "EXP29",
+      "base5_from_saved_order": [
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30"
+      ],
+      "structurally_eligible_neighbors_from_original_base_first3": [
+        {
+          "seed_id": "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+          "neighbor": "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        },
+        {
+          "seed_id": "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+          "neighbor": "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": false
+        }
+      ],
+      "source_neighbor8_first_neighbor_slot": [
+        {
+          "seed_id": "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+          "neighbor": "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        }
+      ],
+      "rule_source_sha256": "e656c2f9b5e02a54221a3f59491b4f19a80b013f7dee9b6738b67f522e13fb6b",
+      "not_reproduced": "query embeddings, ANN candidate ranks, per-source rerank score queues and old execution intermediate pools",
+      "inference_limit": "Explains static eligibility/budget only; not proof of where a target disappeared from a historical candidate queue."
+    },
+    {
+      "id": "EXP30",
+      "base5_from_saved_order": [
+        "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p37_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c4_fixed_150_overlap_30"
+      ],
+      "structurally_eligible_neighbors_from_original_base_first3": [
+        {
+          "seed_id": "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+          "neighbor": "fsb_20261015_responsible_ai_p58_c2_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        },
+        {
+          "seed_id": "fsb_20261015_responsible_ai_p37_c3_fixed_150_overlap_30",
+          "neighbor": "fsb_20261015_responsible_ai_p37_c4_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": false
+        }
+      ],
+      "source_neighbor8_first_neighbor_slot": [
+        {
+          "seed_id": "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+          "neighbor": "fsb_20261015_responsible_ai_p58_c2_fixed_150_overlap_30",
+          "neighbor_in_saved_eight": true
+        }
+      ],
+      "rule_source_sha256": "e656c2f9b5e02a54221a3f59491b4f19a80b013f7dee9b6738b67f522e13fb6b",
+      "not_reproduced": "query embeddings, ANN candidate ranks, per-source rerank score queues and old execution intermediate pools",
+      "inference_limit": "Explains static eligibility/budget only; not proof of where a target disappeared from a historical candidate queue."
+    }
+  ],
+  "findings": {
+    "EXP28": "Both needed passages exist in local pages/chunks/Chroma SQL metadata, neither enters final8. FSB6 has a repeated passage at33, also missing. Ranking/content selection rather than missing local source text.",
+    "EXP29": "HKMA masking/pseudonym paragraph is present. BIS30 c1 is rank7 and ends at data controls and; c2 contains ethical reviews and is absent. Original neighbor expansion only considers base first3, so late source-expanded c1 never gains a next-chunk completion opportunity.",
+    "EXP30": "FSB59 case paragraph and HKMA5 c5 footnote continuation exist in storage, both absent. Current HKMA c4 ends early; its next c5 competes behind the first structural neighbor. FSB58 relevant-looking case prefix does not replace requested59 evidence."
+  },
+  "limits": [
+    "SQL document metadata presence does not prove HNSW vectors/ANN query quality.",
+    "Static rule analysis does not reconstruct original dense/source candidate pools or their numeric ranking.",
+    "Physical-page evidence is verified in locally processed pages; this turn did not visually inspect PDFs.",
+    "Oracle excerpt/page lookup is diagnosis only, not an automatic retrieval strategy or measurable retrieval improvement."
+  ],
+  "next_steps_not_implemented": [
+    "On independent development questions, test general content-focused ranking that reduces title/ToC/reference dominance.",
+    "Evaluate sentence/footnote completion for late-added source seeds, not just original top3; consider bidirectional/cross-page continuity with fixed budget.",
+    "Protect multi-source substantive evidence under same context budget and report all regression cases.",
+    "Treat plan flags as fallible; assess required-subfact coverage including conjunction tails, never equate structure validation with semantic support.",
+    "Separate a future generic per-claim quote-range candidate for EXP05/20, no ID/page hardcoding."
+  ]
+}

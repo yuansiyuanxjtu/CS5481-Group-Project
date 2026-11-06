@@ -1,5 +1,10 @@
 # CS5481 RAG: Member A, Phases 1, 2, 2.5 and 2.6
 
+The [frozen full40 evidence-plan experiment](experiments/generative40/README.md)
+contains the isolated retrieval/generation evaluation code, reproducible offline
+preflight, and [B-reviewed report](docs/experiments/generative40/report.md).
+It remains an experimental candidate; the default application is unchanged.
+
 Member C's grounded QA, Streamlit startup, configurable LLM provider, citation/refusal
 checks and answer evaluation are documented in [Member C handoff](docs/member_c_handoff.md).
 Use C's combined `requirements-app-lock.txt` for the application environment (Streamlit

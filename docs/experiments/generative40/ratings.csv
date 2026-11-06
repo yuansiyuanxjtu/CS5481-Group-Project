@@ -1,0 +1,41 @@
+﻿id,answerable,status,baseline_core,candidate_core,baseline_full,candidate_full,baseline_refusal,candidate_refusal,B_note
+EXP01,True,answered,True,True,True,True,not_applicable,not_applicable,应用性质与风险水平两项在正文及本条原句中齐全，保留2019历史语境。
+EXP02,True,answered,True,True,True,True,not_applicable,not_applicable,升级给负责人员并及时整改完整；附加数据治理框架原句也直接支持。
+EXP03,True,answered,True,True,True,True,not_applicable,not_applicable,设计阶段及与应用重要性相称的解释水平齐全，每条所附同页片段联合支持完整含义。
+EXP04,True,answered,True,True,True,True,not_applicable,not_applicable,适当保留期及使审计成为可能齐全，不虚构固定期限；设计阶段附加主张也有本条原文。
+EXP05,True,answered,True,True,True,False,not_applicable,not_applicable,live data变化原因、保持按预期工作、适当重验证例子三项核心完整。第一条另含on-going monitoring，但其自己的quote到periodic reviews结束，不能借第二条quote补该分句；核心保留，全主张支持不通过。
+EXP06,True,answered,True,True,True,True,not_applicable,not_applicable,owner权限、控制与监测有效性监督、及时升级整改三项齐全；指派owner及人工监督附加主张也有自己的原句。
+EXP07,True,answered,True,True,True,True,not_applicable,not_applicable,部署前和重大变更前、验收标准、可靠性/安全/公平/输出变化、代表性及压力条件均明确。
+EXP08,True,answered,True,True,False,True,not_applicable,not_applicable,AI测试/监测AI时的弱点/偏差、人工监督、交叉核查完整，未重复旧基线把可选安排升级为要求的附加断言。
+EXP09,True,answered,True,True,True,True,not_applicable,not_applicable,残余风险记录、批准机构、治理框架及部署/继续使用前时点完整，沿用题干对接受时点的表述，没有增加新的主体或时限。
+EXP10,True,answered,True,True,True,True,not_applicable,not_applicable,不满足可靠性或安全标准时扣留输出、转审、限制触发行动三种处置和条件齐全。
+EXP11,True,answered,True,True,True,True,not_applicable,not_applicable,市场结构、宏观条件、能源使用齐全，并保留特定情形及可能性限定。
+EXP12,True,answered,True,True,True,True,not_applicable,not_applicable,常规自动化、欺诈识别、历史数据预测三项完整；LLM/GenAI之前的语境也有原句。
+EXP13,True,answered,True,True,True,True,not_applicable,not_applicable,59%及较2022增加五个百分点在正文和引文中齐全；沿用已接受的题干调查语境，未临时改变历史口径。
+EXP14,True,answered,True,True,True,True,not_applicable,not_applicable,提取大量检查文件相关段落、总结和起草检查报告齐全，同一完整原句支持。
+EXP15,True,answered,True,True,True,True,not_applicable,not_applicable,大脑结构/功能启发分层、复杂模式提高预测准确性齐全，词汇表与Box1各自支持。
+EXP16,True,answered,True,True,True,True,not_applicable,not_applicable,结构化初评、关注点及支持证据、不批准/拒绝投资、风险经理最终责任全部写出并有对应原句。
+EXP17,True,answered,True,True,True,True,not_applicable,not_applicable,银行欺诈分析团队审查批准全部新规则、实施前时点明确；无系统绝不自主实施等额外排他断言。
+EXP18,True,answered,True,True,True,True,not_applicable,not_applicable,定期论坛、标准沟通、一致评估监测报告、反馈调整治理风险框架四项齐全，may include语气保留；附加人员清单也有原文。
+EXP19,True,answered,True,True,True,True,not_applicable,not_applicable,记录人工推翻、介入模式分析、据此改进系统和监督流程齐全；附加反馈机制主张保留技术可行性限定并引用其前置主语。
+EXP20,True,answered,True,True,False,False,not_applicable,not_applicable,分包活动数量/类型和提供商依赖程度都在正文，核心通过。第一条目的短语不在该条quote中，不能借第二条补分，保留已确认quote_scope_gap。完整40题基线的核心原本通过，不借12题v2失分夸大改善。
+EXP21,True,answered,True,True,True,True,not_applicable,not_applicable,模型风险、数据风险及各自可解释性/适用性、隐私/安全/偏差例子齐全，每条所附引文支持。
+EXP22,True,answered,True,True,True,True,not_applicable,not_applicable,潜在权衡、更多输入/参数及复杂性解释齐全，分别由对应原文片段支持。
+EXP23,True,answered,True,True,True,True,not_applicable,not_applicable,QCB和若干美国州保险监管者完整，保留报告当时及所考察机构范围。本次独立运行的首次响应成功，不替换旧12题503记录。
+EXP24,True,answered,True,True,True,True,not_applicable,not_applicable,整个承保流程、避免偏差输入、尊重隐私法律、交易前披露全部齐全，纽约监管背景附加主张也有自己的原文。
+EXP25,True,answered,True,True,True,True,not_applicable,not_applicable,维护、访问、权利、所有权/知识产权及安全要求齐全；This承接题干第三方共享数据语境，沿用既有代词/上下文口径。
+EXP26,True,answered,True,True,True,True,not_applicable,not_applicable,HKMA持续关注威胁和防御、FSB三种OWASP/MITRE/NIST来源均明确，跨来源逐条引文支持。
+EXP27,True,answered,True,True,False,True,not_applicable,not_applicable,HKMA容量/专业能力、严重但合理情景及第三方失败完整；FSB第三方AI、高重要性或高风险、暂时下降及机构中断容忍条件完整，每条自己的引文覆盖。
+EXP28,True,insufficient_evidence,False,False,False,False,not_applicable,not_applicable,计划缺问导致整题拒答；可答基准题所需FSB第6页及BIS第34页正文不在固定八块，仍按核心/整答失败，不计预期拒答成功。
+EXP29,True,answered,False,False,False,False,not_applicable,not_applicable,masking/化名标识及data controls已答，但伦理审查未答。BIS块在data controls and处截断，计划误报全覆盖；MSA附加内容不能代替缺失必答事实，判部分正确。
+EXP30,True,insufficient_evidence,False,False,False,False,not_applicable,not_applicable,计划误报两问全覆盖，最终LLM独立拒答；固定八块缺所问FSB案例及HKMA脚注后半。可答题严格分仍0；部分信息减少、整题拒答协议遵循更保守，两者均披露，不称新事实错误。
+EXP-R01,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,未规定精确月数的问法不能由现八块给出；计划supported=false，整题拒答无事实主张。
+EXP-R02,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,固定采样百分比不在所供证据，整题拒答，无编造或只答一般性要求。
+EXP-R03,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,GPU阈值无所供证据，整题拒答，无凭硬件常识猜测。
+EXP-R04,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,商业模型名称与版本无所供证据，整题拒答，不以相关案例说明替代指定值。
+EXP-R05,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,统一人口群体差异阈值无所供证据，整题拒答，无编造百分数。
+EXP-R06,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,False,True,计划区分已知owner职责与缺失强制职称第二问，整题拒答，未只回答已知一半。
+EXP-R07,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,False,True,计划区分初评输出与缺失内部组合编号，整题拒答，无猜测编号。
+EXP-R08,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,False,True,计划区分已知调查比例与缺失全部响应名单，整题拒答，无部分名单冒充完整。
+EXP-R09,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,本地建库电脑CPU型号不在所供出版物证据中，整题拒答。
+EXP-R10,False,insufficient_evidence,not_applicable,not_applicable,not_applicable,not_applicable,True,True,指定日图书馆闭馆时间不在所供文库证据中，整题拒答，没有实时查询或猜测。

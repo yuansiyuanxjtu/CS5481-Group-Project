@@ -1,0 +1,779 @@
+{
+  "evaluator_only_never_sent_to_models": true,
+  "rows": [
+    {
+      "id": "EXP01",
+      "question": "Which two factors did the HKMA's November 2019 letter say should determine how proportionately banks apply its AI principles?",
+      "reference_answer": "The nature of their AI applications and the level of risk involved.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 1,
+          "page_end": 1,
+          "locator": "Opening letter, proportional application",
+          "excerpt": "Banks may apply the following principles in a proportionate manner that reflects the nature of their AI applications and the level of risks involved."
+        }
+      ]
+    },
+    {
+      "id": "EXP02",
+      "question": "What should a bank do when it identifies an AI data-quality problem under the HKMA's 2019 principles?",
+      "reference_answer": "Escalate it to the responsible parties for timely rectification.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Principle 4, final sentence",
+          "excerpt": "Data quality issues identified should be escalated to the responsible parties for rectification in a timely manner."
+        }
+      ]
+    },
+    {
+      "id": "EXP03",
+      "question": "Under the 2019 HKMA letter, at what stage should a bank build in explainability, and what should determine its level?",
+      "reference_answer": "During design, with a level of explainability appropriate to the materiality of the application.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Principle 3, explainability by design",
+          "excerpt": "Banks should implement adequate measures during the design phase to ensure a level of explainability which is appropriate and commensurate with the materiality of their AI applications."
+        }
+      ]
+    },
+    {
+      "id": "EXP04",
+      "question": "How does the 2019 HKMA letter describe the retention period for AI audit logs and documentation?",
+      "reference_answer": "Keep them for an appropriate period so that auditing remains possible.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Principle 6, retention",
+          "excerpt": "These audit logs and documentation should be retained for an appropriate period of time to ensure auditing is possible."
+        }
+      ]
+    },
+    {
+      "id": "EXP05",
+      "question": "Why does the HKMA's 2019 letter call for monitoring after deployment, and what kind of periodic review does it give as an example?",
+      "reference_answer": "Live data may change model behaviour after deployment. Periodic review can include re-validating the model where appropriate, alongside ongoing monitoring to check that it performs as intended.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Principle 9, monitoring and maintenance",
+          "excerpt": "Since AI applications can learn from live data and their model behaviour may hence change after deployment, banks should conduct periodic reviews (e.g. re-validation of the AI model where appropriate) and on-going monitoring to ensure that the applications continue to perform as intended."
+        }
+      ]
+    },
+    {
+      "id": "EXP06",
+      "question": "What responsibilities does the HKMA's 2026 guidance assign to the owner of a deployed AI use case?",
+      "reference_answer": "Define the system's authority, oversee the effectiveness of controls and monitoring, and ensure issues are promptly escalated and remediated.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Expectation 2, use-case ownership",
+          "excerpt": "The assigned owners will be responsible for defining each system’s authority, overseeing the effectiveness of controls and monitoring, and ensuring prompt escalation and remediation of issues encountered."
+        }
+      ]
+    },
+    {
+      "id": "EXP07",
+      "question": "When does HKMA's 2026 resilience guidance call for end-to-end testing, and which performance dimensions does it give as examples for the review?",
+      "reference_answer": "Before deployment and before material system changes. Review against defined acceptance criteria, including reliability, security, fairness and output variability under representative and stressed conditions.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Expectation 4, testing, review and validation",
+          "excerpt": "An AI should conduct end-to-end testing and reviews of an A.I. use case prior to deployment and before material changes to A.I. systems. The outcome should be reviewed against defined acceptance criteria, and generally cover key performance metrics such as reliability, security, fairness and output variability under representative and stressed conditions."
+        }
+      ]
+    },
+    {
+      "id": "EXP08",
+      "question": "What safeguards does HKMA's 2026 guidance call for when AI is used to test or monitor another AI system?",
+      "reference_answer": "Account for potential weaknesses and biases of the systems, with appropriate human oversight and corroborating checks.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Expectation 4, ongoing monitoring",
+          "excerpt": "At the same time, for A.I. systems that are used to test or monitor other A.I. systems, or “A.I. versus A.I.”, institutions should cater for potential weaknesses or biases that may be exhibited by the A.I. systems involved. In line with Principle 2 above, appropriate human oversight and corroborating checks should be in place."
+        }
+      ]
+    },
+    {
+      "id": "EXP09",
+      "question": "Under HKMA's 2026 testing and validation expectation, who accepts residual risks and when must that happen?",
+      "reference_answer": "The approving authority accepts documented residual risks under the institution's governance framework before deployment or continued use.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Expectation 4, residual risks",
+          "excerpt": "Residual risks should be documented and accepted by the approving authority following an AI’s governance framework before deployment or continued use."
+        }
+      ]
+    },
+    {
+      "id": "EXP10",
+      "question": "Under HKMA's 2026 output-quality expectation, what actions should institutions define for outputs that fail reliability or safety standards?",
+      "reference_answer": "Define when outputs must be withheld, referred for review, or restricted from triggering actions.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 7,
+          "page_end": 7,
+          "locator": "Expectation 7, unreliable outputs",
+          "excerpt": "An AI should clearly define when outputs must be withheld, referred for review or restricted from triggering actions when reliability or safety standards are not met."
+        }
+      ]
+    },
+    {
+      "id": "EXP11",
+      "question": "What longer-term changes does the FSB's 2024 executive summary say AI uptake could drive beyond the immediate vulnerabilities it discusses?",
+      "reference_answer": "Changes in market structure, macroeconomic conditions, and energy use.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Executive summary, longer-term impacts",
+          "excerpt": "AI uptake could drive changes in market structure, macroeconomic conditions, and energy use"
+        }
+      ]
+    },
+    {
+      "id": "EXP12",
+      "question": "Before LLMs and generative AI, what three uses for earlier AI and machine-learning technologies does Box 1 of the FSB's 2024 report list?",
+      "reference_answer": "Automating routine tasks, detecting fraud, and making predictions from historical data.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 9,
+          "page_end": 9,
+          "locator": "Box 1, early uses of AI",
+          "excerpt": "These earlier technologies were primarily used for automating routine tasks, detecting fraud, and making predictions based on historical data."
+        }
+      ]
+    },
+    {
+      "id": "EXP13",
+      "question": "What share of surveyed supervisory authorities used SupTech in 2023, and how did it change from 2022 according to the FSB's 2024 report?",
+      "reference_answer": "59% in 2023, an increase of five percentage points from 2022.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 17,
+          "page_end": 17,
+          "locator": "Section 3.2, SupTech adoption",
+          "excerpt": "59% of authorities surveyed using various applications in 2023, a 5- percentage point increase from 2022."
+        }
+      ]
+    },
+    {
+      "id": "EXP14",
+      "question": "How does the FSB's 2024 report describe potential uses of NLP and generative AI in supervisory inspections?",
+      "reference_answer": "Extract relevant paragraphs from large inspection-document collections, and summarise or draft inspection reports for supervisors.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 17,
+          "page_end": 17,
+          "locator": "Section 3.2, supervisory inspections",
+          "excerpt": "Another area where NLP and GenAI are being tested and applied is for inspections: these methods can extract relevant paragraphs from large volumes of inspection documents and summarise and draft inspection reports for supervisors."
+        }
+      ]
+    },
+    {
+      "id": "EXP15",
+      "question": "How does the FSB's 2024 glossary describe the inspiration for deep learning's layers, and what benefit does Box 1 associate with learning complex patterns from large datasets?",
+      "reference_answer": "The layers are inspired by the structure and function of the brain. Box 1 links learning complex patterns from large datasets to improved prediction accuracy.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 37,
+          "page_end": 37,
+          "locator": "Glossary, deep learning",
+          "excerpt": "Deep learning: Deep learning is a form of machine learning that uses algorithms that work in ‘layers’ inspired by the structure and function of the brain."
+        },
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 9,
+          "page_end": 9,
+          "locator": "Box 1, deep learning and prediction accuracy",
+          "excerpt": "Deep learning, a further subset of ML, uses multi-layered neural networks to learn and extract complex patterns from large data sets, thereby significantly enhancing the accuracy of predictions."
+        }
+      ]
+    },
+    {
+      "id": "EXP16",
+      "question": "In the FSB's 2026 investment risk assessment case study, what does the AI produce, and who keeps final accountability for investment decisions?",
+      "reference_answer": "A structured initial risk assessment with concerns and supporting evidence. The tool neither approves nor rejects investments, and final accountability stays with the risk manager.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 13,
+          "page_end": 13,
+          "locator": "Investment risk assessment case study, output and accountability",
+          "excerpt": "It produces a structured initial risk assessment that highlights potential concerns and provides supporting evidence for the risk manager’s consideration. Its outputs are linked to the applicable rules and source documents, supporting transparency and effective oversight. The application does not approve or reject investments and final accountability remains with the risk manager."
+        }
+      ]
+    },
+    {
+      "id": "EXP17",
+      "question": "In the FSB's 2026 agentic fraud-detection case study, who approves the proposed rules and when?",
+      "reference_answer": "The bank's fraud analytics team reviews and approves all new rules before implementation.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 14,
+          "page_end": 14,
+          "locator": "Agentic fraud-detection case study, human approval",
+          "excerpt": "The process embeds human oversight to review and approve all new rules by the bank's fraud analytics team before implementation."
+        }
+      ]
+    },
+    {
+      "id": "EXP18",
+      "question": "What mechanisms does the FSB's 2026 report suggest for coordination across functions on AI risk?",
+      "reference_answer": "Regular forums, standardised communications, consistent methods for risk assessment, monitoring and reporting, and feedback loops that adapt governance and risk frameworks as risks evolve.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 28,
+          "page_end": 28,
+          "locator": "Organisation-wide governance, cross-functional coordination",
+          "excerpt": "coordination mechanisms may include regular fora; standardised communication channels; consistent methodologies for assessing, monitoring and reporting AI risks; and feedback loops that adapt governance and risk frameworks to evolving AI risks."
+        }
+      ]
+    },
+    {
+      "id": "EXP19",
+      "question": "In the FSB's 2026 human-oversight guidance, how can an institution use human overrides to improve an AI system and its oversight process?",
+      "reference_answer": "Track overrides, analyse patterns in interventions, and use those findings to refine both the system and the oversight process.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 54,
+          "page_end": 54,
+          "locator": "Meaningful human oversight, feedback mechanisms",
+          "excerpt": "including tracking when humans override AI recommendations, analysing patterns in these interventions and using this information to refine both the AI model or system and the oversight processes"
+        }
+      ]
+    },
+    {
+      "id": "EXP20",
+      "question": "How does the FSB's 2026 report say an institution can identify indirect concentration risk from an AI provider's subcontractors?",
+      "reference_answer": "Evaluate the volume and types of subcontracted or sub-outsourced activities and how much the provider relies on the subcontractors.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 67,
+          "page_end": 67,
+          "locator": "Third-party AI concentration, indirect dependencies",
+          "excerpt": "A financial institution may consider evaluating the volume and types of sub-contracted or sub-outsourced activities (i.e. where a third-party AI provider itself relies on external parties) and the degree to which the third-party AI provider relies on those subcontractors to further identify indirect concentrations risk."
+        }
+      ]
+    },
+    {
+      "id": "EXP21",
+      "question": "Which two existing risk categories does BIS FSI Insights No. 63 say AI may heighten, and what examples does it give for them?",
+      "reference_answer": "Model risk, for example when limited explainability makes model suitability hard to assess, and data-related risks such as privacy, security and bias.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 32,
+          "page_end": 32,
+          "locator": "Paragraph 68, existing risks heightened by AI",
+          "excerpt": "Admittedly, AI use may heighten some of these risks, such as model risk (eg lack of explainability makes it challenging to assess appropriateness of AI models) and data-related risks (eg privacy, security, bias)."
+        }
+      ]
+    },
+    {
+      "id": "EXP22",
+      "question": "Why does BIS FSI Insights No. 63 describe a potential trade-off between model precision and transparency?",
+      "reference_answer": "More precision can require more inputs or parameters and a more complex model, making transparency and explainability harder.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 18,
+          "page_end": 18,
+          "locator": "Paragraph 26, trade-offs",
+          "excerpt": "there might be a trade-off between reliability and transparency (including the concept of explainability), as the precision of an AI system may require more data inputs or parameters, such as in the case of gen AI, thus making the model more complex."
+        }
+      ]
+    },
+    {
+      "id": "EXP23",
+      "question": "Among the authorities examined in BIS FSI Insights No. 63, which had issued regulations specifically addressing financial institutions' use of AI at the time of the paper?",
+      "reference_answer": "The Qatar Central Bank and several US state insurance regulators.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 24,
+          "page_end": 24,
+          "locator": "Paragraph 43, authorities examined",
+          "excerpt": "only the Qatar Central Bank (QCB) and several US state insurance regulators70 have issued regulations specifically addressing AI use by financial institutions."
+        }
+      ]
+    },
+    {
+      "id": "EXP24",
+      "question": "How far does the scope of fair treatment in AI-based insurance underwriting extend in the New York example discussed by BIS FSI Insights No. 63?",
+      "reference_answer": "It covers the entire underwriting process, from avoiding biased inputs and respecting data privacy to proper customer disclosure before concluding a transaction.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 27,
+          "page_end": 27,
+          "locator": "Paragraph 50, fair treatment in insurance underwriting",
+          "excerpt": "The overarching fair treatment rules apply to the entire insurance underwriting process, from ensuring the data inputs are not biased and that data privacy laws are respected, to providing proper customer disclosure before concluding a transaction."
+        }
+      ]
+    },
+    {
+      "id": "EXP25",
+      "question": "What data-related provisions does BIS FSI Insights No. 63 say a master service agreement can cover when an institution shares data with an AI provider?",
+      "reference_answer": "Data maintenance, access, rights, ownership and intellectual property, and security requirements.",
+      "answerable": true,
+      "question_type": "single_source",
+      "evidence": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 30,
+          "page_end": 30,
+          "locator": "Paragraph 61, master service agreements",
+          "excerpt": "through master service agreements that set out requirements relating to data maintenance, access, rights, ownership and intellectual property, and security requirements."
+        }
+      ]
+    },
+    {
+      "id": "EXP26",
+      "question": "Compare two ways the HKMA's 2019 principles and the FSB's 2026 sound practices say institutions can keep up with AI-related cyber threats. What ongoing action does HKMA describe, and which three specialist sources does the FSB list?",
+      "reference_answer": "HKMA asks banks to stay abreast of emerging threats and defences. FSB lists OWASP Machine Learning Security Top 10, MITRE ATLAS and NIST AI 100-2 E2025 on adversarial machine learning.",
+      "answerable": true,
+      "question_type": "cross_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 4,
+          "page_end": 4,
+          "locator": "Principle 11, emerging security threats",
+          "excerpt": "They should also keep abreast of and remain vigilant to emerging security threats and the corresponding defence measures."
+        },
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 61,
+          "page_end": 61,
+          "locator": "AI cyber and ICT risks, specialist sources",
+          "excerpt": "OWASP Machine Learning (ML) Security Top 10: an up-to-date list of the top 10 security issues of ML systems.95 OWASP also publishes a top 10 list of security issues for agentic and LLM applications respectively.96 ■ MITRE ATLAS: a knowledge base of adversary tactics and techniques tailored to ML systems and covering the entire AI lifecycle.97 ■ NIST AI 100-2 E2025, Adversarial Machine Learning: a taxonomy and terminology of Attacks and Mitigation."
+        }
+      ]
+    },
+    {
+      "id": "EXP27",
+      "question": "What resources does the HKMA's 2026 guidance expect for credible fallback arrangements, and when does the FSB's 2026 report contemplate temporarily accepting diminished functionality during disruption?",
+      "reference_answer": "HKMA calls for sufficient capacity and expertise to handle severe but plausible scenarios, including third-party failures. For high-materiality or high-risk use cases using third-party AI, the FSB says business continuity planning may temporarily accept the risk of diminished functionality if it is within the financial institution's tolerance for disruption.",
+      "answerable": true,
+      "question_type": "cross_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Expectation 4, response and recovery",
+          "excerpt": "maintain credible fallback and recovery arrangements with sufficient capacity and expertise prepared to address different severe but plausible scenarios, including third-party failures"
+        },
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 67,
+          "page_end": 67,
+          "locator": "Business continuity, disruption tolerance",
+          "excerpt": "Financial institutions using third-party AI for high-materiality or high-risk use cases incorporate concentration risk considerations into their business continuity planning (which may include temporarily, risk-accepting diminished functionality if it falls within the financial institution’s tolerance for disruption) and exit strategies."
+        }
+      ]
+    },
+    {
+      "id": "EXP28",
+      "question": "How does the FSB's 2024 executive summary frame the information-gap problem, and what specific obstacle to acquiring AI-use data does BIS FSI Insights No. 63 identify?",
+      "reference_answer": "The FSB suggests addressing data and information gaps to monitor AI use and assess financial stability implications. BIS identifies varying AI definitions across jurisdictions as an obstacle to collecting such data.",
+      "answerable": true,
+      "question_type": "cross_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Executive summary, policy considerations",
+          "excerpt": "Consider ways to address data and information gaps in monitoring developments in AI use in the financial system and assessing their financial stability implications."
+        },
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 34,
+          "page_end": 34,
+          "locator": "Paragraph 72, monitoring and definitions",
+          "excerpt": "The presence of various definitions of AI across jurisdictions is a significant impediment to acquiring these data."
+        }
+      ]
+    },
+    {
+      "id": "EXP29",
+      "question": "Which two privacy-risk reduction techniques does the HKMA's 2026 guidance give for personal data, and what does BIS FSI Insights No. 63 suggest checking during due diligence on an AI provider that handles shared data?",
+      "reference_answer": "HKMA gives masking or using pseudonymous identifiers. BIS suggests assessing the provider's data controls and conducting ethical reviews of how the provider uses the data.",
+      "answerable": true,
+      "question_type": "cross_source",
+      "evidence": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 6,
+          "page_end": 6,
+          "locator": "Expectation 5, data governance",
+          "excerpt": "controls to minimise the risk exposure of personal data, such as by masking or using pseudonymous identifiers."
+        },
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 30,
+          "page_end": 30,
+          "locator": "Paragraph 61, provider due diligence",
+          "excerpt": "Financial institutions could also conduct due diligence on third parties to assess their data controls and ethical reviews on how the third party will use the data."
+        }
+      ]
+    },
+    {
+      "id": "EXP30",
+      "question": "In the FSB's 2026 multi-agent case example, what does the log record besides final outcomes, and which optional GenAI records does the HKMA's 2026 guidance give as examples for tracing material outputs?",
+      "reference_answer": "The FSB example records intermediate decisions and steps escalated to human overseers and their outcomes. HKMA gives prompts and evidence supporting the reasoning underlying material outputs.",
+      "answerable": true,
+      "question_type": "cross_source",
+      "evidence": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 59,
+          "page_end": 59,
+          "locator": "Multi-agent case study, agent activity logs",
+          "excerpt": "The log includes intermediate decisions and steps (not just final outcomes) that were escalated to human overseers and their outcome."
+        },
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 5,
+          "page_end": 5,
+          "locator": "Footnote 7, auditable GenAI records",
+          "excerpt": "Where applicable, including for generative A.I. use cases, records may also include prompts and evidence supporting the reasoning underlying material outputs."
+        }
+      ]
+    },
+    {
+      "id": "EXP-R01",
+      "question": "What exact minimum retention period, in months, did the HKMA's 2019 letter prescribe for AI audit logs?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "near_domain",
+      "missing_information": "The fixed number of months is absent. Principle 6 calls for an appropriate period that allows auditing.",
+      "nearest_context": [
+        {
+          "document_id": "hkma_20191101_ai_principles",
+          "source_file": "hkma_2019_11_01_high_level_ai_principles.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20191101-1-EN/20191101-1-EN.pdf",
+          "page_start": 3,
+          "page_end": 3,
+          "locator": "Principle 6, log retention",
+          "excerpt": "These audit logs and documentation should be retained for an appropriate period of time to ensure auditing is possible."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R02",
+      "question": "Under the HKMA's 2026 customer fairness expectation, what fixed percentage of AI outputs with customer consequences must be included in each sample review?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "near_domain",
+      "missing_information": "The guidance gives sample review as an example but supplies no fixed percentage for it.",
+      "nearest_context": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 8,
+          "page_end": 8,
+          "locator": "Expectation 9, monitoring and sample review",
+          "excerpt": "Where outputs may be used with actual consequences for customers, an AI should conduct regular monitoring, benchmark and assess the reasonableness of outputs (e.g. through sample review) and take mitigating action if anomalies are noted."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R03",
+      "question": "How many GPUs does the FSB's 2024 stability report set as the minimum threshold for classifying a provider as a systemic AI infrastructure concentration risk?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "near_domain",
+      "missing_information": "The fixed GPU count is absent. The report describes reliance on concentrated accelerated computing chip markets.",
+      "nearest_context": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 18,
+          "page_end": 18,
+          "locator": "Table 2, specialised hardware",
+          "excerpt": "AI application development by FIs and their AI service providers increasingly relies on a highly concentrated market for accelerated computing chips."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R04",
+      "question": "What commercial model name and version were used in the in-house agentic fraud-detection system described in the FSB's 2026 case study?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "near_domain",
+      "missing_information": "The case study does not identify a commercial model or version. It describes the development and deployment of the system at a bank.",
+      "nearest_context": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 14,
+          "page_end": 14,
+          "locator": "Agentic fraud detection case study",
+          "excerpt": "The system was built in-house by the bank’s data science and engineering teams in three months, running on a cloud-based data platform and core banking infrastructure to enable real-time data access at scale."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R05",
+      "question": "What maximum demographic disparity percentage does BIS FSI Insights No. 63 prescribe as a uniform threshold for fair AI insurance underwriting?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "near_domain",
+      "missing_information": "The requested uniform numeric threshold is absent. Paragraph 50 discusses fair treatment across the underwriting process.",
+      "nearest_context": [
+        {
+          "document_id": "bis_20241212_ai_regulation",
+          "source_file": "bis_fsi_2024_12_12_regulating_ai_insights63.pdf",
+          "source_url": "https://www.bis.org/publications/fsi-insight-63-regulating-ai-financial-sector-recent-developments-and-main-challenges.pdf",
+          "page_start": 27,
+          "page_end": 27,
+          "locator": "Paragraph 50, underwriting fairness",
+          "excerpt": "The overarching fair treatment rules apply to the entire insurance underwriting process, from ensuring the data inputs are not biased and that data privacy laws are respected, to providing proper customer disclosure before concluding a transaction."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R06",
+      "question": "What responsibilities does the HKMA's 2026 guidance assign to the owner of each deployed AI use case, and what mandatory job title must the owner hold?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "missing_part",
+      "missing_information": "The owner's duties are documented. A mandatory job title is not specified, so the whole question lacks sufficient evidence under the frozen prompt.",
+      "nearest_context": [
+        {
+          "document_id": "hkma_20261015_ai_guidance",
+          "source_file": "hkma_2026_10_15_responsible_ai_guidance.pdf",
+          "source_url": "https://brdr.hkma.gov.hk/eng/doc-ldg/docId/getPdf/20261015-2-EN/20261015-2-EN.pdf",
+          "page_start": 2,
+          "page_end": 2,
+          "locator": "Expectation 2, use-case ownership",
+          "excerpt": "The assigned owners will be responsible for defining each system’s authority, overseeing the effectiveness of controls and monitoring, and ensuring prompt escalation and remediation of issues encountered."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R07",
+      "question": "In the FSB's 2026 investment risk assessment case study, what output does the AI produce, and what is the internal portfolio identifier used in the first assessment?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "missing_part",
+      "missing_information": "The initial risk assessment is described. The internal portfolio identifier is absent from the case study.",
+      "nearest_context": [
+        {
+          "document_id": "fsb_20261015_responsible_ai",
+          "source_file": "fsb_2026_10_15_responsible_ai_final_report.pdf",
+          "source_url": "https://www.fsb.org/uploads/P151026-1.pdf",
+          "page_start": 13,
+          "page_end": 13,
+          "locator": "Investment risk assessment case study",
+          "excerpt": "It produces a structured initial risk assessment that highlights potential concerns and provides supporting evidence for the risk manager’s consideration."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R08",
+      "question": "What share of surveyed authorities used SupTech in 2023 according to the FSB's 2024 report, and can you list every authority that submitted a response to that survey?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "missing_part",
+      "missing_information": "The report states the percentage. It does not provide the full respondent-by-respondent list required by the second part.",
+      "nearest_context": [
+        {
+          "document_id": "fsb_20241114_ai_stability",
+          "source_file": "fsb_2024_11_14_ai_financial_stability.pdf",
+          "source_url": "https://www.fsb.org/uploads/P14112024.pdf",
+          "page_start": 17,
+          "page_end": 17,
+          "locator": "Section 3.2, SupTech adoption",
+          "excerpt": "59% of authorities surveyed using various applications in 2023, a 5- percentage point increase from 2022."
+        }
+      ],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R09",
+      "question": "What was the CPU model of the computer that built our group's local AI document index?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "outside_domain",
+      "missing_information": "The public PDF corpus does not contain our project's machine inventory or execution metadata.",
+      "nearest_context": [],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    },
+    {
+      "id": "EXP-R10",
+      "question": "What time does the City University of Hong Kong Library close on 7 November 2026?",
+      "reference_answer": "Insufficient evidence in the supplied corpus to answer the full question.",
+      "answerable": false,
+      "question_type": "outside_domain",
+      "missing_information": "The five frozen financial AI publications do not provide the closing time of the City University of Hong Kong Library on 7 November 2026.",
+      "nearest_context": [],
+      "checked_scope": "All five frozen publications. Nearest passages, when listed, do not supply the missing fact."
+    }
+  ]
+}
