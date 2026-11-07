@@ -1,8 +1,10 @@
 """Run from the repository root: .venv/bin/python -m streamlit run app.py"""
+import os
+
 import streamlit as st
 
 from rag_app.config import Settings
-from rag_app.service import create_service
+from rag_app.demo import create_demo_service
 
 st.set_page_config(page_title="Evidence QA | CS5481", page_icon="📚", layout="centered")
 st.title("Knowledge Base Q&A")
@@ -11,8 +13,8 @@ st.write("Ask a question in English. Check each cited passage and its physical P
 
 
 @st.cache_resource
-def service():
-    return create_service(Settings.from_env())
+def service(profile):
+    return create_demo_service(Settings.from_env(), profile)
 
 
 with st.form("question_form"):
@@ -31,7 +33,8 @@ if submitted:
                 if not cfg.api_key:
                     st.error("LLM is not configured. Add LLM_API_KEY to the local .env file and restart the app.")
                 else:
-                    st.session_state["qa_result"] = service().answer_question(question)
+                    profile = os.environ.get("RAG_DEMO_PROFILE", "baseline").strip()
+                    st.session_state["qa_result"] = service(profile).answer_question(question)
                     st.session_state["qa_question"] = question
             except Exception:
                 st.error("Application setup is incomplete. Check .env and reproduce the experiment data using README.")

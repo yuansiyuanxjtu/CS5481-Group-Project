@@ -42,6 +42,27 @@ quotations and original PDF links. Source cards label **physical PDF pages**, no
 page labels. Some PDF viewers ignore URL `#page=N`; the displayed physical page remains
 the authoritative locator. Verify links in the presentation browser before class.
 
+## Reviewed joint_pairs8 demo profile
+
+For the integrated demo, set `RAG_DEMO_PROFILE=joint_pairs8` in the local `.env`
+and restart Streamlit. The profile uses the enhanced Phase 2.6 `fixed_150_overlap_30`
+index, the cached MiniLM encoder and the reviewed direct DeepSeek `deepseek-flash`
+configuration. Point `RAG_EXPERIMENT_DIR` to a copy of the reproduced experiment
+directory. On Windows, use an ASCII path for that copy if native HNSW loading fails.
+The index and its temporal catalog must come from the same reproduction.
+
+This profile uses eight chunks and the frozen evidence planning and final-answer
+prompts. An answered submission can make two model requests, with up to 1,200
+output tokens and a 120-second timeout per request. An unsupported part produces
+a whole-question refusal after the first request. HTTP failures appear as service
+errors. Each submission starts a fresh plan, including when a question is asked again.
+The downloaded QA record totals reported usage across both successful stages.
+
+Use `RAG_DEMO_PROFILE=baseline` to launch the original one-stage profile. See the
+[B-reviewed full40 results and offline replay](../experiments/joint_pairs8/README.md).
+The integration tests use an injected HTTP transport for answers, citation links,
+refusals and provider failures. A live demo submission uses the configured provider.
+
 ## Configuration and provider replacement
 
 `.env` is ignored. `.env.example` contains no credentials. The final user-selected provider
@@ -63,7 +84,7 @@ valid only at the school gateway, not at the upstream vendor's endpoint.
 Set `LLM_JSON_MODE=false` only if the provider lacks JSON mode; output still must pass
 the same JSON schema and citation checks. Other API formats need a new `generate()` adapter.
 
-Cost bounds: one call per submitted question, no automatic retries, 1..10 hits,
+Baseline cost bounds: one call per submitted question, no automatic retries, 1..10 hits,
 40,000 characters total context, 128..4,096 output tokens (default 1,200), finite
 HTTP timeouts plus a cancellable total request deadline (example configuration: 60 seconds).
 The total deadline also bounds provider responses that keep sending whitespace/keepalive data.
