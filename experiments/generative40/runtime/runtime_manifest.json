@@ -1,0 +1,49 @@
+{
+  "files": [
+    {
+      "path": "controller80.py",
+      "sha256": "d806595889cdbdbcfa78fc444a7f5b81ce6a519673c3ab3fcf70e6bcc88042bc"
+    },
+    {
+      "path": "generation_prompt.txt",
+      "sha256": "337b7740f2f62c9260bc5ca00c2b1ac0784fa4d8fafc7edec049582d5f261403"
+    },
+    {
+      "path": "generation_protocol.json",
+      "sha256": "ff46c9f478f9373cc2f1bbfb6dc8f2d2d66a7f28b8aa58562834b5e0315647b8"
+    },
+    {
+      "path": "inventory40.json",
+      "sha256": "2c448d7497b355f5ab0e24c8dfb666edbb9287f7895fc7c467c99e14534d49f9"
+    },
+    {
+      "path": "method/coverage_contract.py",
+      "sha256": "7dc8952ca7f65e29d10118796677ce2377228a42bf1d12ae963d4709b28de3b2"
+    },
+    {
+      "path": "method/http_audit.py",
+      "sha256": "79e31f39dadeb615097deece9db4686c58cdb31583d9b508ad3e728d5d1d58aa"
+    },
+    {
+      "path": "method/planned_generation.py",
+      "sha256": "443be3d68b7159aebbb6707ad4ef17d836b2ea7fd60ffdad30148aa1ca668be3"
+    },
+    {
+      "path": "method/selection_adapter.py",
+      "sha256": "79cc6a1a13be48aa94f978f8cfcfd559ca71742479138224ae2501296829644f"
+    },
+    {
+      "path": "method/selection_prompt.txt",
+      "sha256": "c0f95edfdeb609079f4014f8d234f5ec1318718c6c50172dba0b9e4aedaf5408"
+    },
+    {
+      "path": "model_inputs40.json",
+      "sha256": "4af3179ead7442c64dc25cc5153d91942444d8f1e09bd537bb9b4e7a1a7e0039"
+    },
+    {
+      "path": "temporal_catalog.json",
+      "sha256": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612"
+    }
+  ],
+  "runtime_version": "canonical-root-bound-v2"
+}

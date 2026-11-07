@@ -126,7 +126,7 @@ def run_benchmark(manifest: Path, pdf_dir: Path, baseline_dir: Path, catalog: Pa
             rows = [asdict(c) for page in pages for c in chunk_page(page, tokenizer, strategy)]
             chunk_seconds = perf_counter() - started
             path = folder / f"{strategy.name}.jsonl"
-            path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8")
+            path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in rows), encoding="utf-8", newline="\n")
             if arm == "baseline" and strategy.name in {"fixed_150", "fixed_220_overlap_30"}:
                 if digest(path) != digest(archived / path.name):
                     raise ValueError("Recomputed baseline is not byte-identical to the preserved baseline")

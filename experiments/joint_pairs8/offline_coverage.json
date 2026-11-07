@@ -1,0 +1,83 @@
+{
+  "selected_for_regression": "joint_pairs8",
+  "accepted": "joint_pairs8",
+  "gate_passed": true,
+  "model_API_calls": 0,
+  "verified_frozen_closure8_contexts": 77,
+  "unchanged_source_files": 5,
+  "changed_formal_contexts": 4,
+  "changed_refusal_contexts": 1,
+  "metrics": {
+    "development": {
+      "closure8": {
+        "questions": 29,
+        "complete": 26,
+        "facts": 44,
+        "mean_chars": 5832,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      },
+      "joint_pairs8": {
+        "questions": 29,
+        "complete": 26,
+        "facts": 44,
+        "mean_chars": 5832,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      },
+      "joint_soft8": {
+        "questions": 29,
+        "complete": 26,
+        "facts": 44,
+        "mean_chars": 5832,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      }
+    },
+    "historical": {
+      "closure8": {
+        "questions": 8,
+        "complete": 4,
+        "facts": 9,
+        "mean_chars": 5762,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      },
+      "joint_pairs8": {
+        "questions": 8,
+        "complete": 4,
+        "facts": 9,
+        "mean_chars": 5762,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      }
+    },
+    "formal": {
+      "closure8": {
+        "questions": 30,
+        "complete": 28,
+        "facts": 33,
+        "mean_chars": 5827,
+        "gained": [],
+        "lost": [],
+        "lost_facts": []
+      },
+      "joint_pairs8": {
+        "questions": 30,
+        "complete": 29,
+        "facts": 35,
+        "mean_chars": 5830,
+        "gained": [
+          "EXP30"
+        ],
+        "lost": [],
+        "lost_facts": []
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "candidate": "joint_pairs8",
+  "code_sha256_lf": {
+    "experiments/joint_pairs8/candidate_entry.py": "ea52741d2755fad20f21439dd46fd709ee924d6acbe1555b206164bf4d50fcc3",
+    "experiments/joint_pairs8/joint_context.py": "69a0b0cc7f8207594133bfb2508476170a368b947dc520b35779f8062b8369ec",
+    "experiments/joint_pairs8/source_context.py": "0af796cc7a95f6878627f2148ddeaeea7d8a5e9abfa6bfcb3709489cd43aaa3c",
+    "experiments/joint_pairs8/evidence_completion.py": "08f3c999e4bbf2e2fe54d5ac4189e856b348c086f89a4a0203b2652dae4a7245",
+    "experiments/retrieval_candidates/all_question_retrieval.py": "ac1971009e08853486fa67d43409750bae5f53f0e2657f216e2db9c211abafe9",
+    "experiments/retrieval_candidates/boundary_retrieval.py": "fadfcccda0bde16afee2a03d6bf88bd1b09c618a89ba7383d6cb9bee6c5b712e",
+    "experiments/retrieval_candidates/budget_retrieval.py": "e656c2f9b5e02a54221a3f59491b4f19a80b013f7dee9b6738b67f522e13fb6b",
+    "experiments/retrieval_candidates/cross_source_pilot.py": "43ee77500522cc56b7f00d7da3e3f4a1951c9d112d6f840cf3a051c77899ab05",
+    "experiments/retrieval_candidates/passage_rerank.py": "39110fa2eb926b99f9ed3239a318142a88a05bf38d13909dd424e6d9ddd20311",
+    "experiments/retrieval_candidates/relation_retrieval.py": "5f12d80261095800a6032865219fddc852b6d10050c245a54c9f0b0690996d6d",
+    "experiments/retrieval_candidates/routed_retrieval.py": "67cf874499ae94b96d98f1825887460ac3784e1638fe6670599965eea763fe15"
+  },
+  "inputs_sha256_lf": {
+    "experiments/joint_pairs8/model_inputs40.json": "ecc4f8e3832c81638b41dae98c42a0636f1e345d8a175faff5cf6ee514d22ac1",
+    "experiments/joint_pairs8/generation_protocol.json": "2621c6a4eff6ed99bc52c920824d3055937ebaefcf78d77be752460ec94091d0",
+    "experiments/joint_pairs8/evidence_inventory40.json": "4507b363e55ac83be8daa7e56f60b5ba700b4ae257c880c27d65613dcdcbec26",
+    "experiments/generative40/runtime/model_inputs40.json": "4af3179ead7442c64dc25cc5153d91942444d8f1e09bd537bb9b4e7a1a7e0039",
+    "experiments/generative40/runtime/generation_prompt.txt": "337b7740f2f62c9260bc5ca00c2b1ac0784fa4d8fafc7edec049582d5f261403",
+    "experiments/generative40/runtime/temporal_catalog.json": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612",
+    "experiments/generative40/runtime/method/coverage_contract.py": "7dc8952ca7f65e29d10118796677ce2377228a42bf1d12ae963d4709b28de3b2",
+    "experiments/generative40/runtime/method/selection_adapter.py": "79cc6a1a13be48aa94f978f8cfcfd559ca71742479138224ae2501296829644f",
+    "experiments/generative40/runtime/method/selection_prompt.txt": "c0f95edfdeb609079f4014f8d234f5ec1318718c6c50172dba0b9e4aedaf5408"
+  }
+}

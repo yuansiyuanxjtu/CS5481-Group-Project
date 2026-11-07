@@ -1,0 +1,17 @@
+{
+  "approved": false,
+  "user_statement": null,
+  "trial_id": "NEW_TRIAL_REQUIRES_NEW_APPROVAL",
+  "max_provider_attempts": 80,
+  "runtime_manifest_sha256": "56e24eddfdbdb35fec097811177c70dbc146005a46c2c3100cdcb2ab7f984c49",
+  "launcher_sha256": "8255171bf0d470633d455cba6f6a53646102daa28a959daefdc6041ff98fddc3",
+  "scope": "One independent complete40 first-response candidate run; same frozen320 evidence snapshots. Reuse existing complete40 baseline; no new baseline calls. No automatic retry or recovery; stop on infrastructure/audit failure.",
+  "estimated_fee_usd": {
+    "peak": 0.3326,
+    "offpeak": 0.1663,
+    "not_a_hard_monetary_cap": true
+  },
+  "default_upgrade_authorized": false,
+  "historical_scores_changes_authorized": false,
+  "authorized_trial_root": null
+}

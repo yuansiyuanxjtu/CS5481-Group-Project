@@ -1,0 +1,67 @@
+{
+  "status": "B_formal40_provenance_verified_semantic_review_separate",
+  "return_files_verified": 304,
+  "questions": 40,
+  "evidence_records": 320,
+  "provider_attempts": 69,
+  "selection_calls": 40,
+  "generation_calls": 29,
+  "stage_events": 349,
+  "reservations_verified": 69,
+  "first_response_checkpoints_verified": 40,
+  "no_duplicate_question_stage_requests": true,
+  "all_HTTP_successes": true,
+  "state_counts": {
+    "answered": 28,
+    "insufficient_evidence": 12
+  },
+  "plan_skipped_generation_ids": [
+    "EXP28",
+    "EXP-R01",
+    "EXP-R02",
+    "EXP-R03",
+    "EXP-R04",
+    "EXP-R05",
+    "EXP-R06",
+    "EXP-R07",
+    "EXP-R08",
+    "EXP-R09",
+    "EXP-R10"
+  ],
+  "final_LLM_refusal_ids": [
+    "EXP30"
+  ],
+  "usage": {
+    "prompt_tokens": 399433,
+    "completion_tokens": 5894,
+    "total_tokens": 405327,
+    "prompt_cache_hit_tokens": 128249,
+    "prompt_cache_miss_tokens": 271184
+  },
+  "usage_by_phase": {
+    "evidence_selection": {
+      "prompt_tokens": 273928,
+      "completion_tokens": 1622,
+      "total_tokens": 275550,
+      "prompt_cache_hit_tokens": 76797,
+      "prompt_cache_miss_tokens": 197131
+    },
+    "answer_generation": {
+      "prompt_tokens": 125505,
+      "completion_tokens": 4272,
+      "total_tokens": 129777,
+      "prompt_cache_hit_tokens": 51452,
+      "prompt_cache_miss_tokens": 74053
+    }
+  },
+  "returned_models": {
+    "deepseek-flash": 69
+  },
+  "returned_fingerprints": {
+    "bc19ba97cbe016479903222bb1578db6": 69
+  },
+  "run_sha256": "0149c7ea94d48c1742124459710c7b65bdc190da4e8b99a7a85545d03bee16b1",
+  "authorization_sha256": "030491e46637073a50489cf78cfaaf85592ba9e260b99b19fc7f077a27b91087",
+  "new_API_calls_by_B": 0,
+  "source_limits": "Remote Git/history outside the supplied artifacts cannot be re-inspected here. Cloud fingerprint is recorded, not an immutable weight guarantee."
+}

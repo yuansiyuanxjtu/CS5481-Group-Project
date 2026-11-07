@@ -44,3 +44,11 @@ service-account*.json
 *.bin
 *.npy
 *.npz
+
+# Local experiment executions and approvals; frozen inputs/results are versioned.
+/tmp/
+/experiments/generative40/trials/
+/experiments/generative40/authorized_trials/
+/experiments/generative40/preflight_output*/
+/experiments/generative40/user_fee_approval*.json
+/experiments/generative40/*approved*.json

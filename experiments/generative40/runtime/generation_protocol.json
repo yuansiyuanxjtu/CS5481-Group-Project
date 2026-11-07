@@ -1,0 +1,19 @@
+{
+  "provider": "https://api.deepseek.com",
+  "requested_model": "deepseek-flash",
+  "temperature": 0,
+  "max_output_tokens": 1200,
+  "timeout_seconds": 120.0,
+  "thinking": "disabled",
+  "json_mode": true,
+  "prompt_sha256": "7009031d5ea3dcd9454adcf3c0c4fc2a3eeb0087cbb32da41bb5ce31639ac91a",
+  "app_source_sha256": {
+    "service.py": "8b30fada35d7e1bb783cfb8cfbc0ee480f60293f719f4e6e5eff029ac8f9703e",
+    "config.py": "b8302b97a60583a726056dfab2ed264b87c7230826cb38e51a47dbb4f8492d1a",
+    "evaluation.py": "b2a5ca7a77743665c21c1bc39af2a0357424dfb2756b68ea4acdd7ea56c01fa9",
+    "__init__.py": "5d03cbf1f2f6a117d66d831fc9f32d8ea0a816b337703d3816724edf28e287f3",
+    "llm.py": "dc779a5961dfa5eb727bf8dd7156a64b1cd418a3e68bd9b3d518f8a75fbf3092",
+    "grounding.py": "c6ff3c8d440c2be3ad8a2dd1bdfdad04c68dc87292b1228d2b9924aa672d4548"
+  },
+  "temporal_catalog_sha256_lf": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612"
+}

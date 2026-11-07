@@ -1,0 +1,92 @@
+{
+  "status": "B_accepts_C_full40_counts_and_records_no_score_changes",
+  "baseline_counts": {
+    "core_correct": 27,
+    "all_claims_supported": 24,
+    "refusal_success": 7
+  },
+  "candidate_counts": {
+    "core_correct": 27,
+    "all_claims_supported": 25,
+    "refusal_success": 10
+  },
+  "metrics": {
+    "core_correct": {
+      "baseline_count": 27,
+      "new_count": 27,
+      "denominator": 30,
+      "gained_ids": [],
+      "lost_ids": [],
+      "percentage_point_change": 0.0
+    },
+    "all_claims_supported": {
+      "baseline_count": 24,
+      "new_count": 25,
+      "denominator": 30,
+      "gained_ids": [
+        "EXP08",
+        "EXP27"
+      ],
+      "lost_ids": [
+        "EXP05"
+      ],
+      "percentage_point_change": 3.3333
+    },
+    "refusal_success": {
+      "baseline_count": 7,
+      "new_count": 10,
+      "denominator": 10,
+      "gained_ids": [
+        "EXP-R06",
+        "EXP-R07",
+        "EXP-R08"
+      ],
+      "lost_ids": [],
+      "percentage_point_change": 30.0
+    }
+  },
+  "refusal_strata": {
+    "near_domain": {
+      "success": 5,
+      "denominator": 5
+    },
+    "missing_part": {
+      "success": 3,
+      "denominator": 3
+    },
+    "outside_domain": {
+      "success": 2,
+      "denominator": 2
+    }
+  },
+  "candidate_core_verdicts": {
+    "correct": 27,
+    "incorrect": 2,
+    "partial": 1
+  },
+  "qualitative_information_reduction": [
+    "EXP30 partial answer to whole refusal: less partial information, more conservative full-question compliance; strict score unchanged at0"
+  ],
+  "persistent_core_failures": [
+    "EXP28",
+    "EXP29",
+    "EXP30"
+  ],
+  "remaining_quote_scope_gaps": [
+    "EXP05",
+    "EXP20"
+  ],
+  "optional_partial_weighted_diagnostic": {
+    "formula": "(correct+0.5*partial)/30",
+    "baseline_percent": 93.3333,
+    "candidate_percent": 91.6667,
+    "not_a_primary_metric": true
+  },
+  "one_complete_run_not_old12_mixture": true,
+  "no_core_accuracy_gain_claim": true,
+  "exposed_regression_set_not_unseen_generalization": true,
+  "not_same_token_cost_or_single_factor_ablation": true,
+  "real_model_API_calls_by_B": 0,
+  "default_upgrade_authorized": false,
+  "new_experiments_authorized": false
+}
