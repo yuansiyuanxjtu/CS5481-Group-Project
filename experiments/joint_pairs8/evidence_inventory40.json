@@ -1,0 +1,644 @@
+{
+  "rows": [
+    {
+      "id": "EXP01",
+      "question_sha256": "46bdb41f81d4cf26114f39f76db6372a1e151588345d44e555cefa8a3205ac66",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p35_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "cc28a55ac4cb9a2b6db428850a5f34e1481247ac1cfaf8ffb2d40665c22b8bc5",
+      "selection_messages_sha256": "34deb7a22fb28bb295321adfc96cffb90bcccac341f8a2ed72d39c6aef29e98a"
+    },
+    {
+      "id": "EXP02",
+      "question_sha256": "70930bdb400c0c3d7be5541afe7c641cebc1442ad20e678140c297760874359f",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "c16ab46d6199575aa321dd3a264dbdd417fedb38b2ced40bfd3c9a1b32169532",
+      "selection_messages_sha256": "daa3fc2a9db1c9ef34cd46cc639946eab078c8b82454cbf1d1251d65bc3b8010"
+    },
+    {
+      "id": "EXP03",
+      "question_sha256": "1246e0db34b6756691a795d4622be58b62f43fce05d3dbedea5c30401c79452c",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p43_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "901ad55f39b930a6059017fe5ffb4b52d151d2075346157b1ee4d77b6d69f552",
+      "selection_messages_sha256": "fc82e4cbb85efcce98a5e764b268c73368ed0b14fc213a115c84f54b83ced2a0"
+    },
+    {
+      "id": "EXP04",
+      "question_sha256": "69a31394df75ad9e06d46594115feb11a06648d5923c71db20091c518a27fc47",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "f143221ed9ae6757bc847f81e5102c40e589ff07f068c7745d6dc42668617bbd",
+      "selection_messages_sha256": "c29ed7984b3feece536a9828df1963702f7c2ed678cc5697880d56a84438248f"
+    },
+    {
+      "id": "EXP05",
+      "question_sha256": "2f9910835de0dadef4ee688f757991e7b2f47d158dd52479197eafbcc12d991d",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "119703e31261cf740f1965af6f6c9d78c65bacf340dc0a20bcb1942eaf132952",
+      "selection_messages_sha256": "709ddf52a8f61d35b46e09be941757a5194c542c1150a3ba306f6dcabdb4c23f"
+    },
+    {
+      "id": "EXP06",
+      "question_sha256": "f1e1c2b52715986663152ff2d04adac57ffae17681a5ccd834ac43eb5d7cf3d5",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "64c1e351d1f3a6b50ff8802afa5d708073c7fe592e7ca536489bba1e5b2235c9",
+      "selection_messages_sha256": "f1785d3480f7838cfed8c1d133d765415b5f91874a3e69dac470585051915961"
+    },
+    {
+      "id": "EXP07",
+      "question_sha256": "be03a4966f12fc08a3eb81e89f7ab29cce0e4af3f151c9b36e5b9cebbe914696",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "63d992a0c290d33a62cba956c089096da3c68d2ed96926ab030dcaa5494d8a1b",
+      "selection_messages_sha256": "73c4f56b57b1f8dd3b2df5e60b69414478dfee2818cfced56e05897dad633e28"
+    },
+    {
+      "id": "EXP08",
+      "question_sha256": "0069467487ca9c1dea377b67142f0e21e6d1d4b1a8e7660b0bb5c0e03da1f1e3",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "c2ee09f3f161b71df45f332e4b80636804dd805343b0ca15431f2117d8e4d7e6",
+      "selection_messages_sha256": "c47f1d85b47d2e98cd84bdc80f9900b4a7a211ae4cebbee53fcbd20d970b4f9d"
+    },
+    {
+      "id": "EXP09",
+      "question_sha256": "78ba89cad7c37d79fa0fa1cfb45e070d3b196390d9a8dc1f3909085906df5372",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "72fc2d4c5321dc94492aae1971d7634b2fb6bf6c855f038989cf7fd6e1464f1c",
+      "selection_messages_sha256": "0798db8f7676cc0a820f43f31a04b31d82acf92c348972e963e224ca538c343e"
+    },
+    {
+      "id": "EXP10",
+      "question_sha256": "83b12ef88dd6694fd9da3e8858035256c944014dd384b0f24432873db130ebb7",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c5_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "30e9d095318facc6355267a03f89ef9df6dab211fde19ffeddcdb7e7e5c6394c",
+      "selection_messages_sha256": "7709aad60f15cff04732f15144b627c510aadbbf12303055f1a9ae78f580229d"
+    },
+    {
+      "id": "EXP11",
+      "question_sha256": "a7c3b9226a57637ac5dd96219ee599ca29e0ceb151a7fe50da5ab869402e3f2d",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "8457b32e15e0582d810eb9021cca6eeee4e0df811278ccee287493609719967f",
+      "selection_messages_sha256": "58e56fde7bf028166f189026dc1b9755f2e4566cff39190027b75f4aa546481a"
+    },
+    {
+      "id": "EXP12",
+      "question_sha256": "e80b5bd6480fd822fd695cf6719ffabbd9fcebca00e7a4d26b0e01bdc3018d04",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p12_c5_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "3af36a4d18f9736ed02953ae465a4f95a567dc658fd178841e250240366c5db1",
+      "selection_messages_sha256": "e09fd1e3dde76fbee26a37f95c07584e6897abe6eb89b4189794aae7c11901fc"
+    },
+    {
+      "id": "EXP13",
+      "question_sha256": "3c58bc32db809e2a33e803b0a5c14c0daaa9cdd12d3cec60216d53071db6e850",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "0646626a07c719a87994bd31b6ca159fceff2981bb22be78cf1c685c90101fd1",
+      "selection_messages_sha256": "b9f14f1fa59de13b0a2a4506f819b71477be3f8ad3496478c0e472e29bacafd2"
+    },
+    {
+      "id": "EXP14",
+      "question_sha256": "461af6d6c644dad87c0d6a717a8fd5723f92b1878c8609bbc4d1060fdc150f0c",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c3_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "6212fda7cc150b8eeb889278ea72d389e54a2a03724bae59464df8d1842933b7",
+      "selection_messages_sha256": "9001a0559d849775fb884c5b505cbb1699e965155b7683c5d2dc388da6239a5a"
+    },
+    {
+      "id": "EXP15",
+      "question_sha256": "cde13f3fe5c49ed85ed7d4c3889a0232b4e438249f186eef0fe9a04ae3a18b63",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p15_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "a8a9cf2206aeb676e960397d2804429b14a2cdbe2d97b8693a5ae721fb2c49f0",
+      "selection_messages_sha256": "af952c7f45ea8c8647a016d1d450884213dd20c46b0f24ced4d64a49b083d220"
+    },
+    {
+      "id": "EXP16",
+      "question_sha256": "29ec5644f551a4c57bc0d3aeea1ea5f58d43c885d6d69aaef1bc67eb42d1e745",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p11_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "d0879e01987ea7ddad1fbb39e0d88630978297f5a5576adc8e938900dd53ab1e",
+      "selection_messages_sha256": "cb885a03c262e3031ee5a398ab50c1ed7714207522b79bc6392b2a4887709f1b"
+    },
+    {
+      "id": "EXP17",
+      "question_sha256": "330aabd32376090977f63f7afa392670bf74e007a791dbbb46e8c038f823960f",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "f2ec5da6807378d0150a8be451880a252a74df2f5e3ba1a794c4fa7190868ac5",
+      "selection_messages_sha256": "2b6e3fde1fbde73801d8b0450421a13c5aee1b8ab7eb729681bf8b6bd35637c8"
+    },
+    {
+      "id": "EXP18",
+      "question_sha256": "f7f2d22c3f7d1c50675f9428254c5556d659c1d2d43e2ca6822d4d2359fb247e",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p28_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p28_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p6_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "c7d1487cf6286e50310df683311577653f828192ebe51400d0008d4f457f77e1",
+      "selection_messages_sha256": "b105d41f20d377c9e1b7f36006505f630946f3f464dc9ea776539a3af2a2f242"
+    },
+    {
+      "id": "EXP19",
+      "question_sha256": "99cca8ebc636de652357015f7620c864f6bdc759ab76b75d6c0664e5495e3875",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p54_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p57_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p35_c3_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "9940211587b633fd4f98a1c06775048548488066bd19be81b26e9d4b0c5e6665",
+      "selection_messages_sha256": "e76b52481c2e4d2c59b5188f21141c76b84547aa73bf7e65cdd08db4fcdbe1cc"
+    },
+    {
+      "id": "EXP20",
+      "question_sha256": "6075be42528b6e09cdda566622bd4442ced7f7f77a173ed40e1fc82f1892ba6e",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p67_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "25d407b573238ba27678ac59ef80be402797f52b610950ae70dd7bc5c01feab3",
+      "selection_messages_sha256": "604dcb1f6877a991e1bed04101ad077c8e53c6b7cc0ca2030f5c75f4969db39c"
+    },
+    {
+      "id": "EXP21",
+      "question_sha256": "1d0499967bdf9e4a40b453d37f7b10082b90b280605c5b6641b5a1834a4d5fd6",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c5_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "4aa23022aecb00664f767692aa3d4a0e4bc21d2379f195c384b7bc57d4106dbc",
+      "selection_messages_sha256": "9087748dda0de5b74c08a6d548d5c84d5f0a8871e8c3f4bdbc021de1ad4f1cfb"
+    },
+    {
+      "id": "EXP22",
+      "question_sha256": "dd0fd4b8140f1192b9a98e8d740eda44eae5d6f2d43a919c652db79ca6a9f4b9",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p18_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p42_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p26_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "2f8e6247aa49893221627c7ece9b65b3db8f859829c1db8fa54d1a26fac8513d",
+      "selection_messages_sha256": "46c9668a86c943d56f1caaf950ffbb7660da6986303016456cf442272dd49922"
+    },
+    {
+      "id": "EXP23",
+      "question_sha256": "e13d01024f9af6bab7a17aa4700264bcb7069c2b72b58af5f032d0b3d57a2527",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p5_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "875cb312ead9b6be21d30c6da7002d51fd423464796e40e09c85c518fca25b2e",
+      "selection_messages_sha256": "c2a4e8210d4c918ad367427ffc14facd3bcef4dafcf0e08b39c5889b72a75600"
+    },
+    {
+      "id": "EXP24",
+      "question_sha256": "53814a5b6be317c19bc7a3ab017d150647e2c4d7a18750d8e31882951c226e51",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "3d8b3f7fb95d4412a723b689a6914b56b61a9a4b6d085b190dc8cd7f8cdfd839",
+      "selection_messages_sha256": "8508423bf417f70edd844f3127724f94bb8f8ff8f70a5dc59924cd4632675465"
+    },
+    {
+      "id": "EXP25",
+      "question_sha256": "029081db34db8a687765f5a7e2fc3b197cf424a956ffbbc1a110bdc9eb7e555f",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p11_c8_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p9_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "eae185a176b593714231cc4a1b351208b9578333593c6503fa92f17339f79583",
+      "selection_messages_sha256": "f7d824c0236874abf1717091dfdbd8bf71db46e33a0a9de7fc52eec62a7b9175"
+    },
+    {
+      "id": "EXP26",
+      "question_sha256": "5963010dc0b71a98d112e063f25e79f20e2ec9cebfee84fc8914c0cee5291aa0",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p61_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p74_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "7d58f289d45cb5dbc3784d241fe9c6e60630cbb4b25abfe86a0cd782c69c8b5b",
+      "selection_messages_sha256": "0f3456aa3c5abdf85c0015f2156a76366d8bf07383a9f8810403b5b7e83bbdd1"
+    },
+    {
+      "id": "EXP27",
+      "question_sha256": "40b04b92009e3438b8862a5599447b619666a87da153f43b7a2d66d23b8b5dbc",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "bbebef0dd997da60828a46fa080c9d0a11cb1faf208d1222099ec5c3dc27d22b",
+      "selection_messages_sha256": "6bd6f43df5a5da48008be31e27a1e90aaf16c1e88d17ac92ce65cc4911a645bc"
+    },
+    {
+      "id": "EXP28",
+      "question_sha256": "653a8d0445e550a688247716580e48007b7d43075949989628cbd70ffc661fee",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p3_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "abc0bbcf024fb8a5ba2a7aebd2635634e73d3740712c05e52b197f493dc5f59c",
+      "selection_messages_sha256": "6b01092f31f39734b518ea5d52b6a6669f74ddcfd06c31f3895879ae084b2076"
+    },
+    {
+      "id": "EXP29",
+      "question_sha256": "8eac2e829624b2805f3b0e6da1044ef198288604b1182f21cc44f828ca67f98c",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "c8cae22fca7f424a394ff825470e2d0f2c4732b8216836ccf82e948295a2437e",
+      "selection_messages_sha256": "3c528b473d9d6f789a308aee2ef0cc18efc5198fd467cbe24515cebd6b36d1cc"
+    },
+    {
+      "id": "EXP30",
+      "question_sha256": "346c0dfc859c94e4547ae5aefeaf6b464a49636e1fd59202cc96b4f37bd05e74",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p37_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p59_c1_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "00bd05f2be8ff04a23ccc430c788363e06ba014aaed6973478d83b17aaf2b9ef",
+      "selection_messages_sha256": "86439652fabd880bad601c37a666337014e59dde04d1ebea6cbedfa2a7e01dc5"
+    },
+    {
+      "id": "EXP-R01",
+      "question_sha256": "8d986ba1d5a17a475f73b80a3403fb295793b38e13137d17b8bf3091d3cd3b67",
+      "chunk_ids": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "038be5c444f979a245b389bb131e681916da46a9b317d6b791fca321fa5b1dcc",
+      "selection_messages_sha256": "3ff37734e52e48391204d4a2928e8d9aedb78b09890be73b1887df56f1e8b145"
+    },
+    {
+      "id": "EXP-R02",
+      "question_sha256": "b13c1abf8328763c271be49238baa7411cd1cc0bc09da654f5bb35ce49da7abf",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p21_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "14b3a00951a8e6e5fdf61e33ee455282355d769d9b3cb539dd9d036cb0ef361e",
+      "selection_messages_sha256": "f89a20cf7357fb9a6128c41836e167ab7fd24cffbfbf2b258dcf024a6895130b"
+    },
+    {
+      "id": "EXP-R03",
+      "question_sha256": "d84c54b47b1de98f1e312cde20fb1734ca179819bd72764576e3aa14c85eca91",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "9f8cfe944d20a464e038e899bbe0c99f03a936ebc630cf4cb90fdb22857cae97",
+      "selection_messages_sha256": "cc644a9710dff233358cc52d77662997d8db8069b78ff605c16b401786b7d80e"
+    },
+    {
+      "id": "EXP-R04",
+      "question_sha256": "a2f04b8ff5c575e153db4a6934dc88023d7af16b7a9e0adcbff2fc49f8657512",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p53_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p52_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "066f33b3614f8959bf4906c54fa40839fb03202ffad47acf0f587cb7b61dc898",
+      "selection_messages_sha256": "37c0e26ac7ed9eaa21daf3328268efa2a1c01a43a2c9e70d3dcbb9f028d2e318"
+    },
+    {
+      "id": "EXP-R05",
+      "question_sha256": "892d087763d38fa5e32569486e889fc9477d5b263606d388462fd957b7b04490",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "1936b02caf92a8a1151d89b0ef7d063a402d271e4f576c2069573d0c83c83128",
+      "selection_messages_sha256": "be0ae266a7c64856a82422ef88c62a023f2b354681ebf476eab5cffee020d97b"
+    },
+    {
+      "id": "EXP-R06",
+      "question_sha256": "c9617684138b284168974683e848ffe144a388ae00bc39239d422c1cf23c2f13",
+      "chunk_ids": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "8d9ddfa9c9ea73f039d4f3ad637294e76ba744b8c76f25937002d731e43718b3",
+      "selection_messages_sha256": "37e8030816f16df62fe3439b0faabb76387241a120a915e8cb5bde41e135de69"
+    },
+    {
+      "id": "EXP-R07",
+      "question_sha256": "04dec2bbb2a7375ff628c3918b8b26e7d3a2315ed0aa24eb30e6c0301cac768a",
+      "chunk_ids": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "bb97c4f01c4a57ad30b5ec5dd8a91bf9c7e1209d18484cc5e041d72d75ad0cf4",
+      "selection_messages_sha256": "c86e84e68c298ab37d722c9a90d98576f86f4f6517016947c6a23fca0e2ae238"
+    },
+    {
+      "id": "EXP-R08",
+      "question_sha256": "96e0614f593a017dbf4613918186bde0ee760188293c74f5f819467ca6a3bc97",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "e176c32858d55775da4f07d7f2c6b8af86f010a5b66771f9f3e6cea23785c356",
+      "selection_messages_sha256": "1836bda62d5bf417c18154c412c934a6ded45574b1667e5cc774838f30cee5b8"
+    },
+    {
+      "id": "EXP-R09",
+      "question_sha256": "4ebceb1f54ffa1615ab05b17355dc3b87717a9c2527d1a583f1ff61bf0bc4c11",
+      "chunk_ids": [
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "b92926a2226dc00e0465dd1250b9ee37a8f764f8d35207cbc79fb025117030c0",
+      "selection_messages_sha256": "5079a67a8eb200bf1c98e72e334073bdaecff7b7fcfb79b50b7d39154d7a5c17"
+    },
+    {
+      "id": "EXP-R10",
+      "question_sha256": "1c5926e4ebb9f5142e681af398028cde0b90934f8a9186fe4bc014401d064fc2",
+      "chunk_ids": [
+        "bis_20241212_ai_regulation_p36_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p32_c8_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p59_c7_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p75_c4_fixed_150_overlap_30"
+      ],
+      "evidence_sha256": "f46d8b8e4c4de809ec55f10961041791c4b2163f86aac81da9d7d4d734b20e5e",
+      "selection_messages_sha256": "8ab48f8cdb3aaf45f447bec7e9b5e7b353b830e0375591f53d29d4ccf9eacddb"
+    }
+  ]
+}

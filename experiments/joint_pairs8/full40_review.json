@@ -1,0 +1,784 @@
+{
+  "status": "B_review_accepted_C_scores",
+  "scope": "Independent full40 first responses on exposed regression set",
+  "fixed_denominators": {
+    "core_correct": 30,
+    "all_claims_supported": 30,
+    "refusal_success": 10
+  },
+  "original_complete40_baseline": {
+    "core_correct": 27,
+    "all_claims_supported": 24,
+    "refusal_success": 7
+  },
+  "previous_complete40": {
+    "core_correct": 27,
+    "all_claims_supported": 25,
+    "refusal_success": 10
+  },
+  "joint_pairs8_complete40": {
+    "core_correct": 29,
+    "all_claims_supported": 28,
+    "refusal_success": 10
+  },
+  "gains_vs_previous": {
+    "core_correct": [
+      "EXP29",
+      "EXP30"
+    ],
+    "all_claims_supported": [
+      "EXP20",
+      "EXP29",
+      "EXP30"
+    ],
+    "refusal_success": []
+  },
+  "losses_vs_previous": {
+    "core_correct": [],
+    "all_claims_supported": [],
+    "refusal_success": []
+  },
+  "rows": [
+    {
+      "id": "EXP01",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP02",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP03",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP04",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP05",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": false,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": false
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "核心事实均出现。第一条引文只到定期审查，未覆盖该条主张中的持续监测。沿用原逐条评分。"
+    },
+    {
+      "id": "EXP06",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP07",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP08",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP09",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP10",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP11",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP12",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP13",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP14",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP15",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP16",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP17",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP18",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP19",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP20",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "同一引文覆盖分包数量、类型、依赖程度及识别间接集中风险。旧引文边界缺口修复。"
+    },
+    {
+      "id": "EXP21",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP22",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP23",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP24",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP25",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP26",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP27",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "参考事实与所选引文对齐。"
+    },
+    {
+      "id": "EXP28",
+      "answerable": true,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": false,
+        "all_claims_supported": false,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [],
+      "note": "BIS 的不同司法管辖区 AI 定义差异未见于八块；整题拒答在可答分母计失分。"
+    },
+    {
+      "id": "EXP29",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "HKMA 的 masking / pseudonymous identifiers 与 BIS 第三方数据控制、数据使用伦理审查均由所选引文支持。"
+    },
+    {
+      "id": "EXP30",
+      "answerable": true,
+      "status": "answered",
+      "B_review": {
+        "core_correct": true,
+        "all_claims_supported": true,
+        "refusal_success": "not_applicable"
+      },
+      "claim_reviews": [
+        {
+          "claim_index": 1,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 2,
+          "selected_quotes_support_entire_claim": true
+        },
+        {
+          "claim_index": 3,
+          "selected_quotes_support_entire_claim": true
+        }
+      ],
+      "note": "FSB 的升级人工的中间决策、步骤与结果由第 59 页支持。HKMA 第 5 页支持可选提示词、推理证据及适用条件。附加监控主张也有自己的引文。"
+    },
+    {
+      "id": "EXP-R01",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R02",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R03",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R04",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R05",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R06",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R07",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "只确认初步风险评估可支持，缺内部组合标识。最终整题拒答无事实主张。"
+    },
+    {
+      "id": "EXP-R08",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R09",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    },
+    {
+      "id": "EXP-R10",
+      "answerable": false,
+      "status": "insufficient_evidence",
+      "B_review": {
+        "core_correct": "not_applicable",
+        "all_claims_supported": "not_applicable",
+        "refusal_success": true
+      },
+      "claim_reviews": [],
+      "note": "整题拒答且无事实主张。"
+    }
+  ],
+  "claims_reviewed": 57,
+  "run_sha256": "5ac04a75cb7034d6b5b74aaa4ef21a825d66a0e5d06ca4773e6daf2bde4a67a2",
+  "B_new_API_calls": 0,
+  "user_human_verification_claimed": false
+}

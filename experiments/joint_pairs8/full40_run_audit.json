@@ -1,0 +1,41 @@
+{
+  "returned_archive_sha256": "35ab76de6f56e83b62e5587fed80a118356f6c3f12bbc0767b128aa7ac84b241",
+  "returned_files_verified": 82,
+  "trial_id": "joint_pairs8_full40_20261107_v1",
+  "frozen_input_and_answer_count": 40,
+  "evidence_records": 320,
+  "first_checkpoints": 40,
+  "stage_events": 349,
+  "provider_attempts": 69,
+  "HTTP_200": 69,
+  "selection_calls": 40,
+  "generation_calls": 29,
+  "generation_skipped": [
+    "EXP28",
+    "EXP-R01",
+    "EXP-R02",
+    "EXP-R03",
+    "EXP-R04",
+    "EXP-R05",
+    "EXP-R06",
+    "EXP-R07",
+    "EXP-R08",
+    "EXP-R09",
+    "EXP-R10"
+  ],
+  "usage": {
+    "prompt_tokens": 397377,
+    "completion_tokens": 6005,
+    "total_tokens": 403382,
+    "prompt_cache_hit_tokens": 90108,
+    "prompt_cache_miss_tokens": 307269
+  },
+  "models": [
+    "deepseek-flash"
+  ],
+  "fingerprints": [
+    "bc19ba97cbe016479903222bb1578db6"
+  ],
+  "run_sha256": "5ac04a75cb7034d6b5b74aaa4ef21a825d66a0e5d06ca4773e6daf2bde4a67a2",
+  "B_new_API_calls": 0
+}

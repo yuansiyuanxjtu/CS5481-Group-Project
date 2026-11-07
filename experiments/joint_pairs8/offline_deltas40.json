@@ -1,0 +1,1023 @@
+{
+  "candidate": "joint_pairs8",
+  "rows": [
+    {
+      "id": "EXP01",
+      "closure8": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p35_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p35_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP02",
+      "closure8": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP03",
+      "closure8": [
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p43_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p43_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c3_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP04",
+      "closure8": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP05",
+      "closure8": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c1_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p2_c1_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP06",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP07",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP08",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP09",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP10",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c5_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c5_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP11",
+      "closure8": [
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p31_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c1_fixed_150_overlap_30"
+      ],
+      "added": [
+        "fsb_20241114_ai_stability_p5_c1_fixed_150_overlap_30"
+      ],
+      "removed": [
+        "fsb_20241114_ai_stability_p33_c2_fixed_150_overlap_30"
+      ]
+    },
+    {
+      "id": "EXP12",
+      "closure8": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p12_c5_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p14_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p12_c5_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP13",
+      "closure8": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p34_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP14",
+      "closure8": [
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c3_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c3_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP15",
+      "closure8": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p15_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p9_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p37_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p7_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p15_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p9_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p8_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP16",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p11_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p28_c6_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p11_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP17",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP18",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p28_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p28_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p6_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p28_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p28_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p6_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p7_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p27_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP19",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p54_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p57_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p35_c3_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p54_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p54_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p57_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p35_c3_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP20",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p67_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p67_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p64_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP21",
+      "closure8": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c5_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p32_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p4_c5_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP22",
+      "closure8": [
+        "bis_20241212_ai_regulation_p18_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p42_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p26_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p18_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p42_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p18_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p26_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP23",
+      "closure8": [
+        "bis_20241212_ai_regulation_p5_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p5_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p6_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p7_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p24_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP24",
+      "closure8": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p36_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP25",
+      "closure8": [
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p11_c8_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p9_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p11_c8_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p21_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p9_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP26",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p61_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p74_c1_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p61_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p61_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p74_c1_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP27",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p67_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p29_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP28",
+      "closure8": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p3_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c7_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p1_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p3_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p2_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30"
+      ],
+      "added": [
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p6_c2_fixed_150_overlap_30"
+      ],
+      "removed": [
+        "fsb_20241114_ai_stability_p5_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c2_fixed_150_overlap_30"
+      ]
+    },
+    {
+      "id": "EXP29",
+      "closure8": [
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p6_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p30_c2_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP30",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p37_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p52_c5_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p58_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p37_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p5_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p58_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p59_c1_fixed_150_overlap_30"
+      ],
+      "added": [
+        "fsb_20261015_responsible_ai_p59_c1_fixed_150_overlap_30"
+      ],
+      "removed": [
+        "fsb_20261015_responsible_ai_p52_c5_fixed_150_overlap_30"
+      ]
+    },
+    {
+      "id": "EXP-R01",
+      "closure8": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20191101_ai_principles_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p1_c1_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p1_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c3_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p3_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R02",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p21_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p8_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p8_c2_fixed_150_overlap_30",
+        "hkma_20191101_ai_principles_p4_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p21_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p4_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R03",
+      "closure8": [
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p33_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p17_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p5_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p21_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R04",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p53_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p52_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p14_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p14_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p53_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p73_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p52_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R05",
+      "closure8": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p27_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p72_c1_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c2_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p27_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p37_c3_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R06",
+      "closure8": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "hkma_20261015_ai_guidance_p2_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c3_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c2_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p2_c4_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p3_c1_fixed_150_overlap_30",
+        "hkma_20261015_ai_guidance_p7_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R07",
+      "closure8": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20261015_responsible_ai_p13_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c2_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c1_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c4_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p48_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p47_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p10_c4_fixed_150_overlap_30"
+      ],
+      "added": [
+        "fsb_20261015_responsible_ai_p47_c3_fixed_150_overlap_30"
+      ],
+      "removed": [
+        "fsb_20261015_responsible_ai_p13_c2_fixed_150_overlap_30"
+      ]
+    },
+    {
+      "id": "EXP-R08",
+      "closure8": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p17_c1_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p33_c5_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p27_c6_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p14_c5_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c2_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p17_c3_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p13_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R09",
+      "closure8": [
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c4_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p38_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p16_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c3_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p66_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p36_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p33_c5_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    },
+    {
+      "id": "EXP-R10",
+      "closure8": [
+        "bis_20241212_ai_regulation_p36_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p32_c8_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p59_c7_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p75_c4_fixed_150_overlap_30"
+      ],
+      "candidate": [
+        "bis_20241212_ai_regulation_p36_c6_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p32_c8_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c3_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c4_fixed_150_overlap_30",
+        "fsb_20241114_ai_stability_p11_c7_fixed_150_overlap_30",
+        "bis_20241212_ai_regulation_p20_c5_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p59_c7_fixed_150_overlap_30",
+        "fsb_20261015_responsible_ai_p75_c4_fixed_150_overlap_30"
+      ],
+      "added": [],
+      "removed": []
+    }
+  ]
+}
