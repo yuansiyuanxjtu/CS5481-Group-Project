@@ -3,7 +3,9 @@
 The [frozen full40 evidence-plan experiment](experiments/generative40/README.md)
 contains the isolated retrieval/generation evaluation code, reproducible offline
 preflight, and [B-reviewed report](docs/experiments/generative40/report.md).
-It remains an experimental candidate; the default application is unchanged.
+The [reviewed joint_pairs8 results](experiments/joint_pairs8/README.md) and the
+[optional two-stage Streamlit profile](docs/member_c_handoff.md#reviewed-joint_pairs8-demo-profile)
+document the latest retrieval and demo integration. The application starts with the baseline profile.
 
 Member C's grounded QA, Streamlit startup, configurable LLM provider, citation/refusal
 checks and answer evaluation are documented in [Member C handoff](docs/member_c_handoff.md).

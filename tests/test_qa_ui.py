@@ -11,7 +11,8 @@ APP = Path(__file__).resolve().parents[1] / "app.py"
 
 
 @pytest.fixture(autouse=True)
-def clear_resources():
+def clear_resources(monkeypatch):
+    monkeypatch.setenv("RAG_DEMO_PROFILE", "baseline")
     st.cache_resource.clear()
     yield
     st.cache_resource.clear()
