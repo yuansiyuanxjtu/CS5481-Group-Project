@@ -29,6 +29,12 @@ This is an exposed development/regression set, not an unseen test or an equal-co
 ablation. Earlier 12-case and four-case trials remain separate and were not mixed
 into the complete40 result. Human QA signoff remains pending.
 
+## Execution version separation
+
+The original measured runtime is retained by byte-for-byte controller/launcher source snapshots and its original manifest/unapproved template in [history/runtime_v1](history/runtime_v1/README.md). The other ten runtime files, model inputs, prompts, evaluator data, historical result hashes and scores remain unchanged. The historical manifest is still the one identified by `docs/experiments/generative40/freeze_provenance.json`.
+
+The current controller is `canonical-root-bound-v2`: it fixes approval replay through a different trial root. Its manifest pins the patched controller, and the current unapproved template pins that manifest and the current launcher. This current execution gate is not retrospectively attributed to the historical full40 results. The joint_pairs8 retrieval/input lock does not depend on the controller or launcher and remains unchanged.
+
 ## Layout and frozen bytes
 
 - `runtime/`: bounded controller, original method with only 24-to-80 call-cap
@@ -65,11 +71,10 @@ $env:PYTHONPATH = (Resolve-Path 'src').Path
 ```
 
 Use a new preflight output directory if it already exists. POSIX uses the same
-script arguments with `.venv/bin/python` and `PYTHONPATH=src`. The original 30
+script arguments with `.venv/bin/python` and `PYTHONPATH=src`. The 30
 orchestration checks exercise 80 mock dispatches, the 81st-call block, duplicate and
 renamed-output restart guards, unsupported-part skipping, both-stage failures,
-audit persistence failures and usage. Five additional checks cover authorization
-gates and truthful formal-mode metadata with synthetic transports only.
+audit persistence failures and usage. Additional launcher regressions cover canonical-root binding, alias normalization, same-root replay, fresh separately authorized roots, historical provenance and truthful formal-mode metadata with synthetic transports only.
 
 Preflight forbids credential/evaluator reads and real provider transports. Windows
 allows only CPython's internal loopback socketpair required by asyncio. The
@@ -83,6 +88,10 @@ The 69-call historical trial is complete. Do not reuse its unused allowance or
 historical approval. The published authorization example is false and rejects
 before loading credentials. A future run needs a new user-approved trial ID,
 matching runtime/launcher hashes, a fixed trial-root and a newly agreed scope/cost.
+
+A real approval must contain `authorized_trial_root` as the exact **absolute canonical path** approved by the user, as well as the current trial/runtime/launcher fingerprints and 80-attempt limit. The shipped value is null and `approved` remains false. No helper fills, changes or approves real consent. Relative paths or symlink aliases may be supplied as the requested `--trial-root`; both launcher and direct authorized `run_trial` calls resolve that request and compare it with the fixed canonical path in the approval before credentials, transport construction or trial files. Approval fields that are missing, relative, or symlink aliases are rejected. Preflight with `authorization=None` remains an explicitly transport-injected offline path; it is not authorization for provider traffic.
+
+Changing only `--trial-root` cannot reuse an approval. A different root requires separate explicit approval. Same-root restarts, including a changed output filename or a symlink alias, still hit the original exclusive trial marker. Preserve that marker and the trial directory; deleting/moving ledgers or concurrently changing filesystem ownership/symlinks is outside this local guard's trust boundary.
 
 After such approval, the explicit launcher takes `--runtime`, `--app-src`,
 `--trial-root` and `--approval-file`. Provider credentials stay in the local

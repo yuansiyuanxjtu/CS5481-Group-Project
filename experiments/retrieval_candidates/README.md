@@ -10,9 +10,14 @@ pinned MiniLM model. For a live offline inspection, add this directory to
 `PYTHONPATH`, import `BudgetRetriever`, instantiate with explicit
 `experiment_dir`/`cache_dir` and `mode="source_neighbor8"`, and call
 `retrieve(question, top_k=8, collection="fixed_150_overlap_30", arm="enhanced")`.
-No model API calls are required. Legacy exploratory CLI defaults refer to their
-own question files; supply explicit question paths rather than treating them as
-the complete40 runner.
+No model API calls are required. The standalone `passage_rerank.py` and
+`all_question_retrieval.py` CLI mains are archived exploratory tools, not supported
+reproduction entry points: their historical development/holdout questions and
+route files are not shipped, and `--gold` does not replace those missing inputs.
+Do not reconstruct those inputs or infer results by running these mains. Their
+importable retrieval classes remain available to the candidate dependency chain.
+Use `../joint_pairs8/verify_replay.py` for the supported frozen forty-context
+offline replay; do not treat these archived CLIs as the complete40 runner.
 
 `test_budget_retrieval.py` checks all modes' fixed budgets, retention of the
 original five chunks, caller configuration and unmodified text. It uses synthetic

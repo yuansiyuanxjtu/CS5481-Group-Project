@@ -108,7 +108,15 @@ class Budget80:
                 return client.generate(messages)
         return Guard()
 
-def validate_authorization(runtime,trial_id,authorization):
+def canonical_trial_root(trial_root):
+    """Resolve caller aliases once, without creating the target directory."""
+    try:
+        return Path(trial_root).resolve()
+    except (OSError,RuntimeError,TypeError,ValueError):
+        raise TrialBlocked('Invalid trial root.') from None
+
+
+def validate_authorization(runtime,trial_id,authorization,trial_root):
     if (not isinstance(authorization,dict) or authorization.get('approved') is not True
             or not isinstance(authorization.get('user_statement'),str)
             or not authorization['user_statement'].strip()
@@ -116,12 +124,28 @@ def validate_authorization(runtime,trial_id,authorization):
             or authorization.get('max_provider_attempts')!=80
             or authorization.get('runtime_manifest_sha256')!=digest(Path(runtime)/'runtime_manifest.json')):
         raise TrialBlocked('Explicit full40 approval bound to this trial/runtime is required.')
+    approved_root=authorization.get('authorized_trial_root')
+    if not isinstance(approved_root,str) or not approved_root.strip():
+        raise TrialBlocked('Approval must identify the authorized canonical trial root.')
+    approved=Path(approved_root)
+    canonical=canonical_trial_root(approved)
+    # The approval records a fixed physical location, not a relative path or a
+    # symlink that could be retargeted after approval. Caller aliases are allowed.
+    if not approved.is_absolute() or approved!=canonical:
+        raise TrialBlocked('Approved trial root must be an absolute canonical path.')
+    requested=canonical_trial_root(trial_root)
+    if requested!=canonical:
+        raise TrialBlocked('Requested trial root differs from the approved canonical trial root.')
+    return requested
 
 
 def run_trial(runtime,app_src,trial_root,trial_id,output_name,cfg,transport_factory,*,fault=None,authorization=None):
     """No auto-resume; trial marker independent of output_name; supplied transports only."""
     if not re.fullmatch(r'[A-Za-z0-9_-]{1,80}',trial_id):raise TrialBlocked('Invalid trial ID.')
-    if authorization is not None:validate_authorization(runtime,trial_id,authorization)
+    if authorization is not None:
+        trial_root=validate_authorization(runtime,trial_id,authorization,trial_root)
+    else:
+        trial_root=canonical_trial_root(trial_root)
     if Path(output_name).name!=output_name or not output_name.endswith('.json'):raise TrialBlocked('Use local output filename.')
     inputs,protocol=initialize(runtime,app_src);runtime=Path(runtime).resolve()
     configured={'provider':cfg.base_url,'requested_model':cfg.model,'max_output_tokens':cfg.max_tokens,

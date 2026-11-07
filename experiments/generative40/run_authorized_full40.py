@@ -21,7 +21,7 @@ def main():
     import controller80 as controller
     approval = json.loads(args.approval_file.read_bytes())
     trial_id = approval.get('trial_id', '')
-    controller.validate_authorization(runtime, trial_id, approval)
+    trial_root = controller.validate_authorization(runtime, trial_id, approval, args.trial_root)
     if approval.get('launcher_sha256') != sha256(Path(__file__).read_bytes()).hexdigest():
         raise controller.TrialBlocked('Approval is not bound to this launcher version.')
     controller.initialize(runtime, app_src)
@@ -34,7 +34,7 @@ def main():
     if not cfg.api_key:
         raise controller.TrialBlocked('Configure provider credentials locally.')
     run, anchors, _, _, _ = controller.run_trial(
-        runtime, app_src, args.trial_root.resolve(), trial_id, 'run.json', cfg,
+        runtime, app_src, trial_root, trial_id, 'run.json', cfg,
         lambda: httpx.AsyncHTTPTransport(retries=0), authorization=approval)
     print(json.dumps({'trial_id': trial_id, 'provider_client_attempts': run['provider_client_attempts'],
                       'stopped': anchors['stopped'], 'scores': 'pending_C_and_B_review'}, ensure_ascii=False))

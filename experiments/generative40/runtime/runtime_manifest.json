@@ -2,7 +2,7 @@
   "files": [
     {
       "path": "controller80.py",
-      "sha256": "9013e541103c9df5d555ac993c29169f3589a0ef324f565991db8de08a025a50"
+      "sha256": "d806595889cdbdbcfa78fc444a7f5b81ce6a519673c3ab3fcf70e6bcc88042bc"
     },
     {
       "path": "generation_prompt.txt",
@@ -44,5 +44,6 @@
       "path": "temporal_catalog.json",
       "sha256": "d42f1d2dd35dc8ea58705d00be5fa4b01d82cc4457a77c08d4cb7c9250491612"
     }
-  ]
+  ],
+  "runtime_version": "canonical-root-bound-v2"
 }
