@@ -30,3 +30,12 @@ def corpus(tmp_path):
         "doc001,alpha.pdf,https://example.invalid/alpha.pdf\n", encoding="utf-8"
     )
     return manifest, raw
+
+
+@pytest.fixture(autouse=True)
+def isolate_ofox_acceptance_registry(monkeypatch, tmp_path):
+    # Tests must never inspect or mutate a real operator's stopped/live session.
+    import sys
+    budget = sys.modules.get("rag_app.demo_budget")
+    if budget is not None:
+        monkeypatch.setattr(budget, "DEFAULT_LEDGER", tmp_path / "unused_acceptance.sqlite3")

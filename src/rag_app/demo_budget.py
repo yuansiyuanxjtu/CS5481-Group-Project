@@ -139,6 +139,8 @@ class SessionLedger:
                     CREATE TABLE cases (id TEXT PRIMARY KEY, token TEXT UNIQUE, state TEXT);
                     CREATE TABLE attempts (ordinal INTEGER PRIMARY KEY, case_id TEXT, stage TEXT, state TEXT, created TEXT, usage TEXT, UNIQUE(case_id,stage));
                     CREATE TABLE results (case_id TEXT PRIMARY KEY, result TEXT);
+                    CREATE TABLE attempt_diagnostics_v1 (ordinal INTEGER PRIMARY KEY REFERENCES attempts(ordinal), record TEXT NOT NULL);
+                    CREATE TABLE cleanup_diagnostics_v1 (ordinal INTEGER PRIMARY KEY REFERENCES attempts(ordinal), record TEXT NOT NULL);
                 ''')
             consent = sha256(json.dumps(approval, sort_keys=True).encode()).hexdigest()
             # Persist the approved value, never a newly observed replacement.
@@ -229,7 +231,7 @@ class SessionLedger:
                        (ordinal, claim[0], stage, 'reserved', datetime.now(timezone.utc).isoformat(), None))
         return ordinal
 
-    def record(self, ordinal, ok, usage=None):
+    def record(self, ordinal, ok, usage=None, *, diagnostic=None):
         # Only nonnegative integer usage counters; no headers/body/credential fields.
         safe = {k: v for k, v in (usage or {}).items() if k in {'prompt_tokens','completion_tokens','total_tokens'} and type(v) is int and v >= 0} if isinstance(usage, dict) else {}
         with self.transaction() as db:
@@ -237,8 +239,26 @@ class SessionLedger:
                 ('ok' if ok else 'error', json.dumps(safe), ordinal, 'reserved')).rowcount
             if changed != 1:
                 raise BudgetBlocked('Attempt audit mismatch.')
+            if diagnostic is not None:
+                from .ofox_diagnostics import sanitize
+                safe_diagnostic = sanitize(diagnostic)
+                safe_diagnostic['attempt_ordinal'] = ordinal
+                db.execute('INSERT INTO attempt_diagnostics_v1 VALUES(?,?)',
+                           (ordinal, json.dumps(safe_diagnostic, allow_nan=False)))
             if not ok:
                 db.execute("UPDATE meta SET state='stopped'")
+
+    def record_cleanup(self, ordinal, diagnostic):
+        """Append one cleanup failure; never rewrite a response or reserve a call."""
+        from .ofox_diagnostics import sanitize
+        safe = sanitize(diagnostic)
+        safe.update(attempt_ordinal=ordinal, failure_stage='cleanup')
+        with self.transaction() as db:
+            if not db.execute('SELECT 1 FROM attempts WHERE ordinal=?', (ordinal,)).fetchone():
+                raise BudgetBlocked('Cleanup audit has no reserved attempt.')
+            db.execute('INSERT INTO cleanup_diagnostics_v1 VALUES(?,?)',
+                       (ordinal, json.dumps(safe, allow_nan=False)))
+            db.execute("UPDATE meta SET state='stopped'")
 
     def finish(self, claim, status, result=None):
         with self.transaction() as db:
@@ -250,8 +270,12 @@ class SessionLedger:
             db.execute("UPDATE cases SET state='done' WHERE id=?", (claim[0],))
             if result is not None:
                 fields = {'status','answer','citations','claims','retrieved','error','model','usage','elapsed_seconds',
-                          'usage_completeness','provider_attempts','demo_profile','experiment_origin'}
+                          'usage_completeness','provider_attempts','demo_profile','experiment_origin','diagnostics'}
                 safe_result = {k:v for k,v in result.items() if k in fields}
+                if 'diagnostics' in safe_result:
+                    from .ofox_diagnostics import sanitize
+                    values = safe_result['diagnostics']
+                    safe_result['diagnostics'] = [sanitize(v) for v in values[:12]] if isinstance(values, list) else []
                 db.execute('INSERT INTO results VALUES(?,?)', (claim[0],json.dumps(safe_result,ensure_ascii=False,allow_nan=False)))
             if rows != expected or status != wanted:
                 db.execute("UPDATE meta SET state='stopped'")
@@ -264,6 +288,14 @@ class SessionLedger:
                     'attempts': [{'ordinal': a, 'case_id': b, 'stage': c, 'state': d, 'created_at_utc': e,
                                   'usage': json.loads(f) if f else None}
                                  for a,b,c,d,e,f in db.execute('SELECT * FROM attempts ORDER BY ordinal')]}
+
+    def diagnostics(self):
+        # Only new synthetic/future stores have this extension; never migrate on read.
+        with self.transaction() as db:
+            return [json.loads(row[0]) for row in db.execute(
+                'SELECT record FROM (SELECT ordinal,0 AS event,record FROM attempt_diagnostics_v1 '
+                'UNION ALL SELECT ordinal,1 AS event,record FROM cleanup_diagnostics_v1) '
+                'ORDER BY ordinal,event LIMIT 12')]
 
     def first_result(self, case_id):
         with self.transaction() as db:
