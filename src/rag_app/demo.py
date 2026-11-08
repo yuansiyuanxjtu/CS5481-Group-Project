@@ -59,6 +59,11 @@ class TwoStageDemoClient:
 
 
 def create_demo_service(settings, profile, *, transport=None):
+    from .demo_budget import enforce_profile
+    enforce_profile(profile)
+    if profile == 'ofox_joint_pairs8':
+        from .ofox_demo import create_ofox_service
+        return create_ofox_service(settings, transport=transport)
     if profile == "baseline":
         return service.create_service(settings)
     if profile != "joint_pairs8":

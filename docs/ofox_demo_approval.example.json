@@ -1,0 +1,11 @@
+{
+  "approved": false,
+  "statement": null,
+  "session_id": "NEW_APPROVAL_REQUIRED",
+  "authorized_registry": null,
+  "source_sha256": null,
+  "provider": "https://api.ofox.ai/v1",
+  "model": "openai/gpt-6-luna",
+  "profile": "ofox_joint_pairs8",
+  "max_attempts": 6
+}

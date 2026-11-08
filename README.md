@@ -7,6 +7,12 @@ The [reviewed joint_pairs8 results](experiments/joint_pairs8/README.md) and the
 [optional two-stage Streamlit profile](docs/member_c_handoff.md#reviewed-joint_pairs8-demo-profile)
 document the latest retrieval and demo integration. The application starts with the baseline profile.
 
+The separate, opt-in `ofox_joint_pairs8` acceptance profile uses OfoxAI
+`openai/gpt-6-luna` with a durable six-attempt registry. It is a new demonstration,
+not a reproduction of the DeepSeek scores. See [the live acceptance plan](docs/live_demo_acceptance_plan.md)
+for offline tests, explicit consent requirements and unresolved live-provider behavior.
+Do not provision a real registry or submit paid questions without separate approval.
+
 Member C's grounded QA, Streamlit startup, configurable LLM provider, citation/refusal
 checks and answer evaluation are documented in [Member C handoff](docs/member_c_handoff.md).
 Use C's combined `requirements-app-lock.txt` for the application environment (Streamlit

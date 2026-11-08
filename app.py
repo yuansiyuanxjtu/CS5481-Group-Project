@@ -30,10 +30,14 @@ if submitted:
         with st.spinner("Retrieving evidence and checking the answer…"):
             try:
                 cfg = Settings.from_env()
-                if not cfg.api_key:
-                    st.error("LLM is not configured. Add LLM_API_KEY to the local .env file and restart the app.")
+                profile = os.environ.get("RAG_DEMO_PROFILE", "baseline").strip()
+                from rag_app.demo_budget import enforce_profile
+                enforce_profile(profile)  # also guard already-cached baseline services
+                key_present = bool(os.environ.get('OFOX_API_KEY','').strip()) if profile == 'ofox_joint_pairs8' else bool(cfg.api_key)
+                if not key_present:
+                    key_name = 'OFOX_API_KEY' if profile == 'ofox_joint_pairs8' else 'LLM_API_KEY'
+                    st.error(f"LLM is not configured. Add {key_name} to the local .env file and restart the app.")
                 else:
-                    profile = os.environ.get("RAG_DEMO_PROFILE", "baseline").strip()
                     st.session_state["qa_result"] = service(profile).answer_question(question)
                     st.session_state["qa_question"] = question
             except Exception:
