@@ -14,6 +14,16 @@ from .service import QAService
 from .ofox_diagnostics import Diagnostic, exception_category
 
 
+def _contains_secret(value, secret):
+    if isinstance(value, str):
+        return secret in value
+    if isinstance(value, list):
+        return any(_contains_secret(v, secret) for v in value)
+    if isinstance(value, dict):
+        return any(_contains_secret(k, secret) or _contains_secret(v, secret) for k,v in value.items())
+    return False
+
+
 class GuardedTransport(httpx.AsyncBaseTransport):
     def __init__(self, ledger, claim, upstream_factory, *, diagnostic_sink=None, secret="", deadline_expired=lambda: False):
         self.ledger, self.claim = ledger, claim
@@ -35,7 +45,7 @@ class GuardedTransport(httpx.AsyncBaseTransport):
                     or body['model'] != budget.MODEL or body['max_completion_tokens'] != 1200
                     or body['reasoning_effort'] != 'low' or body['stream'] is not False
                     or body['response_format'] != {'type':'json_object'}
-                    or body['extra_body'] != {'provider': {'type':'openai', 'fallback':[]}}):
+                    or body['extra_body'] != {'provider': {'type':getattr(self.ledger, 'ROUTE', 'openai'), 'fallback':[]}}):
                 raise budget.BudgetBlocked('OfoxAI request configuration differs.')
             messages = body['messages']
             payload = json.loads(messages[1]['content'])
@@ -57,6 +67,8 @@ class GuardedTransport(httpx.AsyncBaseTransport):
             prompt = RUNTIME/('generation_prompt.txt' if stage == 'generation' else 'method/selection_prompt.txt')
             if len(messages) != 2 or messages[0] != {'role':'system', 'content':prompt.read_text(encoding='utf-8')}:
                 raise budget.BudgetBlocked('Frozen prompt differs.')
+            if hasattr(self.ledger, 'validate_request'):
+                self.ledger.validate_request(request)
             phase = 'reservation'
             ordinal = self.ledger.reserve(self.claim, stage)  # durable BEFORE factory/network
             diagnostic.attempt_ordinal = ordinal
@@ -110,6 +122,30 @@ class GuardedTransport(httpx.AsyncBaseTransport):
                             phase = 'complete'
             diagnostic.failure_stage = phase
             valid = diagnostic.category == 'ok'
+            if valid and hasattr(self.ledger, 'accept_response'):
+                phase = 'content'
+                try:
+                    content = data['choices'][0]['message']['content']
+                    if self.secret:
+                        try:
+                            decoded = json.loads(content)
+                        except ValueError:
+                            decoded = None
+                        except RecursionError:
+                            raise GenerationError('Response nesting is invalid.') from None
+                        try:
+                            unsafe = self.secret in content or _contains_secret(decoded, self.secret)
+                        except RecursionError:
+                            unsafe = True
+                        if unsafe:
+                            raise GenerationError('Response contains private credential material.')
+                    self.ledger.accept_response(ordinal, data)
+                except GenerationError:
+                    diagnostic.category, diagnostic.failure_stage = 'invalid_content', 'content'
+                    valid = False
+                except (budget.BudgetBlocked, OSError):
+                    phase = 'audit'
+                    raise
             phase = 'audit'
             self.ledger.record(ordinal, valid, usage, diagnostic=diagnostic.snapshot())
             phase = 'complete'
@@ -192,7 +228,7 @@ class OfoxChatClient(ChatClient):
             raise LLMError('Configure OFOX_API_KEY locally after explicit live authorization.')
         body = dict(model=budget.MODEL, messages=messages, max_completion_tokens=1200,
                     reasoning_effort='low', response_format={'type':'json_object'}, stream=False,
-                    extra_body={'provider': {'type':'openai', 'fallback':[]}})
+                    extra_body={'provider': {'type':getattr(self.ledger, 'ROUTE', 'openai'), 'fallback':[]}})
         try:
             transport = GuardedTransport(self.ledger, self.claim, self.factory,
                 diagnostic_sink=self._remember, secret=self.settings.api_key,
@@ -268,10 +304,15 @@ class OfoxAcceptanceService:
 
 
 def create_ofox_service(settings, *, transport=None):
-    from .demo import ROOT, RUNTIME, _load_experiment
-    from rag_ingest.temporal import load_temporal_catalog
     budget.enforce_profile(budget.PROFILE)
     ledger = budget.SessionLedger(budget.DEFAULT_LEDGER)
+    return _service_for_controller(settings, ledger, transport=transport,
+        key_loader=lambda: os.environ.get('OFOX_API_KEY','').strip())
+
+
+def _service_for_controller(settings, ledger, *, transport=None, key_loader=None):
+    from .demo import ROOT, RUNTIME, _load_experiment
+    from rag_ingest.temporal import load_temporal_catalog
     ledger.check()  # before credentials, model loading or network transport
     if transport is not None and not isinstance(transport, httpx.MockTransport):
         raise budget.BudgetBlocked('Only MockTransport injection is supported; live transport has zero retries.')
@@ -280,7 +321,7 @@ def create_ofox_service(settings, *, transport=None):
         if row['path'].startswith('method/') or row['path'] == 'generation_prompt.txt':
             if sha256((RUNTIME/row['path']).read_bytes()).hexdigest() != row['sha256']:
                 raise budget.BudgetBlocked('Historical generation source differs.')
-    cfg = replace(settings, api_key=os.environ.get('OFOX_API_KEY','').strip(), base_url=budget.PROVIDER,
+    cfg = replace(settings, api_key=key_loader() if key_loader is not None else settings.api_key, base_url=budget.PROVIDER,
                   model=budget.MODEL, thinking='', timeout=120, max_tokens=1200, json_mode=True,
                   top_k=8, collection='fixed_150_overlap_30', arm='enhanced', max_distance=None)
     catalog_path = cfg.experiment_dir/'temporal_catalog.json'
