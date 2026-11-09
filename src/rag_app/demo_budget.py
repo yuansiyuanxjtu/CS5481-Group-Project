@@ -93,6 +93,15 @@ def enforce_profile(profile):
 
 
 class SessionLedger:
+    CONTROLLER = 'six_request_v1'
+    MAX_ATTEMPTS = 6
+    STOP_AFTER_RECORD = False
+    STOP_AFTER_FINISH = False
+
+    @classmethod
+    def create_extension(cls, db):
+        pass  # version-specific new-store schema; never called on existing stores
+
     def __init__(self, path):
         self.path = Path(path).resolve()
         if Path(path).absolute() != self.path:
@@ -112,7 +121,7 @@ class SessionLedger:
                 or approval['authorized_registry'] != str(path)
                 or approval['source_sha256'] != fingerprint()
                 or (approval['provider'], approval['model'], approval['profile']) != (PROVIDER, MODEL, PROFILE)
-                or type(approval['max_attempts']) is not int or approval['max_attempts'] != 6):
+                or type(approval['max_attempts']) is not int or approval['max_attempts'] != cls.MAX_ATTEMPTS):
             raise BudgetBlocked('Explicit approval must bind the canonical registry and current sources.')
         approved_fingerprint = approval['source_sha256']
         ledger = cls(path)  # construct before releasing the final readiness fence
@@ -135,6 +144,7 @@ class SessionLedger:
             db = sqlite3.connect(path)
             db.execute('PRAGMA synchronous=FULL')
             db.executescript('''
+                    CREATE TABLE guard_policy (controller TEXT NOT NULL, max_attempts INTEGER NOT NULL);
                     CREATE TABLE meta (id INTEGER PRIMARY KEY CHECK(id=1), state TEXT, fingerprint TEXT, consent_hash TEXT, session_id TEXT, registry TEXT);
                     CREATE TABLE cases (id TEXT PRIMARY KEY, token TEXT UNIQUE, state TEXT);
                     CREATE TABLE attempts (ordinal INTEGER PRIMARY KEY, case_id TEXT, stage TEXT, state TEXT, created TEXT, usage TEXT, UNIQUE(case_id,stage));
@@ -142,6 +152,8 @@ class SessionLedger:
                     CREATE TABLE attempt_diagnostics_v1 (ordinal INTEGER PRIMARY KEY REFERENCES attempts(ordinal), record TEXT NOT NULL);
                     CREATE TABLE cleanup_diagnostics_v1 (ordinal INTEGER PRIMARY KEY REFERENCES attempts(ordinal), record TEXT NOT NULL);
                 ''')
+            cls.create_extension(db)
+            db.execute('INSERT INTO guard_policy VALUES(?,?)', (cls.CONTROLLER, cls.MAX_ATTEMPTS))
             consent = sha256(json.dumps(approval, sort_keys=True).encode()).hexdigest()
             # Persist the approved value, never a newly observed replacement.
             db.execute('INSERT INTO meta VALUES(1,?,?,?,?,?)',
@@ -184,6 +196,8 @@ class SessionLedger:
             row = db.execute('SELECT state,fingerprint,registry FROM meta WHERE id=1').fetchone()
             if not row or row[1] != fingerprint() or row[2] != str(self.path):
                 raise BudgetBlocked('Acceptance source binding differs.')
+            if db.execute('SELECT controller,max_attempts FROM guard_policy').fetchall() != [(self.CONTROLLER,self.MAX_ATTEMPTS)]:
+                raise BudgetBlocked('Registry controller or attempt policy differs.')
             yield db
             db.commit()
         except (OSError, sqlite3.Error):
@@ -217,8 +231,8 @@ class SessionLedger:
     def reserve(self, claim, stage):
         with self.transaction() as db:
             count = db.execute('SELECT count(*) FROM attempts').fetchone()[0]
-            if count >= 6:
-                raise BudgetBlocked('Six provider attempts exhausted.')
+            if count >= self.MAX_ATTEMPTS:
+                raise BudgetBlocked({1:'One',2:'Two',6:'Six'}.get(self.MAX_ATTEMPTS,str(self.MAX_ATTEMPTS))+' provider attempts exhausted.')
             if db.execute('SELECT state FROM meta').fetchone()[0] != 'active':
                 raise BudgetBlocked('Session stopped.')
             if db.execute('SELECT token,state FROM cases WHERE id=?', (claim[0],)).fetchone() != (claim[1], 'running'):
@@ -245,7 +259,7 @@ class SessionLedger:
                 safe_diagnostic['attempt_ordinal'] = ordinal
                 db.execute('INSERT INTO attempt_diagnostics_v1 VALUES(?,?)',
                            (ordinal, json.dumps(safe_diagnostic, allow_nan=False)))
-            if not ok:
+            if not ok or self.STOP_AFTER_RECORD:
                 db.execute("UPDATE meta SET state='stopped'")
 
     def record_cleanup(self, ordinal, diagnostic):
@@ -277,7 +291,7 @@ class SessionLedger:
                     values = safe_result['diagnostics']
                     safe_result['diagnostics'] = [sanitize(v) for v in values[:12]] if isinstance(values, list) else []
                 db.execute('INSERT INTO results VALUES(?,?)', (claim[0],json.dumps(safe_result,ensure_ascii=False,allow_nan=False)))
-            if rows != expected or status != wanted:
+            if rows != expected or status != wanted or self.STOP_AFTER_FINISH:
                 db.execute("UPDATE meta SET state='stopped'")
             elif db.execute('SELECT count(*) FROM cases').fetchone()[0] == 3:
                 db.execute("UPDATE meta SET state='complete'")
